@@ -32,6 +32,7 @@ function Navbar() {
           <p className="w-[695px] h-[40px] mt-5" > Join us in shaping a future where every digital interaction resonates with the<br/>
             essence of seamless financial empowerment.  </p>
         </div>
+        <div> ghgjhj</div>
 
         </div>
        
