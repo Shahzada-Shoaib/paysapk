@@ -1,0 +1,43 @@
+body{
+  background-color: black ; 
+  /* background-color: white;  */
+}
+/* .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;  
+
+} */
+.button{
+  width: 121px;
+  height: 27px;
+  border: 2px;
+  color: white;
+  border-radius: 5.55px;
+  background: radial-gradient(circle, #4298CA59 35%, #00000000 100%);
+}
+
+.banner{
+  display: flex;              
+  flex-direction: column;
+   align-items: center;  
+  text-align: center; 
+  color: white;
+  border: 2px solid;
+  margin-top: 68.3px;
+}
+.banner h1{
+  justify-content: center;
+  /* width: 883px; */
+  /* height: 68px; */
+  font-weight: 700; 
+  font-family: 'Manrope';
+  font-size: 50px;
+}
+
+.banner p{
+ /* width: 695px; */
+ /* height: 40px;   */
+ font-family: 'Raleway';
+}
