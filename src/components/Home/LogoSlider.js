@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 const logos = [
     '../assets/clients-logos/clients-logo1.svg',
     '../assets/clients-logos/clients-logo2.svg',
-    //wrong size of an image need to be fixed
+    // wrong size of an image need to be fixed
     // '../assets/clients-logos/clients-logo3.svg',
     '../assets/clients-logos/clients-logo4.svg',
     '../assets/clients-logos/clients-logo5.svg',
