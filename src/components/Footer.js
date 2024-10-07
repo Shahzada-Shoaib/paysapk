@@ -10,11 +10,26 @@ import ThreadIcon from "../images/social-icons/threads.svg";
 const Footer = () => {
   return (
     <div>
-      <div className="flex justify-center">
+      <div className="flex justify-center my-[70px]">
         <img src={FooterLogo} alt="icon" className="" />
       </div>
-      <div className="h-[2px] bg-[#185C8333]"></div>
-      <div className="flex justify-between items-center bg-black text-white py-4 px-8">
+      <div>
+        <div
+          style={{
+            height: "0.5px",
+            background: "#17557A",
+          }}
+          className="mb-1"
+        ></div>
+        <div
+          style={{
+            height: "0.5px",
+            background: "#17557A",
+          }}
+        ></div>
+      </div>
+
+      <div className="flex justify-between items-center bg-black text-white py-8 px-8">
         {/* Navigation Links */}
         <div className="flex items-center space-x-4 text-lg">
           <span className="cursor-pointer">About Us</span>
