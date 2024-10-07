@@ -6,8 +6,7 @@ import MenuPopup from "./components/MenuPopup";
 import { useState } from "react";
 import Slider from "react-slick";
 import LogoSlider from "./components/Home/LogoSlider";
-
-
+import Button from "./components/Button";
 
 function App() {
   const [showMenuPopup, setShowMenuPopup] = useState(false);
