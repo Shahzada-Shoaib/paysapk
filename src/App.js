@@ -1,11 +1,11 @@
 // import logo from './logo.svg';
 
 import Footer from "./components/Footer";
-import Button from "./components/Button";
 import Navbar from "./components/Home/Navbar";
 import Banner from "./components/Home/Banner";
 import MenuPopup from "./components/MenuPopup";
 import { useState } from "react";
+import Button from "./components/Button";
 function App() {
   const [showMenuPopup, setShowMenuPopup] = useState(false);
   return (
@@ -21,9 +21,10 @@ function App() {
         />
       )}
       <Banner />
+      <div className="w-full flex justify-center">
+        <Button />
+      </div>
       <Footer />
-      {/* <Button /> */}
-      <Button />
     </div>
   );
 }

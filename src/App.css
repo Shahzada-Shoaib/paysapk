@@ -19,13 +19,31 @@ body{
 }
 
 .button-styling {
-border: Mixed solid;
-border-image-source: linear-gradient(180deg, #FED21C 0%, rgba(0, 0, 0, 0) 100%);
-backdrop-filter: blur(200px);
-background: #FED21C33;
-border: 0.5px solid;
-
+background: linear-gradient(to right, rgba(254, 210, 28, 0.2), #52440b );
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px); /* For Safari support */
+background-color: transparent;
+font-family: Raleway, 'sans-serif';
+font-weight: 600;
+font-size: 20px;
 }
+
+
+
+
+.button-styling-secondary {
+  background: linear-gradient(to right, rgba(24, 92, 131, 0.2) 0%,rgba(24, 92, 131, 1) 50%, rgba(24, 92, 131, 0.2) 100%);
+  backdrop-filter: blur(200px);
+  -webkit-backdrop-filter: blur(200px); /* For Safari support */
+  background-color: transparent;
+  font-family: Raleway, 'sans-serif';
+  font-weight: 600;
+  font-size: 20px;
+  
+  }
+
+
+
 
 
 
