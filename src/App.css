@@ -18,6 +18,9 @@ body{
   background: radial-gradient(circle, #4298CA59 35%, #00000000 100%);
 }
 
+
+
+
 .banner{
   display: flex;              
   flex-direction: column;
@@ -41,3 +44,10 @@ body{
  /* height: 40px;   */
  font-family: 'Raleway';
 }
+
+
+.footer-border-line {
+  border: 0.5px solid;
+  border-image-source: linear-gradient(90deg, #185C83 -0.94%, rgba(0, 0, 0, 0) 100%);
+}
+
