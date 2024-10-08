@@ -17,12 +17,13 @@ function Banner() {
             Join us in shaping a future where every digital interaction
             resonates with the
             <br />
-            essence of seamless financial empowerment.{" "}
+            essence of seamless financial empowerment.
+            {" "}
           </p>
         </div>
       </div>
       <div className="mt-6 border-white">
-        <video className="w-[1334] h-[895px] border-white" autoPlay loop muted>
+        <video className="w-[1334] h-[895px] mx-auto border-white" autoPlay loop muted>
           <source src="paysaApp-video.mp4" type="video/mp4" />
           Your browser does not support the video format.
         </video>

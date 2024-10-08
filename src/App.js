@@ -1,11 +1,13 @@
 // import logo from './logo.svg';
-
 import Footer from "./components/Footer";
 import Navbar from "./components/Home/Navbar";
 import Banner from "./components/Home/Banner";
 import MenuPopup from "./components/MenuPopup";
 import { useState } from "react";
+import Slider from "react-slick";
+import LogoSlider from "./components/Home/LogoSlider";
 import Button from "./components/Button";
+
 function App() {
   const [showMenuPopup, setShowMenuPopup] = useState(false);
   return (
@@ -24,6 +26,7 @@ function App() {
       <div className="w-full flex justify-center">
         <Button title="Get in the circle" isPrimary={false} isChevronEnabled />
       </div>
+      <LogoSlider/>
       <Footer />
     </div>
   );
