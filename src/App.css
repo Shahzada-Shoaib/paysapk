@@ -71,6 +71,14 @@ font-size: 20px;
   font-weight: 600;
 }
 
+.font-manrope {
+  font-family: 'Manrope', sans-serif;
+}
+
+.font-raleway {
+  font-family: "Raleway", sans-serif;
+}
+
 
 .banner p{
  /* width: 695px; */
