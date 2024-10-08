@@ -22,7 +22,7 @@ function App() {
       )}
       <Banner />
       <div className="w-full flex justify-center">
-        <Button />
+        <Button title="Get in the circle" isPrimary={false} isChevronEnabled />
       </div>
       <Footer />
     </div>

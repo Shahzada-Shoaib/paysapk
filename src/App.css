@@ -18,9 +18,9 @@ body{
   background: radial-gradient(circle, #4298CA59 35%, #00000000 100%);
 }
 
-.button-styling {
-background: linear-gradient(to right, rgba(254, 210, 28, 0.2), #52440b );
-backdrop-filter: blur(10px);
+.button-styling-secondary {
+background: linear-gradient(to right, rgba(254, 210, 28, 0.2) 0%, rgba(254, 210, 28, 0.6) 50%, rgba(254, 210, 28, 0.2) 100% );
+backdrop-filter: blur(200px);
 -webkit-backdrop-filter: blur(10px); /* For Safari support */
 background-color: transparent;
 font-family: Raleway, 'sans-serif';
@@ -31,7 +31,7 @@ font-size: 20px;
 
 
 
-.button-styling-secondary {
+.button-styling {
   background: linear-gradient(to right, rgba(24, 92, 131, 0.2) 0%,rgba(24, 92, 131, 1) 50%, rgba(24, 92, 131, 0.2) 100%);
   backdrop-filter: blur(200px);
   -webkit-backdrop-filter: blur(200px); /* For Safari support */
