@@ -43,17 +43,24 @@ function LogoSlider() {
     };
 
     return (
+        <>
+            <div className='flex justify-center'>
+                <h1 className='text-white font-bold font-[manrope] text-[35px] mt-[67.64px]  h-[64px]'>
+                    OUR TRUSTED CLIENTS
+                </h1>
+            </div>
         <div className="relative ">
             <h2 className="my-4 text-2xl font-bold text-center">OUR TRUSTED CLIENTS</h2>
             <Slider {...settings} className="slider">
                 {logos.map((logo, index) => (
-                    <div key={index} className="relative p-2 h-250">
+                    <div key={index} className="relative p-2 ">
 
-                        <img src={logo} alt={`Client Logo ${index + 1}`} className="w-[100px] h-[50px] object-contain flex justify-center" />
+                        <img src={logo} alt={`Client Logo ${index + 1}`} className="w-[100px] h-[150px] object-contain flex justify-center" />
                     </div>
                 ))}
             </Slider>
         </div>
+        </>
     );
 }
 
