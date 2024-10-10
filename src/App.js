@@ -17,7 +17,9 @@ function App() {
   const [showMenuPopup, setShowMenuPopup] = useState(false);
   return (
     <div>
-      {/* <Navbar
+      
+      
+      <Navbar
         showMenuPopup={showMenuPopup}
         setShowMenuPopup={setShowMenuPopup}
       />
@@ -30,18 +32,7 @@ function App() {
       <Banner />
       <LogoSlider />
       <AboutUsGrid />
-       <MapSection/>
-      <HomePageCarousel />
-      <Footer />
-       */}
-
-       {/* <CarouselBanner/> */}
        <HomePageCarousel />
-     
-
-     
-      
-
       <MapSection />
       <Footer />
     </div>
