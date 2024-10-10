@@ -2,10 +2,10 @@ import React from 'react'
 
 function CarouselBanner(props) {
     return (
-        <>
+        <div className=''>
 
             {/* section 1 */}
-            <div className="relative flex bg-cover ">
+            <div className="relative flex ">
                 <div className="absolute top-[60px] left-[100px] flex items-center justify-center">
                     <span className='text-[300px] font-bold'
                         style={{
@@ -18,7 +18,7 @@ function CarouselBanner(props) {
                     </span>
                 </div>
                 <div className="absolute flex items-center justify-center  -top-[200px] left-[1px] w-full">
-                    <img className='w-full' src={`${props.image}`} alt=''></img>
+                    <img className='' src={`${props.image}`} alt=''></img>
                 </div>
             </div>
 
@@ -58,7 +58,7 @@ function CarouselBanner(props) {
             </div>
 
 
-        </>
+        </div>
 
 
 

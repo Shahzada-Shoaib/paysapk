@@ -47,8 +47,6 @@ const HomePageCarousel = () => {
       />
     );
   };
-  //paragraph data as props
-  // const title = "365 DAYS<br />SETTLEMENT"; // String with HTML break
 
   return (
     <div className="relative">
@@ -63,28 +61,21 @@ const HomePageCarousel = () => {
         showThumbs={false}
         showStatus={false}
       >
-        <div className='size-full'>
-
+        <div className=''>
           <CarouselBanner number='01' image='/assets/carousel-pic01.svg' title1='365 DAYS' title2='SETTLEMENT' description1='Get lightning-fast payment settlements' description2="with PaySa's POS terminal (within 24 hours)" />
-
         </div>
 
         <div>
-          <img
-            src="/assets/HomePageMap.svg"
-            alt="Slide 2"
-            className="border border-white"
-          />
+          <CarouselBanner number='01' image='/assets/carousel-pic01.svg' title1='365 DAYS' title2='SETTLEMENT' description1='Get lightning-fast payment settlements' description2="with PaySa's POS terminal (within 24 hours)" />
           {/* Remove legend */}
         </div>
+
+        
         <div>
-          <img
-            src="https://via.placeholder.com/800x400"
-            alt="Slide 3"
-            className=""
-          />
+          <CarouselBanner number='01' image='/assets/carousel-pic01.svg' title1='365 DAYS' title2='SETTLEMENT' description1='Get lightning-fast payment settlements' description2="with PaySa's POS terminal (within 24 hours)" />
           {/* Remove legend */}
         </div>
+        
       </Carousel>
     </div>
   );
