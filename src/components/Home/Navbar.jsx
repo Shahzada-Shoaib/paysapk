@@ -4,11 +4,13 @@ import React from "react";
 import "../../App.css";
 import Banner from "./Banner";
 import MenuPopup from "../MenuPopup";
+import SiteLogo from "../../images/site-logo.svg"
+
 
 function Navbar({ showMenuPopup, setShowMenuPopup }) {
   return (
     <div>
-      <div className="flex justify-between items-center px-5">
+      <div className="flex justify-between items-center py-8 max-w-screen-xl mx-auto">
         <div>
           {" "}
           <img
@@ -21,7 +23,8 @@ function Navbar({ showMenuPopup, setShowMenuPopup }) {
 
         <div>
           {" "}
-          <img src="../assets/logo.svg" alt="logo"></img>
+          <img src={SiteLogo} alt="logo"></img>
+          {/* <Image src={SiteLogo} alt="logo" /> */}
         </div>
         {/* <div> Button</div> */}
         <button className="button">
