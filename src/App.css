@@ -55,12 +55,10 @@ font-size: 20px;
   text-align: center; 
   color: white;
   /* border: 2px solid; */
-  margin-top: 68.3px;
+  margin-top: 60.3px;
 }
 .banner h1{
   justify-content: center;
-  /* width: 883px; */
-  /* height: 68px; */
   font-weight: 700; 
   font-family: 'Manrope';
   font-size: 50px;
@@ -73,8 +71,6 @@ font-size: 20px;
 
 
 .banner p{
- /* width: 695px; */
- /* height: 40px;   */
  font-family: 'Raleway';
 }
 

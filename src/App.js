@@ -23,10 +23,8 @@ function App() {
         />
       )}
       <Banner />
-      <div className="w-full flex justify-center">
-        <Button title="Get in the circle" isPrimary={false} isChevronEnabled />
-      </div>
-      <LogoSlider/>
+      <LogoSlider />
+      
       <Footer />
     </div>
   );
