@@ -7,6 +7,9 @@ import { useState } from "react";
 import Slider from "react-slick";
 import LogoSlider from "./components/Home/LogoSlider";
 import Button from "./components/Button";
+// import AboutUsCard from "./components/Home/AboutUsCard";
+import AboutUsGrid from "./components/Home/AboutUsGrid";
+import MapSection from "./components/Home/MapSection";
 
 function App() {
   const [showMenuPopup, setShowMenuPopup] = useState(false);
@@ -24,7 +27,8 @@ function App() {
       )}
       <Banner />
       <LogoSlider />
-      
+      <AboutUsGrid />
+      <MapSection />
       <Footer />
     </div>
   );
