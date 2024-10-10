@@ -17,7 +17,7 @@ function CarouselBanner(props) {
                         {props.number}
                     </span>
                 </div>
-                <div className="absolute flex items-center justify-center  -top-[200px] left-[1px] border w-full">
+                <div className="absolute flex items-center justify-center  -top-[200px] left-[1px] w-full">
                     <img className='w-full' src={`${props.image}`} alt=''></img>
                 </div>
             </div>
