@@ -34,7 +34,7 @@ function LogoSlider() {
     const settings = {
         infinite: true,             // Infinite loop scrolling
         speed: 5000,                // Scroll speed
-        slidesToShow: 5,            // Number of logos visible at once (adjust as needed)
+        slidesToShow: 4,            // Number of logos visible at once (adjust as needed)
         slidesToScroll: 1,          // Number of logos to scroll at a time
         autoplay: true,             // Autoplay enabled
         autoplaySpeed: 0,           // Continuous scroll speed
@@ -43,7 +43,7 @@ function LogoSlider() {
     };
 
     return (
-        <>
+        <div className='max-w-screen-xl mx-auto'>
             <div className='flex justify-center'>
                 <h1 className='text-white font-bold font-[manrope] text-[35px] mt-[67.64px]  h-[64px]'>
                     OUR TRUSTED CLIENTS
@@ -60,7 +60,7 @@ function LogoSlider() {
                 ))}
             </Slider>
         </div>
-        </>
+        </div>
     );
 }
 

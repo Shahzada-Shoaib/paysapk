@@ -28,7 +28,7 @@ function App() {
         />
       )}
       <Banner />
-      <LogoSlider/>
+      <LogoSlider />
       <AboutUsGrid />
        <MapSection/>
       <HomePageCarousel />
@@ -42,6 +42,8 @@ function App() {
      
       
 
+      <MapSection />
+      <Footer />
     </div>
   );
 }
