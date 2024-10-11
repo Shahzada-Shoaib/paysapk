@@ -13,14 +13,15 @@ import MapSection from "./components/Home/MapSection";
 import HomePageCarousel from "./components/Home/HomePageCarousel";
 import CarouselBanner from "./components/Home/CarouselBanner";
 import PartnerSlider from "./components/Home/PartnersSlider";
+import PaysaPage from "./components/Paysa-picks-page/PaysaPage";
+
 
 function App() {
   const [showMenuPopup, setShowMenuPopup] = useState(false);
   return (
     <div>
-      
-      
-      <Navbar
+      {/* Home Page starts here */}
+      {/* <Navbar
         showMenuPopup={showMenuPopup}
         setShowMenuPopup={setShowMenuPopup}
       />
@@ -36,7 +37,12 @@ function App() {
        <HomePageCarousel />
        <PartnerSlider/>
       <MapSection />
-      <Footer />
+      <Footer /> */}
+      {/* home page ends here */}
+
+
+      {/* <PaysaPage/> */}
+      <PaysaPage/>
     </div>
   );
 }
