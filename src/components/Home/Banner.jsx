@@ -6,14 +6,12 @@ function Banner() {
     <>
       {" "}
       <div className="banner">
-        <div>
-          <h1 className="max-w-[883px]">
+        <div className="px-4 lg:px-0">
+          <h1 className="max-w-[883px] mx-auto text-center">
             {" "}
             EMPOWER YOUR DIGITAL PAYMENTS
           </h1>
-        </div>
-        <div>
-          <p className="max-w-[600px]   text-center mt-5">
+          <p className="max-w-[600px]  mx-auto text-center mt-5">
             {" "}
             Join us in shaping a future where every digital interaction
             resonates with the
@@ -22,8 +20,9 @@ function Banner() {
             {" "}
           </p>
         </div>
+      
       </div>
-      <div className="mt-6  w-screen mx-auto">
+      <div className="mt-6  max-w-screen mx-auto">
         <video  autoPlay className="w-full"  loop muted>
           <source src="paysaApp-video.mp4" type="video/mp4" />
           Your browser does not support the video format.

@@ -10,7 +10,7 @@ import SiteLogo from "../../images/site-logo.svg"
 function Navbar({ showMenuPopup, setShowMenuPopup }) {
   return (
     <div>
-      <div className="flex justify-between items-center py-8 max-w-screen-xl mx-auto">
+      <div className="flex px-6 md:px-0 justify-between items-center py-8 max-w-screen-xl mx-auto">
         <div>
           {" "}
           <img
@@ -27,7 +27,7 @@ function Navbar({ showMenuPopup, setShowMenuPopup }) {
           {/* <Image src={SiteLogo} alt="logo" /> */}
         </div>
         {/* <div> Button</div> */}
-        <button className="button">
+        <button className="button hidden md:block">
           <span className="font-raleway leading-[20px]">Get in touch</span>
         </button>
       </div>

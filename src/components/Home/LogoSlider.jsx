@@ -2,6 +2,8 @@ import React from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import useIsMobile from "../../utils/useIsMobile"
+
 
 const logos = [
     '../assets/clients-logos/clients-logo1.svg',
@@ -30,31 +32,31 @@ const logos = [
 ];
 
 function LogoSlider() {
+
+
+    const isMobile = useIsMobile();
+
+    console.log("Is Mobile: ", isMobile)
+
     // Slick settings
     const settings = {
         infinite: true,             // Infinite loop scrolling
-        speed: 5000,                // Scroll speed
-        slidesToShow: 4,            // Number of logos visible at once (adjust as needed)
+        speed: 10000,                // Scroll speed
+        slidesToShow: isMobile ? 4 : 4,            // Number of logos visible at once (adjust as needed)
         slidesToScroll: 1,          // Number of logos to scroll at a time
         autoplay: true,             // Autoplay enabled
         autoplaySpeed: 0,           // Continuous scroll speed
         cssEase: "linear",          // Smooth scrolling
-        pauseOnHover: false,        // Don't pause on hover
+        pauseOnHover: true, 
+        arrows: false       // Don't pause on hover
     };
 
     return (
         <div className='max-w-screen-xl mx-auto'>
-            <div className='flex justify-center'>
-                <h1 className='text-white font-bold font-[manrope] text-[35px] mt-[67.64px]  h-[64px]'>
-                    OUR TRUSTED CLIENTS
-                </h1>
-            </div>
         <div className="relative ">
-            <h2 className="my-4 text-2xl font-bold text-center">OUR TRUSTED CLIENTS</h2>
             <Slider {...settings} className="slider">
                 {logos.map((logo, index) => (
                     <div key={index} className="relative p-2 ">
-
                         <img src={logo} alt={`Client Logo ${index + 1}`} className="w-[100px] h-[150px] object-contain flex justify-center" />
                     </div>
                 ))}

@@ -4,14 +4,10 @@ import AboutUsCard from './AboutUsCard';
 const AboutUsGrid = () => {
     return (
         <>
-        <div className='flex justify-center mt-20'>
-                <h1 className='text-center text-white w-[188px]h-[75px] font-bold text-[35px] font-[manrope]'>
-                ABOUT US
-            </h1>
-        </div>
+   
         
-        <div className="flex items-center justify-center min-h-screen">
-                <div className="grid grid-cols-3 gap-[45px]">
+        <div className="flex items-center justify-center">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[45px]">
                 {/* Calling the AboutUsCard component 6 times */}
                 <AboutUsCard title='OUR STORY' description='With swift progress and major industry partnerships, we’re transforming banking.' />
 

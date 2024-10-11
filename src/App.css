@@ -27,7 +27,9 @@ font-weight: 600;
 font-size: 20px;
 }
 
-
+.font-manrope {
+  font-family: 'Manrope';
+}
 
 
 .button-styling {
@@ -84,7 +86,25 @@ font-size: 20px;
   background-image: url('https://s3-alpha-sig.figma.com/img/c0ff/20d7/334e433aba824dad0b8868c94f660037?Expires=1729468800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KpIAs490BmkTgeP774MWzbTK3RV38if~JuK9XSXpfgvXsRE7tGENoJZ~x~-Icc4wl5kQ~e2khuIfe-mk-ktcrgWMlGYdSIIoMa-F4ILOhRZt~j3UgknmpQkV2yuJSIRn99Jmm5AnlSI-1sGtbKHndbSVb9S6LBvsM-8ktKqgaaKeyerPhKrkwNrF389adOoCIgl2krL3uodrPOJz46416jHT4FkpKayes1vx7lJxz6o5gRjFpA6k~7CZ2uLiqrv7976tTG-EgebRLQO7MEBOW2M8LiTSl~KgxLbht~MPJtnLuBtUagnhXIhJegJ9RhbX4HBjSS33KXWmUabF6ciUFA__');
 }
 .menu-popup-bg-overlay {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background: linear-gradient(90deg, #000000 32.62%, rgba(0, 0, 0, 0.5) 83.39%);
 }
+
+@media screen and (max-width: 500px) {
+  .menu-popup-bg-overlay {
+  background: linear-gradient(90deg, #000000 46.62%, rgba(0, 0, 0, 0.5) 124.39%)
+  }
+}
+
+.aboutus-card-bg {
+  background: rgba(254, 210, 28, 0.1);
+  border: 1px solid;
+  border-image-source: linear-gradient(180deg, rgba(254, 210, 28, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+  backdrop-filter: blur(250px);  
+  border-width: 1px;
+  border-radius: 15px; 
+  border-image-slice: 10;
+  overflow: hidden;
+}
+
