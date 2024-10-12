@@ -4,7 +4,12 @@ import AboutUsCard from "./AboutUsCard";
 const AboutUsGrid = () => {
   return (
     <>
-      <div className="flex items-center px-6 md:px-0 justify-center max-w-screen-xl mx-auto pb-12 md:pb-36">
+      <div className='flex justify-center'>
+        <h1 className='text-white font-bold font-[manrope] text-[35px] mt-[67.64px]  h-[64px] mb-[60px]'>
+          ABOUT US
+        </h1>
+      </div>
+      <div className="flex items-center justify-center max-w-screen-xl px-6 pb-12 mx-auto md:px-0 md:pb-36">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[45px]">
           <AboutUsCard
             title="OUR STORY"
