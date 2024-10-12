@@ -6,14 +6,16 @@ import PageNotFound from './components/PageNotFound.js';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/paysaPicks' element={<PaysaPicks />} />
-        <Route path='*' element={<PageNotFound />} />
+    // <Router>
+    //   <Routes>
+    //     <Route path='/' element={<Home />} />
+    //     <Route path='/paysaPicks' element={<PaysaPicks />} />
+    //     <Route path='*' element={<PageNotFound />} />
 
-      </Routes>
-    </Router>
+    //   </Routes>
+    // </Router>
+    <PaysaPicks/>
+    
   );
 }
 
