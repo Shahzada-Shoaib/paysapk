@@ -49,7 +49,7 @@ const HomePageCarousel = () => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative mx-auto ">
       <Carousel
         renderArrowPrev={customPrevArrow}
         renderArrowNext={customNextArrow}
@@ -61,19 +61,14 @@ const HomePageCarousel = () => {
         showThumbs={false}
         showStatus={false}
       >
-        <div className=''>
+        <div className='size-full'>
           <CarouselBanner number='01' image='/assets/carousel-pic01.svg' title1='365 DAYS' title2='SETTLEMENT' description1='Get lightning-fast payment settlements' description2="with PaySa's POS terminal (within 24 hours)" />
         </div>
-
-        <div>
+        <div className='size-full'>
           <CarouselBanner number='01' image='/assets/carousel-pic01.svg' title1='365 DAYS' title2='SETTLEMENT' description1='Get lightning-fast payment settlements' description2="with PaySa's POS terminal (within 24 hours)" />
-          {/* Remove legend */}
         </div>
-
-        
-        <div>
+        <div className='size-full'>
           <CarouselBanner number='01' image='/assets/carousel-pic01.svg' title1='365 DAYS' title2='SETTLEMENT' description1='Get lightning-fast payment settlements' description2="with PaySa's POS terminal (within 24 hours)" />
-          {/* Remove legend */}
         </div>
         
       </Carousel>
