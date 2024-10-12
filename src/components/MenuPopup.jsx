@@ -6,13 +6,14 @@ import InstaIcon from "../images/social-icons/instagram.png";
 import TwitterIcon from "../images/social-icons/twitter.svg";
 import TikTokIcon from "../images/social-icons/tik_tok.svg";
 import ThreadIcon from "../images/social-icons/threads.svg";
+import SiteLogo from "../images/site-logo.svg"
+
 
 function MenuPopup({ showMenuPopup, setShowMenuPopup }) {
   return (
-    <div className="menu-popup-bg pb-[100px] z-10 top-0 bg-cover bg-black left-0 fixed w-full h-screen flex">
+    <div className="menu-popup-bg md:pb-[100px] z-10 top-0 bg-cover bg-black left-0 fixed w-full min-h-screen flex">
       <div className="menu-popup-bg-overlay p-6 flex flex-col space-between items-stretch">
-        {/* top bar */}
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center max-w-screen-xl mx-auto w-full pt-2 ">
           <div>
             <img
               onClick={() => setShowMenuPopup(false)}
@@ -22,12 +23,12 @@ function MenuPopup({ showMenuPopup, setShowMenuPopup }) {
             />
           </div>
           <div>
-            <img src="../assets/logo.svg" alt="logo"></img>
+            <img src={SiteLogo} alt="logo"></img>
           </div>
         </div>
         {/* Menu Section */}
-        <div className="flex flex-1 pb-[50px]">
-          <div className="w-3/6  flex items-end">
+        <div className="flex flex-1 pt-[90px] w-full flex-wrap lg:pt-0 pb-[50px] max-w-screen-xl mx-auto">
+          <div className="md:w-3/6  pt-12 lg:pt-0 flex lg:items-end">
             <ul className="space-y-6 list-none">
               <li className="cursor-pointer hover:text-white text-[#545454] manrope-semibold text-[40px]">
                 Home
@@ -46,8 +47,7 @@ function MenuPopup({ showMenuPopup, setShowMenuPopup }) {
               </li>
             </ul>
           </div>
-          <div className="w-3/6  flex items-end">
-            {/* Social Media Icons */}
+          <div className="md:w-3/6  flex lg:items-end">
             <div className="flex items-end w-full justify-end space-x-3 pb-4 text-2xl">
               <img src={FbIcon} alt="icon" className="mx-1" />
               <img src={LinkedinIcon} alt="icon" className="" />

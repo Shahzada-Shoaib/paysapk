@@ -1,5 +1,6 @@
 import React from "react";
 import ButtonChevron from "../images/button-chevron-right.svg";
+import ChevronButton from "./ChevronButton";
 
 const Button = ({
   isPrimary = true,
@@ -14,13 +15,7 @@ const Button = ({
     >
       <span className={`${isChevronEnabled ? "mr-6" : ""}`}>{title}</span>
       {isChevronEnabled && (
-        <span
-          className={`h-[29px] w-[29px] flex justify-center items-center  rounded-md ${
-            isPrimary ? "bg-[rgba(24,92,131,0.5)]" : "bg-[rgba(254,210,28,0.2)]"
-          } `}
-        >
-          <img src={ButtonChevron} alt="chevron-right" />
-        </span>
+        <ChevronButton isPrimary={isPrimary} />
       )}
     </button>
   );
