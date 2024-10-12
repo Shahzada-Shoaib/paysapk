@@ -100,7 +100,6 @@ font-size: 20px;
 .aboutus-card-bg {
   background: rgba(254, 210, 28, 0.1);
   border: 1px solid;
-  border-image-source: linear-gradient(180deg, rgba(254, 210, 28, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
   backdrop-filter: blur(250px);  
   border-width: 1px;
   border-radius: 15px; 
