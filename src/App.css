@@ -65,6 +65,13 @@ font-size: 20px;
   font-size: 50px;
 }
 
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 30px;
+  }
+  
+}
+
 .manrope-semibold{
   font-family: 'Manrope';
   font-weight: 600;
