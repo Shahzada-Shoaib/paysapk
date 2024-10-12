@@ -53,6 +53,11 @@ function LogoSlider() {
 
     return (
         <div className='max-w-screen-xl mx-auto'>
+            <div className='flex justify-center'>
+                <h1 className='text-white font-bold font-[manrope] text-[35px] mt-[67.64px]  h-[64px] mb-[60px]'>
+                    OUR TRUSTED CLIENTS
+                </h1>
+            </div>
         <div className="relative ">
             <Slider {...settings} className="slider">
                 {logos.map((logo, index) => (

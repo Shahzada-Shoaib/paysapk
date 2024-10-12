@@ -70,6 +70,7 @@ const HomePageCarousel = () => {
         <div className='size-full'>
           <CarouselBanner number='01' image='/assets/carousel-pic01.svg' title1='365 DAYS' title2='SETTLEMENT' description1='Get lightning-fast payment settlements' description2="with PaySa's POS terminal (within 24 hours)" />
         </div>
+        
       </Carousel>
     </div>
   );

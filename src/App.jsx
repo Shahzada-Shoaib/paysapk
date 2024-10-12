@@ -12,14 +12,16 @@ import AboutUsGrid from "./components/Home/AboutUsGrid";
 import MapSection from "./components/Home/MapSection";
 import HomePageCarousel from "./components/Home/HomePageCarousel";
 import CarouselBanner from "./components/Home/CarouselBanner";
+import PartnerSlider from "./components/Home/PartnersSlider";
+import PaysaPage from "./components/Paysa-picks-page/PaysaPage";
+
 
 function App() {
   const [showMenuPopup, setShowMenuPopup] = useState(false);
   return (
     <div>
-      
-      
-      <Navbar
+      {/* Home Page starts here */}
+      {/* <Navbar
         showMenuPopup={showMenuPopup}
         setShowMenuPopup={setShowMenuPopup}
       />
@@ -30,6 +32,17 @@ function App() {
         />
       )}
       <Banner />
+      <LogoSlider />
+      <AboutUsGrid />
+       <HomePageCarousel />
+       <PartnerSlider/>
+      <MapSection />
+      <Footer /> */}
+      {/* home page ends here */}
+
+
+      {/* <PaysaPage/> */}
+      <PaysaPage/>
       <div className='flex justify-center'>
                 <h1 className='text-center text-white mb-8  font-bold font-manrope text-[35px] mt-[67.64px]'>
                     OUR TRUSTED CLIENTS
