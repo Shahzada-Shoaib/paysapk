@@ -10,11 +10,15 @@ import Button from "./components/Button";
 // import AboutUsCard from "./components/Home/AboutUsCard";
 import AboutUsGrid from "./components/Home/AboutUsGrid";
 import MapSection from "./components/Home/MapSection";
+import HomePageCarousel from "./components/Home/HomePageCarousel";
+import CarouselBanner from "./components/Home/CarouselBanner";
 
 function App() {
   const [showMenuPopup, setShowMenuPopup] = useState(false);
   return (
     <div>
+      
+      
       <Navbar
         showMenuPopup={showMenuPopup}
         setShowMenuPopup={setShowMenuPopup}
@@ -38,6 +42,7 @@ function App() {
                 </h1>
             </div>
             <AboutUsGrid />
+            <HomePageCarousel />
       {/* <LogoSlider />
       
       <MapSection />
