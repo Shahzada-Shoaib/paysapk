@@ -36,13 +36,11 @@ function LogoSlider() {
 
     const isMobile = useIsMobile();
 
-    console.log("Is Mobile: ", isMobile)
-
     // Slick settings
     const settings = {
         infinite: true,             // Infinite loop scrolling
         speed: 10000,                // Scroll speed
-        slidesToShow: isMobile ? 4 : 4,            // Number of logos visible at once (adjust as needed)
+        slidesToShow: isMobile ? 4 : 2,            // Number of logos visible at once (adjust as needed)
         slidesToScroll: 1,          // Number of logos to scroll at a time
         autoplay: true,             // Autoplay enabled
         autoplaySpeed: 0,           // Continuous scroll speed
@@ -53,11 +51,6 @@ function LogoSlider() {
 
     return (
         <div className='max-w-screen-xl mx-auto'>
-            <div className='flex justify-center'>
-                <h1 className='text-white font-bold font-[manrope] text-[35px] mt-[67.64px]  h-[64px] mb-[60px]'>
-                    OUR TRUSTED CLIENTS
-                </h1>
-            </div>
         <div className="relative ">
             <Slider {...settings} className="slider">
                 {logos.map((logo, index) => (

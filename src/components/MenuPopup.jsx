@@ -6,7 +6,7 @@ import InstaIcon from "../images/social-icons/instagram.png";
 import TwitterIcon from "../images/social-icons/twitter.svg";
 import TikTokIcon from "../images/social-icons/tik_tok.svg";
 import ThreadIcon from "../images/social-icons/threads.svg";
-import SiteLogo from "../images/site-logo.svg"
+import SiteLogo from "../images/logo.svg"
 
 
 function MenuPopup({ showMenuPopup, setShowMenuPopup }) {
@@ -23,7 +23,7 @@ function MenuPopup({ showMenuPopup, setShowMenuPopup }) {
             />
           </div>
           <div>
-            <img src={SiteLogo} alt="logo"></img>
+            <img src={SiteLogo} alt="logo" style={{height: '30px'}} ></img>
           </div>
         </div>
         {/* Menu Section */}
