@@ -47,11 +47,9 @@ const HomePageCarousel = () => {
       />
     );
   };
-  //paragraph data as props
-  // const title = "365 DAYS<br />SETTLEMENT"; // String with HTML break
 
   return (
-    <div className="relative">
+    <div className="relative mx-auto ">
       <Carousel
         renderArrowPrev={customPrevArrow}
         renderArrowNext={customNextArrow}
@@ -64,26 +62,13 @@ const HomePageCarousel = () => {
         showStatus={false}
       >
         <div className='size-full'>
-
           <CarouselBanner number='01' image='/assets/carousel-pic01.svg' title1='365 DAYS' title2='SETTLEMENT' description1='Get lightning-fast payment settlements' description2="with PaySa's POS terminal (within 24 hours)" />
-
         </div>
-
-        <div>
-          <img
-            src="/assets/HomePageMap.svg"
-            alt="Slide 2"
-            className="border border-white"
-          />
-          {/* Remove legend */}
+        <div className='size-full'>
+          <CarouselBanner number='01' image='/assets/carousel-pic01.svg' title1='365 DAYS' title2='SETTLEMENT' description1='Get lightning-fast payment settlements' description2="with PaySa's POS terminal (within 24 hours)" />
         </div>
-        <div>
-          <img
-            src="https://via.placeholder.com/800x400"
-            alt="Slide 3"
-            className=""
-          />
-          {/* Remove legend */}
+        <div className='size-full'>
+          <CarouselBanner number='01' image='/assets/carousel-pic01.svg' title1='365 DAYS' title2='SETTLEMENT' description1='Get lightning-fast payment settlements' description2="with PaySa's POS terminal (within 24 hours)" />
         </div>
       </Carousel>
     </div>

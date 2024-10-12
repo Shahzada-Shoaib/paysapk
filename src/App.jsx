@@ -42,11 +42,15 @@ function App() {
                 </h1>
             </div>
             <AboutUsGrid />
-            <HomePageCarousel />
-      {/* <LogoSlider />
-      
-      <MapSection />
-      <Footer />  */}
+            {/* <HomePageCarousel /> */}
+            <div className='flex justify-center'>
+                <h1 className='text-center text-white mb-8  font-bold font-manrope text-[35px] mt-[67.64px]'>
+                    OUR TRUSTED PARTNERS
+                </h1>
+            </div>
+         <ClientSlider />
+         <MapSection />
+      <Footer />  
     </div>
   );
 }
