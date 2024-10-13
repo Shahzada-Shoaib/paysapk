@@ -13,8 +13,8 @@ import { Link } from "react-router-dom";
 function MenuPopup({ showMenuPopup, setShowMenuPopup }) {
   return (
     <div className="menu-popup-bg md:pb-[100px] z-10 top-0 bg-cover bg-black left-0 fixed w-full min-h-screen flex">
-      <div className="menu-popup-bg-overlay p-6 flex flex-col space-between items-stretch">
-        <div className="flex justify-between items-center max-w-screen-xl mx-auto w-full pt-2 ">
+      <div className="flex flex-col items-stretch p-6 menu-popup-bg-overlay space-between">
+        <div className="flex items-center justify-between w-full max-w-screen-xl pt-2 mx-auto ">
           <div>
             <img
               onClick={() => setShowMenuPopup(false)}
@@ -28,8 +28,8 @@ function MenuPopup({ showMenuPopup, setShowMenuPopup }) {
           </div>
         </div>
         {/* Menu Section */}
-        <div className="flex flex-1 pt-[90px] w-full flex-wrap lg:pt-0 pb-[50px] max-w-screen-xl mx-auto">
-          <div className="md:w-3/6  pt-12 lg:pt-0 flex lg:items-end">
+        <div className="flex flex-1  md:pt-[90px] w-full flex-wrap lg:pt-0 pb-[50px] max-w-screen-xl mx-auto">
+          <div className="flex pt-12 md:w-3/6 lg:pt-0 lg:items-end">
             <ul className="space-y-6 list-none">
               <li className="cursor-pointer hover:text-white text-[#545454] manrope-semibold text-[40px]">
                 Home
@@ -50,8 +50,8 @@ function MenuPopup({ showMenuPopup, setShowMenuPopup }) {
               </li>
             </ul>
           </div>
-          <div className="md:w-3/6  flex lg:items-end">
-            <div className="flex items-end w-full justify-end space-x-3 pb-4 text-2xl">
+          <div className="flex md:w-3/6 lg:items-end">
+            <div className="flex items-end justify-end w-full pb-4 space-x-3 text-2xl">
               <img src={FbIcon} alt="icon" className="mx-1" />
               <img src={LinkedinIcon} alt="icon" className="" />
               <img src={InstaIcon} alt="icon" className="" />
