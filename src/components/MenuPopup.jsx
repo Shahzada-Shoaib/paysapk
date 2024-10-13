@@ -31,21 +31,21 @@ function MenuPopup({ showMenuPopup, setShowMenuPopup }) {
         <div className="flex flex-1  md:pt-[90px] w-full flex-wrap lg:pt-0 pb-[50px] max-w-screen-xl mx-auto">
           <div className="flex pt-12 md:w-3/6 lg:pt-0 lg:items-end">
             <ul className="space-y-6 list-none">
-              <li className="cursor-pointer hover:text-white text-[#545454] manrope-semibold text-[40px]">
+              <li className="cursor-pointer hover:text-white text-[#545454] manrope-semibold text-[20px]  md:text-[40px]">
                 Home
               </li>
-              <li className="cursor-pointer text-[#545454] hover:text-white  manrope-semibold text-[40px]">
+              <li className="cursor-pointer text-[#545454] hover:text-white  manrope-semibold text-[20px]  md:text-[40px]">
                 Services
               </li>
-              <li className="cursor-pointer text-[#545454] hover:text-white manrope-semibold text-[40px]">
+              <li className="cursor-pointer text-[#545454] hover:text-white manrope-semibold text-[20px]  md:text-[40px]">
                 About us
               </li>
-              <li className="cursor-pointer text-[#545454] manrope-semibold hover:text-white text-[40px]">
+              <li className="cursor-pointer text-[#545454] manrope-semibold hover:text-white text-[20px]  md:text-[40px]">
                 <Link to="paysa-picks">
                 PaySa Picks: Articles & Humour
                 </Link>
               </li>
-              <li className="cursor-pointer text-[#545454] manrope-semibold hover:text-white text-[40px]">
+              <li className="cursor-pointer text-[#545454] manrope-semibold hover:text-white text-[20px]  md:text-[40px]">
                 Get in Touch
               </li>
             </ul>
