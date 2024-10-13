@@ -8,13 +8,14 @@ body{
   padding: 0 20px;  
 
 } */
-.button{
-  width: 121px;
+.navbar-button{
+  width: 100px;
   height: 27px;
   border: 2px;
   color: white;
   border-radius: 5.55px;
-  background: radial-gradient(circle, #4298CA59 35%, #00000000 100%);
+  font-family: 'Manrope';
+  background: linear-gradient(to right, rgba(24, 92, 131, 0.2) 0%,rgba(24, 92, 131, 1) 50%, rgba(24, 92, 131, 0.2) 100%);
 }
 
 .button-styling-secondary {
@@ -22,7 +23,7 @@ background: linear-gradient(to right, rgba(254, 210, 28, 0.2) 0%, rgba(254, 210,
 backdrop-filter: blur(200px);
 -webkit-backdrop-filter: blur(10px); /* For Safari support */
 background-color: transparent;
-font-family: Raleway, 'sans-serif';
+font-family: 'Manrope', sans-serif;
 font-weight: 600;
 font-size: 20px;
 }
@@ -37,7 +38,7 @@ font-size: 20px;
   backdrop-filter: blur(200px);
   -webkit-backdrop-filter: blur(200px); /* For Safari support */
   background-color: transparent;
-  font-family: Raleway, 'sans-serif';
+  font-family: 'Raleway', 'sans-serif';
   font-weight: 600;
   font-size: 20px;
   

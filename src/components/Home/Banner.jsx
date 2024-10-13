@@ -28,9 +28,6 @@ function Banner() {
           Your browser does not support the video format.
         </video>
       </div>
-      <div className="text-center w-full flex justify-center items-center mt-4">
-      <Button title="Take Charge Now" isChevronEnabled />
-      </div>
     </>
   );
 }

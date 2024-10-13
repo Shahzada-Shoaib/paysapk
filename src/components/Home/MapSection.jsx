@@ -1,20 +1,19 @@
 import React from 'react'
 import Button from '../Button';
+import ChevronButton from '../ChevronButton';
 
 function MapSection() {
     return (
       <>
       
-            <section className="relative h-[700px] ms-[116px]">
-                {/* First Div */}
-                <div className="absolute w-[384px] h-[424px] rounded-[20px]  top-[150px]  left-[50px] z-10">
-                    <img className='h-[424px] w-[384px] rounded-[20px] ' src='/assets/550Banner.png' alt='background poster' />
+            <section className="relative max-w-screen-lg mx-auto px-6 md:px-0 ">
+                <div className="md:pt-12">
+                    <img className='hidden md:block h-[424px] w-[384px] rounded-[20px] ' src='/assets/yellow-bg.png' alt='background poster' />
                 </div>
-                {/* Second Div */}
-
-                <div className="  absolute w-[656px] h-[363px] bg-[#3F94C44D] backdrop-blur-md rounded-[20px]  top-[100px] left-[300px] z-20">
-                    <div className='ml-[52px] mt-[70px]'>
-                        <div >
+                <div className="md:absolute  w-[100%] lg:w-[656px] h-[363px] bg-[#3F94C44D] rounded-[20px] top-0  
+                md:left-[250px] z-20">
+                    <div className='pl-[52px] pt-[70px] h-full md:h-auto rounded-[20px] relative backdrop-blur-md md:w-[60%]'>
+                        <div>
                             <h1 className='font-bold text-white text-[40px] font-[manrope] ' >
                                 550+ Customers
                             </h1>
@@ -25,19 +24,19 @@ function MapSection() {
                             </p>
                         </div>
                         <div>
-                            <button className='text-white border mt-[52px] border-white'>Discover more</button>
+                            <button 
+                             style={{background: 'rgba(24, 92, 131, 0.5)'}}
+                            className='mt-[45px] items-center text-white flex rounded px-4 py-1'>Discover more
+                                <span className='ml-4'><ChevronButton isSmall isPrimary={true} /></span>
+                            </button>
                         </div>
                     </div>
                 </div>
-                {/* Third Div */}
-                <div className="absolute w-[650px] h-[560px] top-[150px] left-[508px]">
-                    <img src='/assets/homePageMap.svg' alt='HomePage Map' />
+                <div className="absolute w-[350px] md:w-[650px]  top-[50px]   md:left-[400px]">
+                    <img src='/assets/map-pak.png' alt='HomePage Map' />
                 </div>
+       
             </section>
-
-            <div className="flex items-center justify-center w-full mt-[236px] text-center mb-[136px]">
-                <Button title="Get in the circle" isChevronEnabled />
-            </div>
       
       </>
 
