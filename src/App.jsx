@@ -11,9 +11,9 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/paysa-picks' element={<PaysaPicks />} />
         <Route path='*' element={<PageNotFound />} />
-
-      </Routes>
-    </Router>
+       </Routes>
+     </Router>
+   
   );
 }
 
