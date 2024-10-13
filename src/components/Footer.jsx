@@ -29,9 +29,9 @@ const Footer = () => {
         ></div>
       </div>
 
-      <div className="flex mx-auto max-w-screen-xl flex-wrap justify-center md:justify-between items-center bg-black text-white py-8 px-8">
+      <div className="flex flex-wrap items-center justify-center max-w-screen-xl px-2 py-8 mx-auto text-white bg-black md:justify-between">
         {/* Navigation Links */}
-        <div className="flex items-center space-x-4 text-lg mb-2 md:mb-0">
+        <div className="flex items-center mb-2 space-x-4 text-lg md:mb-0">
           <span className="cursor-pointer">About Us</span>
           <span className="text-yellow-500">•</span>
           <span className="cursor-pointer">Services</span>
@@ -40,7 +40,7 @@ const Footer = () => {
         </div>
 
         {/* Social Media Icons */}
-        <div className="items-center space-x-4 text-2xl hidden md:flex">
+        <div className="items-center hidden space-x-4 text-2xl md:flex">
           <img src={FbIcon} alt="icon" className="mx-1" />
           <img src={LinkedinIcon} alt="icon" className="" />
           <img src={InstaIcon} alt="icon" className="" />
@@ -50,7 +50,7 @@ const Footer = () => {
         </div>
 
         {/* Location Links */}
-        <div className="flex items-center space-x-4 mb-4 md:mb-0 text-lg">
+        <div className="flex items-center mb-4 space-x-4 text-lg md:mb-0">
           <span className="cursor-pointer">Islamabad</span>
           <span className="text-yellow-500">•</span>
           <span className="cursor-pointer">Karachi</span>
