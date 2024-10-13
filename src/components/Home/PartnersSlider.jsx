@@ -6,12 +6,12 @@ import useIsMobile from "../../utils/useIsMobile"
 
 
 const logos = [
-    '../assets/partners-logos/partner3.svg',
-    '../assets/partners-logos/partner4.svg',
-    '../assets/partners-logos/partner6.svg',
-    '../assets/partners-logos/partner3.svg',
-    '../assets/partners-logos/partner4.svg',
-    '../assets/partners-logos/partner6.svg',
+    '/assets/partners-logos/partner3.svg',
+    '/assets/partners-logos/partner4.svg',
+    '/assets/partners-logos/partner6.svg',
+    '/assets/partners-logos/partner3.svg',
+    '/assets/partners-logos/partner4.svg',
+    '/assets/partners-logos/partner6.svg',
 
 ];
 
