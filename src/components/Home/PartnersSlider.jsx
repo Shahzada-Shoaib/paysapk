@@ -6,32 +6,42 @@ import useIsMobile from "../../utils/useIsMobile"
 
 
 const logos = [
-    '../assets/clients-logos/clients-logo1.svg',
-    '../assets/clients-logos/clients-logo2.svg',
+    '../assets/partners-Logos/partner1.svg',
+    '../assets/partners-Logos/partner2.svg',
+    '../assets/partners-Logos/partner3.svg',
+    '../assets/partners-Logos/partner4.svg',
+    '../assets/partners-Logos/partner5.svg',
+    '../assets/partners-Logos/partner6.svg',
+    '../assets/partners-Logos/partner7.svg',
+    '../assets/partners-Logos/partner8.svg',
+
+
+    // '../assets/clients-logos/clients-logo1.svg',
+    // '../assets/clients-logos/clients-logo2.svg',
     // wrong size of an image need to be fixed
     // '../assets/clients-logos/clients-logo3.svg',
-    '../assets/clients-logos/clients-logo4.svg',
-    '../assets/clients-logos/clients-logo5.svg',
-    '../assets/clients-logos/clients-logo6.svg',
-    '../assets/clients-logos/clients-logo7.svg',
-    '../assets/clients-logos/clients-logo8.svg',
-    '../assets/clients-logos/clients-logo9.svg',
-    '../assets/clients-logos/clients-logo10.svg',
-    '../assets/clients-logos/clients-logo11.svg',
-    '../assets/clients-logos/clients-logo12.svg',
-    '../assets/clients-logos/clients-logo13.svg',
-    '../assets/clients-logos/clients-logo14.svg',
-    '../assets/clients-logos/clients-logo15.svg',
-    '../assets/clients-logos/clients-logo16.svg',
-    '../assets/clients-logos/clients-logo17.svg',
-    '../assets/clients-logos/clients-logo18.svg',
-    '../assets/clients-logos/clients-logo19.svg',
-    '../assets/clients-logos/clients-logo20.svg',
-    '../assets/clients-logos/clients-logo21.svg',
-    '../assets/clients-logos/clients-logo22.svg',
+    // '../assets/clients-logos/clients-logo4.svg',
+    // '../assets/clients-logos/clients-logo5.svg',
+    // '../assets/clients-logos/clients-logo6.svg',
+    // '../assets/clients-logos/clients-logo7.svg',
+    // '../assets/clients-logos/clients-logo8.svg',
+    // '../assets/clients-logos/clients-logo9.svg',
+    // '../assets/clients-logos/clients-logo10.svg',
+    // '../assets/clients-logos/clients-logo11.svg',
+    // '../assets/clients-logos/clients-logo12.svg',
+    // '../assets/clients-logos/clients-logo13.svg',
+    // '../assets/clients-logos/clients-logo14.svg',
+    // '../assets/clients-logos/clients-logo15.svg',
+    // '../assets/clients-logos/clients-logo16.svg',
+    // '../assets/clients-logos/clients-logo17.svg',
+    // '../assets/clients-logos/clients-logo18.svg',
+    // '../assets/clients-logos/clients-logo19.svg',
+    // '../assets/clients-logos/clients-logo20.svg',
+    // '../assets/clients-logos/clients-logo21.svg',
+    // '../assets/clients-logos/clients-logo22.svg',
 ];
 
-function LogoSlider() {
+function PartnerSlider() {
 
 
     const isMobile = useIsMobile();
@@ -69,7 +79,7 @@ function LogoSlider() {
                     <Slider {...mobileSettings} className="slider">
                         {logos.map((logo, index) => (
                             <div key={index} className="relative p-2 ">
-                                <img src={logo} alt={`Client Logo ${index + 1}`} className="w-[100px] h-[150px] object-contain flex justify-center" />
+                                <img src={logo} alt={`Client Logo ${index + 1}`} className="w-[100px] h-[300px] object-contain flex justify-center" />
                             </div>
                         ))}
                     </Slider>
@@ -88,7 +98,7 @@ function LogoSlider() {
     );
 }
 
-export default LogoSlider;
+export default PartnerSlider;
 
 
 
