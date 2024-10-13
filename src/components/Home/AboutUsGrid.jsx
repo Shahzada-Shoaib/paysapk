@@ -4,7 +4,7 @@ import AboutUsCard from "./AboutUsCard";
 const AboutUsGrid = () => {
   return (
     <>
-      <div className="flex items-center justify-center max-w-screen-xl px-6 pb-12 mx-auto md:px-0 md:pb-32">
+      <div className="flex items-center justify-center max-w-screen-xl px-6 pb-12 mx-auto md:px-0">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[45px]">
           <AboutUsCard
             title="OUR STORY"

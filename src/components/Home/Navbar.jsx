@@ -5,6 +5,7 @@ import "../../App.css";
 import Banner from "./Banner";
 import MenuPopup from "../MenuPopup";
 import SiteLogo from "../../images/logo.svg"
+import { Link } from "react-router-dom";
 
 
 function Navbar({ showMenuPopup, setShowMenuPopup }) {
@@ -20,8 +21,10 @@ function Navbar({ showMenuPopup, setShowMenuPopup }) {
           />
         </div>
 
-        <div className="flex-1 flex justify-center">
+        <div className="flex-1 flex justify-center cursor-pointer">
+         <Link to="/">
           <img src={SiteLogo} alt="logo" style={{height: '30px'}} />
+         </Link>
         </div>
 
         <div className="flex-1 flex justify-end">

@@ -7,6 +7,7 @@ import TwitterIcon from "../images/social-icons/twitter.svg";
 import TikTokIcon from "../images/social-icons/tik_tok.svg";
 import ThreadIcon from "../images/social-icons/threads.svg";
 import SiteLogo from "../images/logo.svg"
+import { Link } from "react-router-dom";
 
 
 function MenuPopup({ showMenuPopup, setShowMenuPopup }) {
@@ -40,7 +41,9 @@ function MenuPopup({ showMenuPopup, setShowMenuPopup }) {
                 About us
               </li>
               <li className="cursor-pointer text-[#545454] manrope-semibold hover:text-white text-[40px]">
+                <Link to="paysa-picks">
                 PaySa Picks: Articles & Humour
+                </Link>
               </li>
               <li className="cursor-pointer text-[#545454] manrope-semibold hover:text-white text-[40px]">
                 Get in Touch

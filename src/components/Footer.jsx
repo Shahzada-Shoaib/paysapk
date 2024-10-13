@@ -9,8 +9,8 @@ import ThreadIcon from "../images/social-icons/threads.svg";
 
 const Footer = () => {
   return (
-    <div>
-      <div className="flex justify-center my-[70px]">
+    <div className="">
+      <div className="flex  justify-center my-[70px]">
         <img src={FooterLogo} alt="icon" className="" />
       </div>
       <div>
@@ -29,9 +29,9 @@ const Footer = () => {
         ></div>
       </div>
 
-      <div className="flex justify-between items-center bg-black text-white py-8 px-8">
+      <div className="flex mx-auto max-w-screen-xl flex-wrap justify-center md:justify-between items-center bg-black text-white py-8 px-8">
         {/* Navigation Links */}
-        <div className="flex items-center space-x-4 text-lg">
+        <div className="flex items-center space-x-4 text-lg mb-2 md:mb-0">
           <span className="cursor-pointer">About Us</span>
           <span className="text-yellow-500">•</span>
           <span className="cursor-pointer">Services</span>
@@ -40,7 +40,7 @@ const Footer = () => {
         </div>
 
         {/* Social Media Icons */}
-        <div className="flex items-center space-x-4 text-2xl">
+        <div className="items-center space-x-4 text-2xl hidden md:flex">
           <img src={FbIcon} alt="icon" className="mx-1" />
           <img src={LinkedinIcon} alt="icon" className="" />
           <img src={InstaIcon} alt="icon" className="" />
@@ -50,13 +50,23 @@ const Footer = () => {
         </div>
 
         {/* Location Links */}
-        <div className="flex items-center space-x-4 text-lg">
+        <div className="flex items-center space-x-4 mb-4 md:mb-0 text-lg">
           <span className="cursor-pointer">Islamabad</span>
           <span className="text-yellow-500">•</span>
           <span className="cursor-pointer">Karachi</span>
           <span className="text-yellow-500">•</span>
           <span className="cursor-pointer">Lahore</span>
         </div>
+
+        <div className="flex items-center space-x-4 text-2xl md:hidden">
+          <img src={FbIcon} alt="icon" className="mx-1" />
+          <img src={LinkedinIcon} alt="icon" className="" />
+          <img src={InstaIcon} alt="icon" className="" />
+          <img src={TwitterIcon} alt="icon" className="" />
+          <img src={TikTokIcon} alt="icon" className="" />
+          <img src={ThreadIcon} alt="icon" className="" />
+        </div>
+
       </div>
     </div>
   );

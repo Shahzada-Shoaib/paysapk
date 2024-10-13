@@ -40,7 +40,7 @@ function LogoSlider() {
     const settings = {
         infinite: true,             // Infinite loop scrolling
         speed: 10000,                // Scroll speed
-        slidesToShow: isMobile ? 4 : 2,            // Number of logos visible at once (adjust as needed)
+        slidesToShow: 4,            // Number of logos visible at once (adjust as needed)
         slidesToScroll: 1,          // Number of logos to scroll at a time
         autoplay: true,             // Autoplay enabled
         autoplaySpeed: 0,           // Continuous scroll speed
@@ -49,16 +49,40 @@ function LogoSlider() {
         arrows: false       // Don't pause on hover
     };
 
+    const mobileSettings = {
+        infinite: true,             // Infinite loop scrolling
+        speed: 10000,                // Scroll speed
+        slidesToShow: 2,            // Number of logos visible at once (adjust as needed)
+        slidesToScroll: 1,          // Number of logos to scroll at a time
+        autoplay: true,             // Autoplay enabled
+        autoplaySpeed: 0,           // Continuous scroll speed
+        cssEase: "linear",          // Smooth scrolling
+        pauseOnHover: true, 
+        arrows: false       // Don't pause on hover
+    };
+
+
     return (
         <div className='max-w-screen-xl mx-auto'>
-        <div className="relative ">
-            <Slider {...settings} className="slider">
+        <div className="relative">
+       <div className='md:hidden'>
+       <Slider { ...mobileSettings} className="slider">
+                {logos.map((logo, index) => (
+                    <div key={index} className="relative p-2 ">
+                        <img src={logo} alt={`Client Logo ${index + 1}`} className="w-[100px] h-[150px] object-contain flex justify-center" />
+                    </div>
+                ))}
+            </Slider> 
+            </div>   
+            <div className='hidden md:block'>
+             <Slider { ...settings} className="slider">
                 {logos.map((logo, index) => (
                     <div key={index} className="relative p-2 ">
                         <img src={logo} alt={`Client Logo ${index + 1}`} className="w-[100px] h-[150px] object-contain flex justify-center" />
                     </div>
                 ))}
             </Slider>
+            </div> 
         </div>
         </div>
     );

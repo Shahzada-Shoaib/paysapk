@@ -30,36 +30,35 @@ function App() {
           setShowMenuPopup={setShowMenuPopup}
         />
       )}
-      {/* <Banner /> */}
-      {/* <div className="text-center w-full flex justify-center items-center mt-12">
+      <Banner />
+      <div className="text-center w-full flex justify-center items-center mt-12">
         <Button title="Take Charge Now" isChevronEnabled />
-      </div> */}
-      {/* <div className="flex justify-center">
-        <h1 className="text-white font-bold px-6  font-[manrope] text-[35px] my-36">
+      </div>
+      <div className="flex justify-center">
+        <h1 className="text-white font-bold px-6 text-center  font-[manrope] text-[35px] my-12">
           OUR TRUSTED CLIENTS
         </h1>
-      </div> */}
-      {/* <LogoSlider /> */}
-      {/* <div className="flex justify-center">
-        <h1 className="text-white font-bold font-[manrope] text-center px-8 text-[35px] mt-[67.64px]  mb-[60px]">
+      </div>
+      <LogoSlider />
+      <div className="flex justify-center">
+        <h1 className="text-white font-bold font-[manrope] text-center px-6 text-[35px] my-12">
           ABOUT US
         </h1>
-      </div> */}
-      {/* <AboutUsGrid /> */}
-      {/* <div className="flex justify-center px-8 text-center">
+      </div>
+      <AboutUsGrid />
+       <div className="flex justify-center px-8 text-center my-12">
         <h1 className="text-white font-bold font-[manrope] text-[35px]">
           OUR TRUSTED PARTNERS
         </h1>
-      </div> */}
-      {/* <PartnerSlider /> */}
-      {/* <Footer /> */}
-
-      
-      <MapSection />
-            {/* <div className="flex items-center justify-center w-full mt-[236px] text-center mb-[136px]">
-                <Button title="Get in the circle" isChevronEnabled />
+      </div> 
+      <PartnerSlider />
+      <div className="mt-8">
+      <MapSection /> 
+      </div>
+          <div className="flex items-center justify-center w-full mt-[236px] text-center mb-[136px]">
+                <Button title="Get in the circle"  isPrimary={false} isChevronEnabled />
             </div>
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }
