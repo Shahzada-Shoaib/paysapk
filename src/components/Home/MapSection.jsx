@@ -6,13 +6,13 @@ function MapSection() {
     return (
       <>
       
-            <section className="relative max-w-screen-lg mx-auto px-6 md:px-0 ">
+            <section className="relative max-w-screen-lg px-6 mx-auto md:px-0 ">
                 <div className="md:pt-12">
                     <img className='hidden md:block h-[424px] w-[384px] rounded-[20px] ' src='/assets/yellow-bg.png' alt='background poster' />
                 </div>
                 <div className="md:absolute  w-[100%] lg:w-[656px] h-[363px] bg-[#3F94C44D] rounded-[20px] top-0  
                 md:left-[250px] z-20">
-                    <div className='pl-[52px] pt-[70px] h-full md:h-auto rounded-[20px] relative backdrop-blur-md md:w-[60%]'>
+                    <div className='pl-[20px] pt-[10px] md:pl-[52px] md:pt-[70px]  h-full md:h-auto rounded-[20px] relative backdrop-blur-md md:w-[60%]'>
                         <div>
                             <h1 className='font-bold text-white text-[40px] font-[manrope] ' >
                                 550+ Customers
