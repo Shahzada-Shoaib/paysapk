@@ -39,9 +39,10 @@ function PaysaPage() {
         <div className='w-full bg-pink-500 h-[950px]'>
             <img src='/assets/paysaPicksImages/PaysaPicksIMG2.png' alt='image' />
              </div>
+
         
       </div>
-
+<Footer/>
     
       
     </>
