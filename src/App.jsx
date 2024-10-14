@@ -4,31 +4,28 @@ import PaysaPicks from './Pages/PaysaPicks.jsx';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import PageNotFound from './components/PageNotFound.jsx';
 import AboutUs from './Pages/AboutUs';
-import Navbar from './components/Home/Navbar';
+// import Navbar from './components/Home/Navbar';
+import GetInTouch from './Pages/GetInTouch.jsx';
 
 function App() {
   return (
 
-    //Edit Home Page with "About us page " because it was giving error due to routes needs to adjusted after development
+    //Edit Home Page with "Get in Touch " because it was giving error due to routes needs to adjusted after development
 
     
     <Router>
       <Routes>
-        <Route path='/' element={<AboutUs />} />
+
+        <Route path='/' element={<GetInTouch/>} />
+        {/* <Route path='/' element={<Home />} /> */}
+
+        <Route path='/about-us' element={<AboutUs />} />
         <Route path='/paysa-picks' element={<PaysaPicks />} />
         <Route path='*' element={<PageNotFound />} />
+
        </Routes>
      </Router>
 
-    // <Router>
-    //   <Routes>
-    //     <Route path='/' element={<Home />} />
-    //     <Route path='/paysa-picks' element={<PaysaPicks />} />
-    //     <Route path='*' element={<PageNotFound />} />
-    //    </Routes>
-    //  </Router>
-
-    // <AboutUs />
 
 
 
