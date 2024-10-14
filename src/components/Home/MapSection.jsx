@@ -41,23 +41,6 @@ function MapSection() {
       </>
 
 
-
-       
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     )
 }
 
