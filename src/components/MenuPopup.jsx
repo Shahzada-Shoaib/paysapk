@@ -32,21 +32,29 @@ function MenuPopup({ showMenuPopup, setShowMenuPopup }) {
           <div className="flex pt-12 md:w-3/6 lg:pt-0 lg:items-end">
             <ul className="space-y-6 list-none">
               <li className="cursor-pointer hover:text-white text-[#545454] manrope-semibold text-[30px]  md:text-[40px]">
+                <Link to="/">
                 Home
+                </Link>
               </li>
               <li className="cursor-pointer text-[#545454] hover:text-white  manrope-semibold text-[30px]  md:text-[40px]">
+               <Link to="/services">
                 Services
+                </Link>
               </li>
               <li className="cursor-pointer text-[#545454] hover:text-white manrope-semibold text-[30px]  md:text-[40px]">
+               <Link to="/about-us">
                 About us
+                </Link>
               </li>
               <li className="cursor-pointer text-[#545454] manrope-semibold hover:text-white text-[30px]  md:text-[40px]">
-                <Link to="paysa-picks">
+                <Link to="/paysa-picks">
                 PaySa Picks: Articles & Humour
                 </Link>
               </li>
               <li className="cursor-pointer text-[#545454] manrope-semibold hover:text-white text-[30px]  md:text-[40px]">
+                <Link to="/get-in-touch">
                 Get in Touch
+                </Link>
               </li>
             </ul>
           </div>

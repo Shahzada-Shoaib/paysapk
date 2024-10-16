@@ -11,31 +11,16 @@ import Services from './Pages/Services.jsx';
 function App() {
   return (
 
-
-    
     <Router>
       <Routes>
-
-
-
-
         <Route path='/' element={<Home />} />
         <Route path='/services' element={<Services />} />
         <Route path='/get-in-touch' element={<GetInTouch />} />
         <Route path='/about-us' element={<AboutUs />} />
         <Route path='/paysa-picks' element={<PaysaPicks />} />
         <Route path='*' element={<PageNotFound />} />
-
        </Routes>
-     </Router>
-
-
-
-
-
-
-
-   
+     </Router>   
   );
 }
 
