@@ -1,5 +1,5 @@
 import React from 'react'
-import BannerPaysa from '../components/Paysa-picks-page/BannerPaysa';
+import BannerPaysa from '../components/BannerWithoutVideo';
 import PaysaPage from '../components/Paysa-picks-page/PaysaPage';
 
 function PaysaPicks() {

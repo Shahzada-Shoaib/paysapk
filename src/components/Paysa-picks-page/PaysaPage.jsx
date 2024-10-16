@@ -1,14 +1,15 @@
 import React from 'react';
 import Navbar from '../Home/Navbar';
 // import Banner from '../Home/Banner';
-import BannerPaysa from './BannerPaysa';
+import BannerWithoutVideo from '../BannerWithoutVideo';
 import Footer from '../Footer';
 
 function PaysaPage() {
   return (
     <>
     <Navbar/>
-  <BannerPaysa/>
+      <BannerWithoutVideo title=' PAYSA PICKS: ARTICLES & HUMOUR' description="   Dive into the world of finance with a splash of humor! Explore our 'PaySa Picks' for articles 
+                      and chuckles that make banking a breeze." />
     
       <div>
         {/* First Banner */}
