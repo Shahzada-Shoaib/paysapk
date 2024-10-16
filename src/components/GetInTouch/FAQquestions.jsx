@@ -5,7 +5,7 @@ function FAQquestions() {
   return (
     <div>
           <div
-              className="bg-cover h-[1000px] bg-center flex flex-col border "
+              className="bg-cover h-[1000px] bg-center flex flex-col"
               style={{ backgroundImage: "url('/assets/get-in-touch-images/FAQbackground.svg')" }} >
 
 

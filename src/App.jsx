@@ -6,19 +6,22 @@ import PageNotFound from './components/PageNotFound.jsx';
 import AboutUs from './Pages/AboutUs';
 // import Navbar from './components/Home/Navbar';
 import GetInTouch from './Pages/GetInTouch.jsx';
+import Services from './Pages/Services.jsx';
 
 function App() {
   return (
 
-    //Edit Home Page with "Get in Touch " because it was giving error due to routes needs to adjusted after development
 
     
     <Router>
       <Routes>
 
-        <Route path='/' element={<GetInTouch/>} />
-        {/* <Route path='/' element={<Home />} /> */}
 
+
+
+        <Route path='/' element={<Home />} />
+        <Route path='/services' element={<Services />} />
+        <Route path='/get-in-touch' element={<GetInTouch />} />
         <Route path='/about-us' element={<AboutUs />} />
         <Route path='/paysa-picks' element={<PaysaPicks />} />
         <Route path='*' element={<PageNotFound />} />
