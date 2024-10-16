@@ -11,8 +11,6 @@ import Services from './Pages/Services.jsx';
 function App() {
   return (
 
-
-    
     <Router>
       <Routes>
         <Route path='/' element={<Home />} />
@@ -23,16 +21,8 @@ function App() {
         <Route path='*' element={<PageNotFound />} />
         {/* merging in main */}
 
-       </Routes>
-     </Router>
-
-
-
-
-
-
-
-   
+gu       </Routes>
+     </Router>   
   );
 }
 

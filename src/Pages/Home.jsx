@@ -17,19 +17,12 @@ import PaysaPage from "../components/Paysa-picks-page/PaysaPage";
 import LogoSlider from "../components/Home/LogoSlider";
 
 function App() {
-  const [showMenuPopup, setShowMenuPopup] = useState(false);
+
   return (
     <div>
       <Navbar
-        showMenuPopup={showMenuPopup}
-        setShowMenuPopup={setShowMenuPopup}
       />
-      {showMenuPopup && (
-        <MenuPopup
-          showMenuPopup={showMenuPopup}
-          setShowMenuPopup={setShowMenuPopup}
-        />
-      )}
+
       <Banner />
       <div className="text-center w-full flex justify-center items-center mt-12">
         <Button title="Take Charge Now" isChevronEnabled />

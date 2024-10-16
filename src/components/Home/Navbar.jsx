@@ -6,9 +6,13 @@ import Banner from "./Banner";
 import MenuPopup from "../MenuPopup";
 import SiteLogo from "../../images/logo.svg"
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 
-function Navbar({ showMenuPopup, setShowMenuPopup }) {
+function Navbar() {
+
+  const [showMenuPopup, setShowMenuPopup] = useState(false);
+
   return (
     <div>
       <div className="flex px-6  justify-between items-center py-8 max-w-screen-xl mx-auto">
@@ -34,6 +38,12 @@ function Navbar({ showMenuPopup, setShowMenuPopup }) {
         </div>
       
       </div>
+      {showMenuPopup && (
+        <MenuPopup
+          showMenuPopup={showMenuPopup}
+          setShowMenuPopup={setShowMenuPopup}
+        />
+      )}
     </div>
   );
 }
