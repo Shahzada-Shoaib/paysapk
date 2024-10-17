@@ -19,7 +19,9 @@ function App() {
         <Route path='/about-us' element={<AboutUs />} />
         <Route path='/paysa-picks' element={<PaysaPicks />} />
         <Route path='*' element={<PageNotFound />} />
-       </Routes>
+        {/* merging in main */}
+
+gu       </Routes>
      </Router>   
   );
 }

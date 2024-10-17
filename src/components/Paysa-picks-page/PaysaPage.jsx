@@ -15,9 +15,9 @@ function PaysaPage() {
         {/* First Banner */}
         <div className="mx-auto">
           <img
-            src="/assets/paysaPicksImages/PaysaPicksBannerIMG.png"
+            src="/assets/paysaPicksImages/paysaBanner01.png"
             alt="Sample Image"
-            className="w-full h-[auto]"
+            className="w-full"
           />
         </div>
 
@@ -26,7 +26,7 @@ function PaysaPage() {
           {/* Absolutely positioned div for the GIF */}
          
           <div className="absolute inset-0 flex items-center justify-center">
-            <div className="  h-[707px] flex items-center justify-center translate-y-[-10%]">  
+            <div className="  md:h-[707px] flex items-center justify-center translate-y-[-10%]">  
               <img
                 src="/assets/gif.gif"
                 alt="Example GIF"
@@ -37,11 +37,11 @@ function PaysaPage() {
         </div>
 
         {/* Second Banner */}
-        <div className='w-full  h-[950px]'>
-            <img src='/assets/paysaPicksImages/PaysaPicksIMG2.png' alt='image' />
-             </div>
+        <div className='w-full md:mb-80 aspect-auto'>
+          <img src='/assets/paysaPicksImages/paysaBanner2.svg' alt='image' className='w-full aspect-auto' />
+        </div>
 
-        
+
       </div>
 <Footer/>
     
