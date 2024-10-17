@@ -7,10 +7,16 @@ import TwitterIcon from "../images/social-icons/twitter.svg";
 import TikTokIcon from "../images/social-icons/tik_tok.svg";
 import ThreadIcon from "../images/social-icons/threads.svg";
 import SiteLogo from "../images/logo.svg"
-import { Link } from "react-router-dom";
-
+import { Link, useLocation } from "react-router-dom";
 
 function MenuPopup({ showMenuPopup, setShowMenuPopup }) {
+ 
+  const location = useLocation();
+
+  const isActive = (path) => {
+    return location.pathname === path ? "text-white" : "text-[#545454] hover:text-white";
+  };
+ 
   return (
     <div className="menu-popup-bg md:pb-[100px] z-10 top-0 bg-cover bg-black left-0 fixed w-full min-h-screen flex">
       <div className="flex flex-col items-stretch p-6 menu-popup-bg-overlay space-between">
@@ -31,32 +37,22 @@ function MenuPopup({ showMenuPopup, setShowMenuPopup }) {
         <div className="flex flex-1  md:pt-[90px] w-full flex-wrap lg:pt-0 pb-[50px] max-w-screen-xl mx-auto">
           <div className="flex pt-12 md:w-3/6 lg:pt-0 lg:items-end">
             <ul className="space-y-6 list-none">
-              <li className="cursor-pointer hover:text-white text-[#545454] manrope-semibold text-[30px]  md:text-[40px]">
-                <Link to="/">
-                Home
-                </Link>
-              </li>
-              <li className="cursor-pointer text-[#545454] hover:text-white  manrope-semibold text-[30px]  md:text-[40px]">
-               <Link to="/services">
-                Services
-                </Link>
-              </li>
-              <li className="cursor-pointer text-[#545454] hover:text-white manrope-semibold text-[30px]  md:text-[40px]">
-               <Link to="/about-us">
-                About us
-                </Link>
-              </li>
-              <li className="cursor-pointer text-[#545454] manrope-semibold hover:text-white text-[30px]  md:text-[40px]">
-                <Link to="/paysa-picks">
-                PaySa Picks: Articles & Humour
-                </Link>
-              </li>
-              <li className="cursor-pointer text-[#545454] manrope-semibold hover:text-white text-[30px]  md:text-[40px]">
-                <Link to="/get-in-touch">
-                Get in Touch
-                </Link>
-              </li>
-            </ul>
+            <li className={`cursor-pointer manrope-semibold text-[30px] md:text-[40px] ${isActive('/')}`}>
+              <Link to="/">Home</Link>
+            </li>
+            <li className={`cursor-pointer manrope-semibold text-[30px] md:text-[40px] ${isActive('/services')}`}>
+              <Link to="/services">Services</Link>
+            </li>
+            <li className={`cursor-pointer manrope-semibold text-[30px] md:text-[40px] ${isActive('/about-us')}`}>
+              <Link to="/about-us">About us</Link>
+            </li>
+            <li className={`cursor-pointer manrope-semibold text-[30px] md:text-[40px] ${isActive('/paysa-picks')}`}>
+              <Link to="/paysa-picks">PaySa Picks: Articles & Humour</Link>
+            </li>
+            <li className={`cursor-pointer manrope-semibold text-[30px] md:text-[40px] ${isActive('/get-in-touch')}`}>
+              <Link to="/get-in-touch">Get in Touch</Link>
+            </li>
+                   </ul>
           </div>
           <div className="flex md:w-3/6 lg:items-end">
             <div className="flex items-end justify-end w-full pb-4 space-x-3 text-2xl">
