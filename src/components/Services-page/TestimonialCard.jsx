@@ -2,8 +2,7 @@ import React from 'react'
 
 function TestimonialCard() {
     return (
-        <div className='text-white h-[900px]'>
-            <div className=' bg-[#185C8333] w-[355px] h-[476px] rounded-3xl' >
+            <div className=' text-white bg-[#185C8333] w-[355px] h-[476px] rounded-3xl' >
 
                 <div className='ml-10'>
                     <div className='h-[200px] flex justify-center w-[200px]'>
@@ -25,25 +24,7 @@ function TestimonialCard() {
 
                 </div>
             </div>
-        </div>
-
-
-
-       
-
-
-
-
-
-     
-
-
-
-
-
-
-
-
+   
     )
 }
 

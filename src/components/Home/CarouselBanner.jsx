@@ -36,13 +36,8 @@ function CarouselBanner(props) {
                 <div className="">
                     <div className="flex items-end"> {/* Flex container to align items at the bottom */}
                         <h1 className="border-l-8 pl-[24px] border-l-white text-bold text-[50px] font-[manrope] text-white pb-[0px] mt-[87px]"> {/* Padding to create space between text and border */}
-
-                            {/* 365 DAYS <br/> SETTLEMENT */}
-
                             {props.title1}<br />
                             {props.title2}
-
-
                         </h1>
                     </div>
                 </div>

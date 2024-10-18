@@ -12,9 +12,8 @@ function Services() {
       <CarouselServices />
       <TestimonialSection />
       <div>
-        <img src='/assets/servicesPage/servicesGif.gif' alt='image' />
+        <img src='/assets/servicesPage/servicesGif.gif' alt='services' />
       </div>
-      {/* <Button title='Get in the circle'/> */}
       <div className="flex items-center justify-center w-full mt-[236px] text-center mb-[136px]">
         <Button title="Get in the circle" isPrimary={false} isChevronEnabled />
       </div>

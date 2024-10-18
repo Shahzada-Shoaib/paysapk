@@ -5,7 +5,7 @@ import BannerWithoutVideo from '../BannerWithoutVideo';
 function HeroSectionInServices() {
     return (
         <div
-            className="flex flex-col h-[1392px] bg-center bg-cover "
+            className="flex flex-col h-[1300px] bg-center bg-cover "
             style={{ backgroundImage: "url('/assets/servicesPage/bannerServices.svg')" }}
         >
             <Navbar />
