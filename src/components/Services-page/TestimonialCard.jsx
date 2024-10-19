@@ -1,31 +1,24 @@
-import React from 'react'
+import React from "react";
 
-function TestimonialCard() {
-    return (
-            <div className=' text-white bg-[#185C8333] w-[355px] h-[476px] rounded-3xl' >
+function TestimonialCard({ brandLogo = "", testimonial }) {
+  return (
+    <div className="text-white bg-[#185C8333] w-[100%] md:w-[355px] h-[476px] rounded-3xl">
+      <div className="pl-10 flex flex-col h-full">
+        {/* Image Row */}
+        <div className="flex-1 flex items-center justify-start ">
+          <img src={brandLogo} alt="brand testimonial" />
+        </div>
 
-                <div className='ml-10'>
-                    <div className='h-[200px] flex justify-center w-[200px]'>
-                        <img src='/assets/servicesPage/cardLogo1.svg' />
-                    </div>
-
-
-                    <div className="mb-4 text-yellow-400 text-l">
-                        &#9733; &#9733; &#9733; &#9733; &#9733;
-                    </div>
-
-                    <div className='w-[240px]'>
-                        <p>
-                            PaySa's POS solution has revolutionized how we serve our customers, speeding up transactions and reducing wait times. It's reliability personified.
-                        </p>
-                    </div>
-
-
-
-                </div>
-            </div>
-   
-    )
+        {/* Content Row */}
+        <div className="flex-1 flex flex-col">
+          <div className="mb-4 text-yellow-400 text-lg">
+            &#9733; &#9733; &#9733; &#9733; &#9733;
+          </div>
+          <p className="w-[240px]">{testimonial}</p>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default TestimonialCard;

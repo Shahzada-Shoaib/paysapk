@@ -115,3 +115,7 @@ font-size: 20px;
   overflow: hidden;
 }
 
+*:focus {
+  outline: 0;
+  outline: none;
+}
