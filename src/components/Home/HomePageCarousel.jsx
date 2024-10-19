@@ -1,7 +1,7 @@
-import React from 'react';
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import CarouselBanner from './CarouselBanner';
+import React from "react";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import CarouselBanner from "./CarouselBanner";
 
 const HomePageCarousel = () => {
   // Custom previous arrow
@@ -11,7 +11,7 @@ const HomePageCarousel = () => {
         type="button"
         onClick={onClickHandler}
         className="absolute left-2 z-10  text-white bg-[#185C8333] border border-[#185C8333] text-[20px] w-[29px] h-[29px]"
-        style={{ top: '50%', transform: 'translateY(-50%)' }}
+        style={{ top: "50%", transform: "translateY(-50%)" }}
       >
         ❮ {/* Custom left arrow symbol */}
       </button>
@@ -25,7 +25,7 @@ const HomePageCarousel = () => {
         type="button"
         onClick={onClickHandler}
         className="absolute right-2 z-10 text-white bg-[#185C8333] border border-[#185C8333] text-[20px] w-[29px] h-[29px]"
-        style={{ top: '50%', transform: 'translateY(-50%)' }}
+        style={{ top: "50%", transform: "translateY(-50%)" }}
       >
         ❯ {/* Custom right arrow symbol */}
       </button>
@@ -34,8 +34,9 @@ const HomePageCarousel = () => {
 
   // Custom indicator (pagination dots)
   const customIndicator = (onClickHandler, isSelected, index, label) => {
-    const baseStyle = "inline-block w-3 h-3 rounded-full mx-0.5 cursor-pointer";
-    const activeStyle = isSelected ? "bg-blue-500" : "bg-gray-300";
+    const baseStyle =
+      "inline-block w-3 h-3 rounded-full mx-0.5 mb-8 cursor-pointer";
+    const activeStyle = isSelected ? "bg-white" : "bg-gray-500";
     return (
       <li
         className={`${baseStyle} ${activeStyle}`}
@@ -49,7 +50,7 @@ const HomePageCarousel = () => {
   };
 
   return (
-    <div className="relative mx-auto ">
+    <div className="relative mx-auto h-[100vh] max-w-screen-xl">
       <Carousel
         renderArrowPrev={customPrevArrow}
         renderArrowNext={customNextArrow}
@@ -61,16 +62,35 @@ const HomePageCarousel = () => {
         showThumbs={false}
         showStatus={false}
       >
-        <div className='size-full'>
-          <CarouselBanner number='01' image='/assets/carousel-pic01.svg' title1='365 DAYS' title2='SETTLEMENT' description1='Get lightning-fast payment settlements' description2="with PaySa's POS terminal (within 24 hours)" />
+        <div className="size-full">
+          <CarouselBanner
+            image="https://i.imghippo.com/files/4TnYv1729352530.png"
+            title1="365 DAYS SETTLEMENT"
+            description1="Get lightning-fast payment settlements with PaySa's POS terminal (within 24 hours)"
+          />
         </div>
-        <div className='size-full'>
-          <CarouselBanner number='01' image='/assets/carousel-pic01.svg' title1='365 DAYS' title2='SETTLEMENT' description1='Get lightning-fast payment settlements' description2="with PaySa's POS terminal (within 24 hours)" />
+        <div className="size-full">
+          <CarouselBanner
+            image="https://i.imghippo.com/files/TgdPe1729353236.png"
+            title1="365 DAYS SETTLEMENT"
+            description1="Get lightning-fast payment settlements with PaySa's POS terminal (within 24 hours)"
+          />
         </div>
-        <div className='size-full'>
-          <CarouselBanner number='01' image='/assets/carousel-pic01.svg' title1='365 DAYS' title2='SETTLEMENT' description1='Get lightning-fast payment settlements' description2="with PaySa's POS terminal (within 24 hours)" />
+        <div className="size-full">
+          <CarouselBanner
+            image="https://i.imghippo.com/files/KB2X01729354831.png"
+            title1="365 DAYS SETTLEMENT"
+            description1="Get lightning-fast payment settlements with PaySa's POS terminal (within 24 hours)"
+          />
         </div>
-        
+
+        <div className="size-full">
+          <CarouselBanner
+            image="https://i.imghippo.com/files/Bo9fk1729354905.png"
+            title1="365 DAYS SETTLEMENT"
+            description1="Get lightning-fast payment settlements with PaySa's POS terminal (within 24 hours)"
+          />
+        </div>
       </Carousel>
     </div>
   );
