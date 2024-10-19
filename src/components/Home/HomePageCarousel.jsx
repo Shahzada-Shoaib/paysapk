@@ -2,10 +2,14 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import CarouselBanner from "./CarouselBanner";
+import useScreenSize from "../../utils/useIsMobile";
 
 const HomePageCarousel = () => {
+  const { isMobile } = useScreenSize();
+
   // Custom previous arrow
   const customPrevArrow = (onClickHandler, hasPrev) => {
+    if(isMobile) return null;
     return (
       <button
         type="button"
@@ -20,6 +24,7 @@ const HomePageCarousel = () => {
 
   // Custom next arrow
   const customNextArrow = (onClickHandler, hasNext) => {
+    if(isMobile) return null;
     return (
       <button
         type="button"
@@ -50,12 +55,12 @@ const HomePageCarousel = () => {
   };
 
   return (
-    <div className="relative mx-auto h-[100vh] max-w-screen-xl">
+    <div className="relative mx-auto h-[70vh] md:h-[100vh] max-w-screen-xl">
       <Carousel
         renderArrowPrev={customPrevArrow}
         renderArrowNext={customNextArrow}
         renderIndicator={customIndicator}
-        showArrows={true}
+        showArrows={false}
         // autoPlay={true}
         infiniteLoop={true}
         interval={3000}

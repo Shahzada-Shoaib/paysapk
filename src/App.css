@@ -133,3 +133,8 @@ body {
   outline: 0;
   outline: none;
 }
+
+.slick-slider {
+  touch-action: auto;
+  -ms-touch-action: auto;
+}
