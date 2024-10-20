@@ -7,6 +7,7 @@ import Button from '../components/Button';
 import CareerSection from '../components/AboutUs/CareerSection';
 import HiringSection from '../components/AboutUs/HiringSection';
 import Footer from '../components/Footer'
+import AboutUsCarouselSection from '../components/AboutUs/AboutUsCarouselSection';
 
 function AboutUs() {
     return (
@@ -22,7 +23,7 @@ function AboutUs() {
             {/* Story Section */}
             <div className='flex flex-col mt-10 md:flex-row'>
                 <div className='w-full md:w-[50%]'>
-                    <img src='/assets/aboutUsImages/paysaAbout.png' alt="PaySa About" className='w-full h-auto' />
+                    <img src='/assets/aboutUsImages/paysa-aboutUS.svg' alt="PaySa About" className='w-full h-auto' />
                 </div>
 
                 <div className='text-white w-full md:w-[50%] p-5'>
@@ -42,8 +43,11 @@ function AboutUs() {
             {/* Values Section */}
             <div className='mt-72'>
                 <h1 className='flex justify-center font-[manrope] text-white text-3xl mb-10 '>VALUES</h1>
-                <AboutUsCarouselCard />
+                {/* <AboutUsCarouselCard /> */}
             </div>
+            <AboutUsCarouselSection/>
+
+            
             <AboutUsCardsSection />
             <div className="flex items-center justify-center w-full mt-[236px] text-center mb-[136px]">
                 <Button title="Dive in" isPrimary={false} isChevronEnabled />

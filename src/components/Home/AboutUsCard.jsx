@@ -7,7 +7,7 @@ function AboutUsCard(props) {
 
 
   return (
-      <div className={`relative w-full  rounded-[20px] p-[0.5px] bg-gradient-to-b  to-transparent ${isPrimary ? "from-[rgba(254,210,28,0.5)] via-[rgba(254,210,28,0.25)]" : "from-[rgba(63,148,196,0.5)] via-[rgba(63,148,196,0.25)]"}  min-h-[217px]  p-8 text-white`}>
+    <div className={`relative w-full  rounded-[20px] p-[0.5px] bg-gradient-to-b  to-transparent ${isPrimary ? "from-[rgba(254,210,28,0.5)] via-[rgba(254,210,28,0.25)]" : "from-[rgba(63,148,196,0.5)] via-[rgba(63,148,196,0.25)]"} min-h-[217px]   p-8 text-white`}>
         <div 
         className={`relative flex flex-col space-between rounded-[20px]  ${isPrimary ? "bg-[#1A1604]" : "bg-[#071014]"}  h-[217px]  p-8 text-white`}>
         <div>
@@ -16,7 +16,7 @@ function AboutUsCard(props) {
              {props.description}
          </p>
         </div>
-          <div className="flex justify-end absolute bottom-5 right-7">
+          <div className="absolute flex justify-end bottom-5 right-7">
             <ChevronButton isPrimary={!isPrimary} />
           </div>
         </div>
