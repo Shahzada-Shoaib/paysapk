@@ -24,7 +24,7 @@ function App() {
       />
 
       <Banner />
-      <div className="text-center w-full flex justify-center items-center mt-12">
+      <div className="flex items-center justify-center w-full mt-12 text-center">
         <Button title="Take Charge Now" isChevronEnabled />
       </div>
       <div className="flex justify-center">
@@ -39,7 +39,8 @@ function App() {
         </h1>
       </div>
       <AboutUsGrid />
-       <div className="flex justify-center px-8 text-center my-12">
+      <HomePageCarousel/>
+       <div className="flex justify-center px-8 my-12 text-center">
         <h1 className="text-white font-bold font-[manrope] text-[35px]">
           OUR TRUSTED PARTNERS
         </h1>
