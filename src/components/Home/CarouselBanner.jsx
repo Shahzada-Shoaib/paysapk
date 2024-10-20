@@ -6,16 +6,16 @@ function CarouselBanner(props) {
 
   return (
     <div
-      className={`h-[70vh] md:h-[100vh] w-full flex bg-cover bg-contain pb-[100px] bg-center mx-auto  bg-no-repeat  `}
+      className={`h-[70vh] md:h-[100vh] w-full flex bg-cover  pb-[100px] bg-center mx-auto  bg-no-repeat  `}
       style={{
         backgroundImage: `url(${props?.image})`,
       }}
     >
       <div className="hidden md:block md:w-1/2"></div>
       {/* section 2 */}
-      <div className=" md:w-1/2 pt-24 md:pt-24 bg-black/70 bg-none">
+      <div className="pt-24 bg-black/70 md:bg-transparent md:w-1/2 md:pt-24">
         <div className="md:pl-24">
-          <div className="flex justify-start items-start">
+          <div className="flex items-start justify-start ">
             <img
               className="ml-8"
               style={{

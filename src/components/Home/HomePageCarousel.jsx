@@ -55,7 +55,7 @@ const HomePageCarousel = () => {
   };
 
   return (
-    <div className="relative mx-auto h-[70vh] md:h-[100vh] max-w-screen-xl">
+    <div className="relative mx-auto h-[100vh] md:h-[100vh] max-w-screen-xl">
       <Carousel
         renderArrowPrev={customPrevArrow}
         renderArrowNext={customNextArrow}
@@ -69,6 +69,7 @@ const HomePageCarousel = () => {
       >
         <div className="size-full">
           <CarouselBanner
+            className=''
             image="https://i.imghippo.com/files/4TnYv1729352530.png"
             title1="365 DAYS SETTLEMENT"
             description1="Get lightning-fast payment settlements with PaySa's POS terminal (within 24 hours)"
@@ -89,7 +90,7 @@ const HomePageCarousel = () => {
           />
         </div>
 
-        <div className="size-full">
+        <div className="size-full ">
           <CarouselBanner
             image="https://i.imghippo.com/files/Bo9fk1729354905.png"
             title1="365 DAYS SETTLEMENT"

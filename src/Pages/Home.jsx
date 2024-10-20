@@ -15,6 +15,7 @@ import CarouselBanner from "../components/Home/CarouselBanner";
 import PartnerSlider from "../components/Home/PartnersSlider";
 import PaysaPage from "../components/Paysa-picks-page/PaysaPage";
 import LogoSlider from "../components/Home/LogoSlider";
+import BannerWithoutVideo from "../components/BannerWithoutVideo";
 
 function App() {
   return (
@@ -36,6 +37,13 @@ function App() {
         </h1>
       </div>
       <AboutUsGrid />
+
+
+      <div className='my-32'>
+        <BannerWithoutVideo title="EXCEPTIONAL BANKING SERVICES" description="With all the tools you need to track your transaction and even repeat payment as desired." />        
+      </div>
+ 
+ 
       <HomePageCarousel/>
        <div className="flex justify-center px-8 my-12 text-center">
         <h1 className="text-white font-bold font-[manrope] text-[35px]">
@@ -43,7 +51,7 @@ function App() {
         </h1>
       </div>
       <PartnerSlider />
-      <HomePageCarousel />
+      {/* <HomePageCarousel /> */}
       <div className="mt-8">
         <MapSection />
       </div>
