@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <div className="">
       <div className="flex  justify-center my-[70px]">
-        <img src={FooterLogo} alt="icon" className="" />
+        <img src={FooterLogo} alt="icon" className="h-[100px] md:h-auto " />
       </div>
       <div>
         <div

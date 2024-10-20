@@ -1,5 +1,5 @@
-body{
-  background-color: black ; 
+body {
+  background-color: black;
 }
 /* .container{
   display: flex;
@@ -8,61 +8,68 @@ body{
   padding: 0 20px;  
 
 } */
-.navbar-button{
+.navbar-button {
   width: 100px;
   height: 27px;
   border: 2px;
   color: white;
   border-radius: 5.55px;
-  font-family: 'Manrope';
-  background: linear-gradient(to right, rgba(24, 92, 131, 0.2) 0%,rgba(24, 92, 131, 1) 50%, rgba(24, 92, 131, 0.2) 100%);
+  font-family: "Manrope";
+  background: linear-gradient(
+    to right,
+    rgba(24, 92, 131, 0.2) 0%,
+    rgba(24, 92, 131, 1) 50%,
+    rgba(24, 92, 131, 0.2) 100%
+  );
 }
 
 .button-styling-secondary {
-background: linear-gradient(to right, rgba(254, 210, 28, 0.2) 0%, rgba(254, 210, 28, 0.6) 50%, rgba(254, 210, 28, 0.2) 100% );
-backdrop-filter: blur(200px);
--webkit-backdrop-filter: blur(10px); /* For Safari support */
-background-color: transparent;
-font-family: 'Manrope', sans-serif;
-font-weight: 600;
-font-size: 20px;
+  background: linear-gradient(
+    to right,
+    rgba(254, 210, 28, 0.2) 0%,
+    rgba(254, 210, 28, 0.6) 50%,
+    rgba(254, 210, 28, 0.2) 100%
+  );
+  backdrop-filter: blur(200px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+  background-color: transparent;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 .font-manrope {
-  font-family: 'Manrope';
+  font-family: "Manrope";
 }
 
-
 .button-styling {
-  background: linear-gradient(to right, rgba(24, 92, 131, 0.2) 0%,rgba(24, 92, 131, 1) 50%, rgba(24, 92, 131, 0.2) 100%);
+  background: linear-gradient(
+    to right,
+    rgba(24, 92, 131, 0.2) 0%,
+    rgba(24, 92, 131, 1) 50%,
+    rgba(24, 92, 131, 0.2) 100%
+  );
   backdrop-filter: blur(200px);
   -webkit-backdrop-filter: blur(200px); /* For Safari support */
   background-color: transparent;
-  font-family: 'Raleway', 'sans-serif';
+  font-family: "Raleway", "sans-serif";
   font-weight: 600;
   font-size: 20px;
-  
-  }
+}
 
-
-
-
-
-
-
-.banner{
-  display: flex;              
+.banner {
+  display: flex;
   flex-direction: column;
-   align-items: center;  
-  text-align: center; 
+  align-items: center;
+  text-align: center;
   color: white;
   /* border: 2px solid; */
   margin-top: 60.3px;
 }
-.banner h1{
+.banner h1 {
   justify-content: center;
-  font-weight: 700; 
-  font-family: 'Manrope';
+  font-weight: 700;
+  font-family: "Manrope";
   font-size: 50px;
 }
 
@@ -70,28 +77,31 @@ font-size: 20px;
   .banner h1 {
     font-size: 30px;
   }
-  
 }
 
-.manrope-semibold{
-  font-family: 'Manrope';
+.manrope-semibold {
+  font-family: "Manrope";
   font-weight: 600;
 }
 
-
-.banner p{
- font-family: 'Raleway';
+.banner p {
+  font-family: "Raleway";
 }
-
 
 .footer-border-line {
   border: 0.5px solid;
-  border-image-source: linear-gradient(90deg, #185C83 -0.94%, rgba(0, 0, 0, 0) 100%);
+  border-image-source: linear-gradient(
+    90deg,
+    #185c83 -0.94%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
-
 .menu-popup-bg {
-  background-image: url('https://s3-alpha-sig.figma.com/img/c0ff/20d7/334e433aba824dad0b8868c94f660037?Expires=1729468800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KpIAs490BmkTgeP774MWzbTK3RV38if~JuK9XSXpfgvXsRE7tGENoJZ~x~-Icc4wl5kQ~e2khuIfe-mk-ktcrgWMlGYdSIIoMa-F4ILOhRZt~j3UgknmpQkV2yuJSIRn99Jmm5AnlSI-1sGtbKHndbSVb9S6LBvsM-8ktKqgaaKeyerPhKrkwNrF389adOoCIgl2krL3uodrPOJz46416jHT4FkpKayes1vx7lJxz6o5gRjFpA6k~7CZ2uLiqrv7976tTG-EgebRLQO7MEBOW2M8LiTSl~KgxLbht~MPJtnLuBtUagnhXIhJegJ9RhbX4HBjSS33KXWmUabF6ciUFA__');
+  /* background-image: url('https://s3-alpha-sig.figma.com/img/c0ff/20d7/334e433aba824dad0b8868c94f660037?Expires=1729468800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KpIAs490BmkTgeP774MWzbTK3RV38if~JuK9XSXpfgvXsRE7tGENoJZ~x~-Icc4wl5kQ~e2khuIfe-mk-ktcrgWMlGYdSIIoMa-F4ILOhRZt~j3UgknmpQkV2yuJSIRn99Jmm5AnlSI-1sGtbKHndbSVb9S6LBvsM-8ktKqgaaKeyerPhKrkwNrF389adOoCIgl2krL3uodrPOJz46416jHT4FkpKayes1vx7lJxz6o5gRjFpA6k~7CZ2uLiqrv7976tTG-EgebRLQO7MEBOW2M8LiTSl~KgxLbht~MPJtnLuBtUagnhXIhJegJ9RhbX4HBjSS33KXWmUabF6ciUFA__'); */
+  /* background-image: url("/assets/menu-popup-bg.webp");
+ */
+  background-image: url("https://i.imghippo.com/files/lepLW1729346177.webp");
 }
 .menu-popup-bg-overlay {
   min-height: 100vh;
@@ -101,17 +111,30 @@ font-size: 20px;
 
 @media screen and (max-width: 500px) {
   .menu-popup-bg-overlay {
-  background: linear-gradient(90deg, #000000 46.62%, rgba(0, 0, 0, 0.5) 124.39%)
+    background: linear-gradient(
+      90deg,
+      #000000 46.62%,
+      rgba(0, 0, 0, 0.5) 124.39%
+    );
   }
 }
 
 .aboutus-card-bg {
   background: rgba(254, 210, 28, 0.1);
   border: 1px solid;
-  backdrop-filter: blur(250px);  
+  backdrop-filter: blur(250px);
   border-width: 1px;
-  border-radius: 15px; 
+  border-radius: 15px;
   border-image-slice: 10;
   overflow: hidden;
 }
 
+*:focus {
+  outline: 0;
+  outline: none;
+}
+
+.slick-slider {
+  touch-action: auto;
+  -ms-touch-action: auto;
+}

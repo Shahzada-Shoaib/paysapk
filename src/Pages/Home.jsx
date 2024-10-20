@@ -17,12 +17,9 @@ import PaysaPage from "../components/Paysa-picks-page/PaysaPage";
 import LogoSlider from "../components/Home/LogoSlider";
 
 function App() {
-
   return (
     <div>
-      <Navbar
-      />
-
+      <Navbar />
       <Banner />
       <div className="flex items-center justify-center w-full mt-12 text-center">
         <Button title="Take Charge Now" isChevronEnabled />
@@ -44,14 +41,15 @@ function App() {
         <h1 className="text-white font-bold font-[manrope] text-[35px]">
           OUR TRUSTED PARTNERS
         </h1>
-      </div> 
-      <PartnerSlider />
-      <div className="mt-8">
-      <MapSection /> 
       </div>
-          <div className="flex items-center justify-center w-full mt-[236px] text-center mb-[136px]">
-                <Button title="Get in the circle"  isPrimary={false} isChevronEnabled />
-            </div>
+      <PartnerSlider />
+      <HomePageCarousel />
+      <div className="mt-8">
+        <MapSection />
+      </div>
+      <div className="flex items-center justify-center w-full mt-[236px] text-center mb-[136px]">
+        <Button title="Get in the circle" isPrimary={false} isChevronEnabled />
+      </div>
       <Footer />
     </div>
   );

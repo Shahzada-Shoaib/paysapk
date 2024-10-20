@@ -7,19 +7,20 @@ import Footer from '../components/Footer';
 
 function Services() {
   return (
-    <div>
+    <>
       <HeroSectionInServices />
+      <div className='mb-16'>
       <CarouselServices />
-      <TestimonialSection />
-      <div>
-        <img src='/assets/servicesPage/servicesGif.gif' alt='image' />
       </div>
-      {/* <Button title='Get in the circle'/> */}
-      <div className="flex items-center justify-center w-full mt-[236px] text-center mb-[136px]">
+      <TestimonialSection />
+      <div className='mt-12 md:mt-0'>
+        <img src='/assets/servicesPage/servicesGif.gif' alt='services' />
+      </div>
+      <div className="flex items-center justify-center w-full  my-12 md:mt-[236px] text-center md:mb-[136px]">
         <Button title="Get in the circle" isPrimary={false} isChevronEnabled />
       </div>
       <Footer />
-    </div>
+    </>
   )
 }
 

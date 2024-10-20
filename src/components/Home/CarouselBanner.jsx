@@ -1,68 +1,47 @@
-import React from 'react'
+import React from "react";
+import useScreenSize from "../../utils/useIsMobile";
 
 function CarouselBanner(props) {
-    return (
-        <div className=''>
+  const { isMobile } = useScreenSize();
 
-            {/* section 1 */}
-            <div className="relative flex ">
-                <div className="absolute top-[60px] left-[100px] flex items-center justify-center">
-                    <span className='text-[300px] font-bold'
-                        style={{
-                            WebkitTextStroke: '3px gold', // For the gold outline
-                            color: 'transparent',
-                            // Makes the text unfilled
-                        }}
-                    >
-                        {props.number}
-                    </span>
-                </div>
-                <div className="absolute flex items-center justify-center  -top-[200px] left-[1px] w-full">
-                    <img className='' src={`${props.image}`} alt=''></img>
-                </div>
-            </div>
+  return (
+    <div
+      className={`h-[70vh] md:h-[100vh] w-full flex bg-cover bg-contain pb-[100px] bg-center mx-auto  bg-no-repeat  `}
+      style={{
+        backgroundImage: `url(${props?.image})`,
+      }}
+    >
+      <div className="hidden md:block md:w-1/2"></div>
+      {/* section 2 */}
+      <div className=" md:w-1/2 pt-24 md:pt-24 bg-black/70 bg-none">
+        <div className="md:pl-24">
+          <div className="flex justify-start items-start">
+            <img
+              className="ml-8"
+              style={{
+                height: isMobile ? "80px" : "125px",
+                width: isMobile ? "80px" : "125px",
+              }}
+              src="/assets/services-carousel-icons/icon-1.png"
+              alt="services"
+            />
+          </div>
 
-
-
-
-            {/* section 2 */}
-            <div className='float-right me-[300px] mt-[250px]'>
-                <div className='w-[100px] h-[100px] bg-[#185C8333] text-white rounded-sm ms-[35px]'>
-                    vector
-                </div>
-
-
-
-                <div className="">
-                    <div className="flex items-end"> {/* Flex container to align items at the bottom */}
-                        <h1 className="border-l-8 pl-[24px] border-l-white text-bold text-[50px] font-[manrope] text-white pb-[0px] mt-[87px]"> {/* Padding to create space between text and border */}
-
-                            {/* 365 DAYS <br/> SETTLEMENT */}
-
-                            {props.title1}<br />
-                            {props.title2}
-
-
-                        </h1>
-                    </div>
-                </div>
-
-                <div>
-                    <p className='text-white mt-[30px] ms-[35px]'>
-                        {/* Get lightning-fast payment settlements<br />
-                        with PaySa's POS terminal (within 24 hours) */}
-                        {props.description1}<br />{props.description2}
-                    </p>
-                </div>
-
-            </div>
-
-
+          <div className="flex">
+            <h1 className="md:border-l-8 text-left md:w-[200px] md:space-x-2 pl-[24px] md:border-l-white font-bold text-[35px] font-[manrope] text-white pb-[0px] mt-[30px] md:mt-[60px]">
+              {props.title1}
+            </h1>
+          </div>
         </div>
 
-
-
-    )
+        <div className="pl-8 md:pl-24">
+          <p className="text-white text-left mt-[10px] md:mt-[40px] md:w-[400px]">
+            {props.description1}
+          </p>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default CarouselBanner;
