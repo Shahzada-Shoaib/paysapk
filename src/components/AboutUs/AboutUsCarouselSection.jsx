@@ -62,13 +62,15 @@ const MyCarousel = () => {
                 <div className="w-full h-[820px] ">
                     <AboutUsCarouselCard
                         title=" WORKINGS@PAYSA"
-                        description=" At PaySa, we foster diversity, support professional growth, and prioritize open communication and genuine relationships. Our talent philosophy centers on hiring ambitious professionals, offering career growth opportunities, and achieving greatness together by aligning values and goals."
+                        description="At PaySa, we foster diversity, support professional growth, and prioritize open communication and genuine relationships. Our talent philosophy centers on hiring ambitious professionals, offering career growth opportunities, and achieving greatness together by aligning values and goals."
                         yellowimageURL="/assets/aboutUsImages/aboutUsYellowCard.svg"
                         alphabetIMG="/assets/aboutUsImages/P-Image.svg"
                         // vector="/assets/aboutUsImages/vector1.svg"
                         // nextSlide={nextSlide} 
                         // prevSlide={prevSlide} 
                         button={firstSlidebutton}
+                        textLeft="text-left"
+                        firstSlideBlur="md:w-[55%]"
                     />
                 </div>
                 <div className="w-full ">

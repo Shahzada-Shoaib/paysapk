@@ -3,8 +3,8 @@ import AboutUsCard from '../Home/AboutUsCard';
 
 function AboutUsCardsSection() {
     return (
-        <div className=''>
-            <div className='mt-72'>
+        <div className='mt-[-100px]'>
+            <div className=''>
                 <h1 className='text-white banner text-[50px] font-bold font-[manrope] mb-[81px]'> PAYSAPICKS: ARTICLES & HUMOUR </h1>
 
                 {/* Responsive Grid layout for cards */}
@@ -21,7 +21,7 @@ function AboutUsCardsSection() {
                     {/* Card 2 */}
                     <div className="h-auto">
                         <AboutUsCard
-                            title="MEEZAN BANK COLLABORATION"
+                            title="PAYSA COMIC VOL 1"
                             description="Join the PaySa adventure in our vibrant comic series! Uncover the story of our innovative POS machines in an unexpected twist. Stay tuned for the next colorful edition – it's going to be epic!"
                         />
                     </div>
@@ -29,7 +29,7 @@ function AboutUsCardsSection() {
                     {/* Card 3 */}
                     <div className="h-auto">
                         <AboutUsCard
-                            title="MEEZAN BANK COLLABORATION"
+                            title="PAYSA WRAP"
                             description="Inspired by the trending spotify wrap on social media, PaySa presents the wrap in its very own classic style."
                             isPrimary={true}
                         />
