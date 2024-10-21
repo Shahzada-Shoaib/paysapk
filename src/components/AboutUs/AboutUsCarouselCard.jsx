@@ -3,9 +3,9 @@ import ChevronButton from '../ChevronButton';
 
 function AboutUsCarouselCard(props) {
     return (
-        <div className=''>
+        <div className='container md:mx-auto '>
 
-            <section className="relative flex justify-center max-w-screen-lg mx-auto border md:px-0">
+            <section className="relative flex justify-center max-w-screen-lg mx-auto md:px-0">
                 {/* <div className="md:pt-12">
                     <img className='absolute  right-[360px] hidden md:block h-[424px] w-[384px] rounded-[20px] ' src='/assets/aboutUsImages/aboutUsYellowCard.svg' alt='background poster' />
                 </div> */}
@@ -16,39 +16,45 @@ function AboutUsCarouselCard(props) {
                         // backgroundImage: `url('/assets/aboutUsImages/aboutUsYellowCard.svg')`,
                         backgroundImage: `url(${props.yellowimageURL})`,
                     }}>
-                    <img src={props.vector} alt='vector' className='mx-auto mt-8' />
+                  
 
+                    {props.vector && (
+                        <img src={props.vector} alt="vector" className="mx-auto mt-8" />
+                    )}
+
+                    
+                    
                 </div>
 
                 <div className="md:absolute  w-[100%] lg:w-[656px] h-[427px] bg-[#3F94C44D] rounded-[20px] top-0  
-                md:left-[250px] z-20">
-                    <div className='pl-[20px] pt-[10px] md:pl-[52px] md:pt-[70px]  h-full md:h-auto rounded-[20px] relative backdrop-blur-md md:w-[55%]'>
-                        <div>
-                            <h1 className='font-bold text-white text-[25px] font-[manrope] ' >
+                md:left-[250px]  ">
 
+                    <div className={` pl-[20px] pt-20 md:pl-[52px] md:pt-[70px]  h-full md:h-auto rounded-[20px] relative backdrop-blur-md  ${props.textLeft} ${props.firstSlideBlur}`}>
+
+                        <div className=' mb-[22px]'>
+                            <h1 className='font-bold text-white text-[25px] font-[manrope]' >
                                 {props.title}
                             </h1>
                         </div>
-                        <div className='mt-[20px] w-[400px]'>
-                            <p className='text-white text-[16px] font-semibold font-[raleway] md:w-[400px] w-[300px]'>
+                        <div className='mt-[20px] flex justify-center '>
+                            <p className='text-white text-[16px] font-semibold font-[raleway] md:w-[400px] w-[300px] leading-[20px]'>
                                 {props.description}
                             </p>
                         </div>
 
                         
-                <div className='mt-10 border ' >
-                            <div className='flex items-center justify-center '>
+                        <div className='flex flex-col items-start mt-[-22px]'>
                                 {props.button}
-                            </div>
+                        </div>
 
-                            <div className='flex justify-center mt-10' >
-                                {props.navigationButtons}
-
-                            </div>                
-                </div>
-    
-    
+                                      
            </div>
+           
+                    <div className='flex justify-center mt-[51px] ' >
+                        {props.navigationButtons}
+                    </div>  
+
+                    
          </div>  
                 
 
