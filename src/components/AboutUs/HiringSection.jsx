@@ -1,9 +1,10 @@
 import React from "react";
 import Button from "../Button";
+import { Link } from "react-router-dom";
 
 function HiringSection() {
   return (
-    <div className="">
+    <div className="px-6 md:px-0 relative md:-mt-12 -mt-32 ">
       <div className="font-bold text-white text-[35px] flex justify-center">
         <h1>WE'RE HIRING </h1>
       </div>
@@ -50,7 +51,9 @@ function HiringSection() {
             <br />
             Monday to Friday: 09:00 am to 05:30 pm PKST
           </p>
-          <Button title="Apply Now" isPrimary={false} isChevronEnabled />
+          <Link to="https://forms.gle/L1GRJfyrHCmbuPT99">
+            <Button title="Apply Now" isPrimary={false} isChevronEnabled />
+          </Link>
         </div>
       </div>
     </div>

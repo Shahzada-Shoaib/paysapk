@@ -19,9 +19,9 @@ const MyCarousel = () => {
 
   const firstSlidebutton = (
     <button
-      style={{ background: "red", zIndex: "100", position: "relative" }}
+      style={{ background: "rgba(24, 92, 131, 0.2)" }}
       onClick={nextSlide}
-      className="mt-[45px] items-center text-white flex rounded px-4 py-1 font-[raleway]"
+      className="mt-[20px] font-med relative z-10 items-center text-white flex rounded px-4 py-1 font-[raleway]"
     >
       Our values
       <span className="ml-4">

@@ -30,9 +30,11 @@ function Navbar() {
         </div>
 
         <div className="flex-1 flex justify-end">
-          <button className="navbar-button">
-            <span className="font-raleway leading-[20px]">Get in touch</span>
-          </button>
+          <Link to={"/get-in-touch"}>
+            <button className="navbar-button">
+              <span className="font-raleway leading-[20px]">Get in touch</span>
+            </button>
+          </Link>
         </div>
       </div>
       {showMenuPopup && (

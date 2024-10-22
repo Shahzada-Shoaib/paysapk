@@ -27,31 +27,44 @@ function App() {
           OUR TRUSTED CLIENTS
         </h1>
       </div>
-      <LogoSlider />
+      <Suspense fallback={<div>Loading...</div>}>
+        <LogoSlider />
+      </Suspense>
       <div className="flex justify-center">
         <h1 className="text-white font-bold font-[manrope] text-center px-6 text-[35px] my-12">
           ABOUT US
         </h1>
       </div>
-      <AboutUsGrid />
+      <Suspense fallback={<div>Loading...</div>}>
+        <AboutUsGrid />
+      </Suspense>
+
       <BannerWithoutVideo
         title="EXCEPTIONAL BANKING SERVICES"
         description="With all the tools you need to track your transaction and even repeat payment as desired."
       />
-      <HomePageCarousel />
+      <Suspense fallback={<div>Loading...</div>}>
+        <HomePageCarousel />
+      </Suspense>
       <div className="flex justify-center px-8 my-12 text-center">
         <h1 className="text-white font-bold font-[manrope] text-[35px]">
           OUR TRUSTED PARTNERS
         </h1>
       </div>
-      <PartnerSlider />
-      <div className="mt-8">
-        <MapSection />
-      </div>
+      <Suspense fallback={<div>Loading...</div>}>
+        <PartnerSlider />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
+        <div className="mt-8">
+          <MapSection />
+        </div>
+      </Suspense>
       <div className="flex items-center justify-center w-full mt-[236px] text-center mb-[136px]">
         <Button title="Get in the circle" isPrimary={false} isChevronEnabled />
       </div>
-      <Footer />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Footer />
+      </Suspense>
     </div>
   );
 }
