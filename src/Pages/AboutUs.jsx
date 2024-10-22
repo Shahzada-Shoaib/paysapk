@@ -12,18 +12,29 @@ import AboutUsCarouselSection from '../components/AboutUs/AboutUsCarouselSection
 function AboutUs() {
     return (
         <div className='bg-black'>
-            <Navbar />
-            <BannerWithoutVideo title="THE TRAILBLAZERS IN DIGITAL WORLD" description="Pioneering innovation and reshaping the digital landscape, one transaction at a time." />
 
-            {/* Banner Image */}
-            <div className='flex justify-center text-white'>
-                <img src='/assets/aboutUsImages/AboutUsBanner.png' alt='About Us Banner Image' className='w-full h-auto' />
+            <div className=''>
+                <Navbar />
+                <BannerWithoutVideo title="THE TRAILBLAZERS IN DIGITAL WORLD" description="Pioneering innovation and reshaping the digital landscape, one transaction at a time." />
+
+                {/* Banner Image */}
+                <div className='flex justify-center text-white'>
+                    <img src='/assets/aboutUsImages/AboutUsBanner.png' alt='About Us Banner Image' className='w-full h-auto' />
+                </div>
+                
             </div>
 
+
+            
+            
+
+
+
+
             {/* Story Section */}
-            <div className='flex flex-col mt-10 md:flex-row'>
+            <div className='flex flex-col md:mt-[-150px] md:flex-row'>
                 <div className='w-full md:w-[50%]'>
-                    <img src='/assets/aboutUsImages/paysa-aboutUS.svg' alt="PaySa About" className='w-full h-auto' />
+                    <img src='/assets/aboutUsImages/paysa-aboutUs.svg' alt="PaySa About" className='w-full h-auto' />
                 </div>
 
                 <div className='text-white w-full md:w-[50%] p-5'>
@@ -49,7 +60,7 @@ function AboutUs() {
 
             
             <AboutUsCardsSection />
-            <div className="flex items-center justify-center w-full mt-[236px] text-center mb-[136px]">
+            <div className="flex items-center justify-center w-full mt-[59px] ">
                 <Button title="Dive in" isPrimary={false} isChevronEnabled />
             </div>
             <CareerSection/>

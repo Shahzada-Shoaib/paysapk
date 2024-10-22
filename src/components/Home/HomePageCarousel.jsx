@@ -55,7 +55,7 @@ const HomePageCarousel = () => {
   };
 
   return (
-    <div className="relative mx-auto h-[70vh] md:h-[100vh] max-w-screen-xl">
+    <div className="relative mx-auto  md:h-[100vh]  max-w-screen-xl h-[70vh]">
       <Carousel
         renderArrowPrev={customPrevArrow}
         renderArrowNext={customNextArrow}
@@ -79,16 +79,16 @@ const HomePageCarousel = () => {
           <CarouselBanner
             icon="/assets/services-carousel-icons/icon-2.png"
             image="https://i.imghippo.com/files/TgdPe1729353236.png"
-            title1="365 DAYS SETTLEMENT"
-            description1="Get lightning-fast payment settlements with PaySa's POS terminal (within 24 hours)"
+            title1="CUSTOMISED MIS"
+            description1="Make smart decisions with powerful analytics"
           />
         </div>
         <div className="size-full">
           <CarouselBanner
             icon="/assets/services-carousel-icons/icon-2.png"
             image="https://i.imghippo.com/files/KB2X01729354831.png"
-            title1="365 DAYS SETTLEMENT"
-            description1="Get lightning-fast payment settlements with PaySa's POS terminal (within 24 hours)"
+            title1="SECURE VPN TUNNEL"
+            description1="Safeguard transactions with top-notch security through implementation of network segmentation"
           />
         </div>
 
@@ -96,7 +96,7 @@ const HomePageCarousel = () => {
           <CarouselBanner
             icon="/assets/services-carousel-icons/icon-3.png"
             image="https://i.imghippo.com/files/Bo9fk1729354905.png"
-            title1="365 DAYS SETTLEMENT"
+            title1="24/7 CUSTOMER SUPPORT"
             description1="Get lightning-fast payment settlements with PaySa's POS terminal (within 24 hours)"
           />
         </div>
