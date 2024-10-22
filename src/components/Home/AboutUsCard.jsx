@@ -15,7 +15,7 @@ function AboutUsCard(props) {
       <div
         className={`relative flex flex-col space-between rounded-[20px]  ${
           isPrimary ? "bg-[#1A1604]" : "bg-[#071014]"
-        }  min-h-[217px]  p-8 text-white`}
+        }  min-h-[217px]  p-8 pb-12 text-white`}
       >
         <div>
           <h2 className="text-xl font-[manrope] font-bold text-center mt-[5px] text-white">
@@ -25,7 +25,7 @@ function AboutUsCard(props) {
             {props.description}
           </p>
         </div>
-        <div className="absolute flex justify-end bottom-3 right-7 ">
+        <div className="absolute flex justify-end bottom-4 right-7 ">
           <ChevronButton isPrimary={!isPrimary} />
         </div>
       </div>

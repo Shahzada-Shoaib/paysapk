@@ -20,7 +20,7 @@ function AboutUs() {
         />
 
         {/* Banner Image */}
-        <div className="flex justify-center text-white">
+        <div className="flex justify-center text-white max-w-screen-xl mx-auto">
           <img
             fetchpriority="high"
             src="/assets/aboutUsImages/AboutUsBanner.png"
@@ -70,20 +70,19 @@ function AboutUs() {
       </div>
 
       {/* Values Section */}
-      <div className="mt-72">
-        <h1 className="flex justify-center font-[manrope] text-white text-3xl mb-10 ">
+      <div className="mt-24  md:mt-72">
+        <h1 className="flex justify-center font-[manrope] font-semibold text-white text-3xl mb-10 ">
           VALUES
         </h1>
         {/* <AboutUsCarouselCard /> */}
       </div>
-      <AboutUsCarouselSection />
 
+      <AboutUsCarouselSection />
       <AboutUsCardsSection />
       <div className="flex items-center justify-center w-full mt-[59px] ">
         <Button title="Dive in" isPrimary={false} isChevronEnabled />
       </div>
       <CareerSection />
-
       <HiringSection />
       <Footer />
     </div>
