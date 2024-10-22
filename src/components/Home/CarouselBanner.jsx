@@ -22,7 +22,7 @@ function CarouselBanner(props) {
                 height: isMobile ? "80px" : "125px",
                 width: isMobile ? "80px" : "125px",
               }}
-              src="/assets/services-carousel-icons/icon-1.png"
+              src={props?.icon}
               alt="services"
             />
           </div>

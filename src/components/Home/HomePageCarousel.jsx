@@ -9,7 +9,7 @@ const HomePageCarousel = () => {
 
   // Custom previous arrow
   const customPrevArrow = (onClickHandler, hasPrev) => {
-    if(isMobile) return null;
+    if (isMobile) return null;
     return (
       <button
         type="button"
@@ -24,7 +24,7 @@ const HomePageCarousel = () => {
 
   // Custom next arrow
   const customNextArrow = (onClickHandler, hasNext) => {
-    if(isMobile) return null;
+    if (isMobile) return null;
     return (
       <button
         type="button"
@@ -69,6 +69,7 @@ const HomePageCarousel = () => {
       >
         <div className="size-full">
           <CarouselBanner
+            icon="/assets/services-carousel-icons/icon-1.png"
             image="https://i.imghippo.com/files/4TnYv1729352530.png"
             title1="365 DAYS SETTLEMENT"
             description1="Get lightning-fast payment settlements with PaySa's POS terminal (within 24 hours)"
@@ -76,6 +77,7 @@ const HomePageCarousel = () => {
         </div>
         <div className="size-full">
           <CarouselBanner
+            icon="/assets/services-carousel-icons/icon-2.png"
             image="https://i.imghippo.com/files/TgdPe1729353236.png"
             title1="365 DAYS SETTLEMENT"
             description1="Get lightning-fast payment settlements with PaySa's POS terminal (within 24 hours)"
@@ -83,6 +85,7 @@ const HomePageCarousel = () => {
         </div>
         <div className="size-full">
           <CarouselBanner
+            icon="/assets/services-carousel-icons/icon-2.png"
             image="https://i.imghippo.com/files/KB2X01729354831.png"
             title1="365 DAYS SETTLEMENT"
             description1="Get lightning-fast payment settlements with PaySa's POS terminal (within 24 hours)"
@@ -91,6 +94,7 @@ const HomePageCarousel = () => {
 
         <div className="size-full">
           <CarouselBanner
+            icon="/assets/services-carousel-icons/icon-3.png"
             image="https://i.imghippo.com/files/Bo9fk1729354905.png"
             title1="365 DAYS SETTLEMENT"
             description1="Get lightning-fast payment settlements with PaySa's POS terminal (within 24 hours)"
