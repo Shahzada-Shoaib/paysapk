@@ -1,21 +1,18 @@
 // import logo from './logo.svg';
-import Footer from "../components/Footer";
+import { useState, Suspense, lazy } from "react";
 import Navbar from "../components/Home/Navbar";
 import Banner from "../components/Home/Banner";
-import MenuPopup from "../components/MenuPopup";
-import { useState } from "react";
-import Slider from "react-slick";
-import ClientSlider from "../components/Home/LogoSlider";
 import Button from "../components/Button";
-// import AboutUsCard from "./components/Home/AboutUsCard";
-import AboutUsGrid from "../components/Home/AboutUsGrid";
-import MapSection from "../components/Home/MapSection";
-import HomePageCarousel from "../components/Home/HomePageCarousel";
-import CarouselBanner from "../components/Home/CarouselBanner";
-import PartnerSlider from "../components/Home/PartnersSlider";
-import PaysaPage from "../components/Paysa-picks-page/PaysaPage";
-import LogoSlider from "../components/Home/LogoSlider";
 import BannerWithoutVideo from "../components/BannerWithoutVideo";
+const Footer = lazy(() => import("../components/Footer"));
+const LogoSlider = lazy(() => import("../components/Home/LogoSlider"));
+const PartnerSlider = lazy(() => import("../components/Home/PartnersSlider"));
+const MapSection = lazy(() => import("../components/Home/MapSection"));
+
+const AboutUsGrid = lazy(() => import("../components/Home/AboutUsGrid"));
+const HomePageCarousel = lazy(() =>
+  import("../components/Home/HomePageCarousel")
+);
 
 function App() {
   return (
@@ -37,9 +34,12 @@ function App() {
         </h1>
       </div>
       <AboutUsGrid />
-      <BannerWithoutVideo title="EXCEPTIONAL BANKING SERVICES" description="With all the tools you need to track your transaction and even repeat payment as desired."/>
-      <HomePageCarousel/>
-       <div className="flex justify-center px-8 my-12 text-center">
+      <BannerWithoutVideo
+        title="EXCEPTIONAL BANKING SERVICES"
+        description="With all the tools you need to track your transaction and even repeat payment as desired."
+      />
+      <HomePageCarousel />
+      <div className="flex justify-center px-8 my-12 text-center">
         <h1 className="text-white font-bold font-[manrope] text-[35px]">
           OUR TRUSTED PARTNERS
         </h1>
