@@ -151,12 +151,12 @@ function FAQquestions() {
             />
           </div>
 
-          <div>
+          {/* <div>
             <Accordion
               isPrimary
               title=" How secure are POS transactions, and what measures are in place to protect my customers data?"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

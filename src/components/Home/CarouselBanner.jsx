@@ -6,7 +6,7 @@ function CarouselBanner(props) {
 
   return (
     <div
-      className={`md:h-[100vh] w-full flex bg-cover pb-[100px] mx-auto  bg-no-repeat `}
+      className={`md:h-[120vh] w-full flex bg-cover pb-[100px] mx-auto  bg-no-repeat `}
       style={{
         backgroundImage: `url(${props?.image})`,
       }}

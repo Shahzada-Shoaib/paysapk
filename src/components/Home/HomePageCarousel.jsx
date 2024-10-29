@@ -55,7 +55,7 @@ const HomePageCarousel = () => {
   };
 
   return (
-    <div className="relative mx-auto  md:h-[100vh]  max-w-screen-xl h-[70vh]">
+    <div className="relative mx-auto  md:h-[100vh]  max-w-screen-2xl h-[70vh]">
       <Carousel
         renderArrowPrev={customPrevArrow}
         renderArrowNext={customNextArrow}

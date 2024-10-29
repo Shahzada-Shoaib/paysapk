@@ -13,8 +13,8 @@ function Navbar() {
 
   return (
     <div>
-      <div className="flex px-6 md:px-0  justify-between items-center py-8 max-w-screen-xl mx-auto">
-        <div className="flex-1 flex justify-start">
+      <div className="flex items-center justify-between px-1 py-8 mx-auto md:px-3 md:max-w-screen-2xl">
+        <div className="flex justify-start flex-1">
           <img
             onClick={() => setShowMenuPopup(true)}
             src="../assets/burger-menu-paysapk.svg"
@@ -23,13 +23,13 @@ function Navbar() {
           />
         </div>
 
-        <div className="flex-1 flex justify-center cursor-pointer">
+        <div className="flex justify-center flex-1 cursor-pointer">
           <Link to="/">
             <img src={SiteLogo} alt="logo" style={{ height: "30px" }} />
           </Link>
         </div>
 
-        <div className="flex-1 flex justify-end">
+        <div className="flex justify-end flex-1">
           <Link to={"/get-in-touch"}>
             <button className="navbar-button">
               <span className="font-raleway leading-[20px]">Get in touch</span>

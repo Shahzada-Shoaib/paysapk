@@ -60,7 +60,7 @@ function App() {
         </div>
       </Suspense>
       <div className="flex items-center justify-center w-full mt-[236px] text-center mb-[136px]">
-        <Button title="Get in the circle" isPrimary={false} isChevronEnabled />
+        <Button title="Take charge Now" isPrimary={true} isChevronEnabled />
       </div>
       <Suspense fallback={<div>Loading...</div>}>
         <Footer />

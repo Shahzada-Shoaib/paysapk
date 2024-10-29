@@ -15,30 +15,6 @@ const logos = [
     '../assets/partners-Logos/partner7.svg',
     '../assets/partners-Logos/partner8.svg',
 
-
-    // '../assets/clients-logos/clients-logo1.svg',
-    // '../assets/clients-logos/clients-logo2.svg',
-    // wrong size of an image need to be fixed
-    // '../assets/clients-logos/clients-logo3.svg',
-    // '../assets/clients-logos/clients-logo4.svg',
-    // '../assets/clients-logos/clients-logo5.svg',
-    // '../assets/clients-logos/clients-logo6.svg',
-    // '../assets/clients-logos/clients-logo7.svg',
-    // '../assets/clients-logos/clients-logo8.svg',
-    // '../assets/clients-logos/clients-logo9.svg',
-    // '../assets/clients-logos/clients-logo10.svg',
-    // '../assets/clients-logos/clients-logo11.svg',
-    // '../assets/clients-logos/clients-logo12.svg',
-    // '../assets/clients-logos/clients-logo13.svg',
-    // '../assets/clients-logos/clients-logo14.svg',
-    // '../assets/clients-logos/clients-logo15.svg',
-    // '../assets/clients-logos/clients-logo16.svg',
-    // '../assets/clients-logos/clients-logo17.svg',
-    // '../assets/clients-logos/clients-logo18.svg',
-    // '../assets/clients-logos/clients-logo19.svg',
-    // '../assets/clients-logos/clients-logo20.svg',
-    // '../assets/clients-logos/clients-logo21.svg',
-    // '../assets/clients-logos/clients-logo22.svg',
 ];
 
 function PartnerSlider() {
@@ -49,8 +25,8 @@ function PartnerSlider() {
     // Slick settings
     const settings = {
         infinite: true,             // Infinite loop scrolling
-        speed: 10000,                // Scroll speed
-        slidesToShow: 4,            // Number of logos visible at once (adjust as needed)
+        speed: 4000,                // Scroll speed
+        slidesToShow: 6,            // Number of logos visible at once (adjust as needed)
         slidesToScroll: 1,          // Number of logos to scroll at a time
         autoplay: true,             // Autoplay enabled
         autoplaySpeed: 0,           // Continuous scroll speed
@@ -73,7 +49,7 @@ function PartnerSlider() {
 
 
     return (
-        <div className='max-w-screen-xl mx-auto'>
+        <div className='mx-auto max-w-screen-2xl'>
             <div className="relative">
                 <div className='md:hidden'>
                     <Slider {...mobileSettings} className="slider">

@@ -39,8 +39,8 @@ function LogoSlider() {
     // Slick settings
     const settings = {
         infinite: true,             // Infinite loop scrolling
-        speed: 10000,                // Scroll speed
-        slidesToShow: 4,            // Number of logos visible at once (adjust as needed)
+        speed: 4000,                // Scroll speed
+        slidesToShow: 6,            // Number of logos visible at once (adjust as needed)
         slidesToScroll: 1,          // Number of logos to scroll at a time
         autoplay: true,             // Autoplay enabled
         autoplaySpeed: 0,           // Continuous scroll speed
@@ -63,7 +63,7 @@ function LogoSlider() {
 
 
     return (
-        <div className='max-w-screen-xl mx-auto'>
+        <div className='mx-auto max-w-screen-2xl'>
         <div className="relative">
        <div className='md:hidden'>
        <Slider { ...mobileSettings} className="slider">
