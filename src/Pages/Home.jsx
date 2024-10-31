@@ -46,10 +46,14 @@ function App() {
       <Suspense fallback={<div>Loading...</div>}>
         <HomePageCarousel />
       </Suspense>
-      <div className="flex justify-center px-8 my-12 text-center">
+      
+      {/* <div className="flex justify-center px-8 mt-12 text-center">
         <h1 className="text-white font-bold font-[manrope] text-[35px]">
           OUR TRUSTED PARTNERS
         </h1>
+      </div> */}
+      <div className="mt-[150px]">
+        <BannerWithoutVideo title=" OUR TRUSTED PARTNERS" />       
       </div>
       <Suspense fallback={<div>Loading...</div>}>
         <PartnerSlider />
@@ -65,6 +69,9 @@ function App() {
       <Suspense fallback={<div>Loading...</div>}>
         <Footer />
       </Suspense>
+      
+     
+
     </div>
   );
 }

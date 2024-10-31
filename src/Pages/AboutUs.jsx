@@ -20,10 +20,10 @@ function AboutUs() {
         />
 
         {/* Banner Image */}
-        <div className="flex justify-center text-white max-w-screen-xl mx-auto">
+        <div className="flex justify-center max-w-screen-xl mx-auto text-white">
           <img
             fetchpriority="high"
-            src="/assets/aboutUsImages/AboutUsBanner.png"
+            src="/assets/aboutUsImages/aboutUsBanner.svg"
             alt="About Us Banner"
             className="w-full h-auto"
           />
@@ -31,7 +31,7 @@ function AboutUs() {
       </div>
 
       {/* Story Section */}
-      <div className="flex flex-col md:mt-[-150px] md:flex-row">
+      <div className="flex flex-col md:flex-row">
         <div className="w-full md:w-[50%]">
           <img
             src="/assets/aboutUsImages/paysa-aboutUs.svg"
@@ -70,7 +70,7 @@ function AboutUs() {
       </div>
 
       {/* Values Section */}
-      <div className="mt-24  md:mt-72">
+      <div className="mt-24 md:mt-72">
         <h1 className="flex justify-center font-[manrope] font-semibold text-white text-3xl mb-10 ">
           VALUES
         </h1>

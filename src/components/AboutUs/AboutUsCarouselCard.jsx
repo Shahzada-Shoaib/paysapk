@@ -37,7 +37,7 @@ function AboutUsCarouselCard(props) {
               {props.navigationButtons}
             </div>
 
-            <div className="flex flex-col items-start mt-[-22px]">
+            <div className="flex flex-col items-start mt-[-22px] transition-transform transform hover:-translate-y-1">
               {props.button}
             </div>
           </div>

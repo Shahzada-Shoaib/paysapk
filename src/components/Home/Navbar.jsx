@@ -31,8 +31,8 @@ function Navbar() {
 
         <div className="flex justify-end flex-1">
           <Link to={"/get-in-touch"}>
-            <button className="navbar-button">
-              <span className="font-raleway leading-[20px]">Get in touch</span>
+            <button className="transition-transform transform navbar-button hover:-translate-y-1">
+              <span className="font-raleway leading-[20px] ">Get in touch</span>
             </button>
           </Link>
         </div>
@@ -48,3 +48,7 @@ function Navbar() {
 }
 
 export default Navbar;
+
+{/* <button class="px-4 py-2 text-white bg-indigo-500 transition-transform transform hover:-translate-y-1">
+  Slide Up on Hover
+</button> */}

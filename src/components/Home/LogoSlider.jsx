@@ -19,16 +19,16 @@ const logos = [
     '../assets/clients-logos/clients-logo10.svg',
     '../assets/clients-logos/clients-logo11.svg',
     '../assets/clients-logos/clients-logo12.svg',
-    '../assets/clients-logos/clients-logo13.svg',
-    '../assets/clients-logos/clients-logo14.svg',
+    // '../assets/clients-logos/clients-logo13.svg',
+    // '../assets/clients-logos/clients-logo14.svg',
     '../assets/clients-logos/clients-logo15.svg',
-    '../assets/clients-logos/clients-logo16.svg',
+    // '../assets/clients-logos/clients-logo16.svg',
     '../assets/clients-logos/clients-logo17.svg',
     '../assets/clients-logos/clients-logo18.svg',
     '../assets/clients-logos/clients-logo19.svg',
     '../assets/clients-logos/clients-logo20.svg',
-    '../assets/clients-logos/clients-logo21.svg',
-    '../assets/clients-logos/clients-logo22.svg',
+    // '../assets/clients-logos/clients-logo21.svg',
+    // '../assets/clients-logos/clients-logo22.svg',
 ];
 
 function LogoSlider() {
@@ -63,28 +63,40 @@ function LogoSlider() {
 
 
     return (
+   
+
+
+
         <div className='mx-auto max-w-screen-2xl'>
-        <div className="relative">
-       <div className='md:hidden'>
-       <Slider { ...mobileSettings} className="slider">
-                {logos.map((logo, index) => (
-                    <div key={index} className="relative p-2 ">
-                        <img src={logo} alt={`Client Logo ${index + 1}`} className="w-[100px] h-[150px] object-contain flex justify-center" />
-                    </div>
-                ))}
-            </Slider> 
-            </div>   
-            <div className='hidden md:block'>
-             <Slider { ...settings} className="slider">
-                {logos.map((logo, index) => (
-                    <div key={index} className="relative p-2 ">
-                        <img src={logo} alt={`Client Logo ${index + 1}`} className="w-[100px] h-[150px] object-contain flex justify-center" />
-                    </div>
-                ))}
-            </Slider>
-            </div> 
+            <div className="relative">
+                <div className='md:hidden'>
+                    <Slider {...mobileSettings} className="slider">
+                        {logos.map((logo, index) => (
+                            <div key={index} className="relative p-2 ">
+                                <img src={logo} alt={`Client Logo ${index + 1}`} className="w-[100px] h-[100px] object-contain flex justify-center" />
+                            </div>
+                        ))}
+                    </Slider>
+                </div>
+                <div className='hidden md:block'>
+                    <Slider {...settings} className="slider">
+                        {logos.map((logo, index) => (
+                            <div key={index} className="relative p-2 ">
+                                <img src={logo} alt={`Client Logo ${index + 1}`} className="w-[100px] h-[100px] object-contain flex justify-center " />
+                            </div>
+                        ))}
+                    </Slider>
+                </div>
+            </div>
         </div>
-        </div>
+
+
+
+
+
+
+
+    
     );
 }
 

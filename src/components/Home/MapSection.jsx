@@ -35,7 +35,7 @@ function MapSection() {
             <div>
               <button
                 style={{ background: "rgba(24, 92, 131, 0.5)" }}
-                className="mt-[45px] items-center text-white flex rounded px-4 py-1"
+                className="mt-[45px] items-center text-white flex rounded px-4 py-1 transition-transform transform hover:-translate-y-1"
               >
                 Discover more
                 <span className="ml-4">
