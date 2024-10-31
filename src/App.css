@@ -138,3 +138,25 @@ body {
   touch-action: auto;
   -ms-touch-action: auto;
 }
+
+.popup-enter {
+  transform: scale(0.9);
+  opacity: 0;
+}
+
+.popup-enter-active {
+  transform: scale(1);
+  opacity: 1;
+  transition: transform 300ms, opacity 300ms;
+}
+
+.popup-exit {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.popup-exit-active {
+  transform: scale(0.9);
+  opacity: 0;
+  transition: transform 300ms, opacity 300ms;
+}
