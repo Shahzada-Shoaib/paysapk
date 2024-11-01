@@ -22,7 +22,7 @@ function MapPopup({ isOpen, onClose, backgroundImage = "" }) {
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="w-10 h-10 absolute border text-white top-4 left-4 cursor-pointer"
+        className="absolute w-10 h-10 text-white border cursor-pointer top-4 left-4"
         onClick={onClose}
       >
         <path
