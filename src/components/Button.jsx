@@ -11,7 +11,7 @@ const Button = ({
     <button
       className={`${isPrimary ? "button-styling" : "button-styling-secondary"}
         ${isChevronEnabled ? "pl-8" : "pl-6"}
-      } flex items-center  pr-6 py-3  text-white rounded-md hover:shadow-lg transition-all`}
+      } flex items-center  pr-6 py-3  text-white rounded-md hover:shadow-lg transition-all transition-transform transform hover:-translate-y-2 `}
     >
       <span className={`${isChevronEnabled ? "mr-6" : ""}`}>{title}</span>
       {isChevronEnabled && (
@@ -22,3 +22,4 @@ const Button = ({
 };
 
 export default Button;
+

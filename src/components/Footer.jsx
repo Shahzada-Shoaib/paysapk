@@ -32,13 +32,20 @@ const Footer = () => {
 
       <div className="flex flex-wrap items-center justify-center max-w-screen-xl px-2 py-8 mx-auto text-white bg-black md:justify-between">
         {/* Navigation Links */}
+      
         <div className="flex items-center mb-2 space-x-4 text-lg md:mb-0">
-          <span className="cursor-pointer">About Us</span>
+          <Link to="/about-us" className="cursor-pointer">About Us</Link>
           <span className="text-yellow-500">•</span>
-          <span className="cursor-pointer">Services</span>
+          <Link to="/services" className="cursor-pointer">Services</Link>
           <span className="text-yellow-500">•</span>
-          <span className="cursor-pointer">Get in Touch</span>
+          <Link to="/get-in-touch" className="cursor-pointer">Get in Touch</Link>
         </div>
+
+
+
+
+
+
 
         {/* Social Media Icons */}
         <div className="items-center hidden space-x-4 text-2xl md:flex">

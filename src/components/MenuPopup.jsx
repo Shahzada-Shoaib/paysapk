@@ -40,12 +40,14 @@ function MenuPopup({ showMenuPopup, setShowMenuPopup }) {
             <li className={`cursor-pointer manrope-semibold text-[30px] md:text-[40px] ${isActive('/')}`}>
               <Link to="/">Home</Link>
             </li>
+              <li className={`cursor-pointer manrope-semibold text-[30px] md:text-[40px] ${isActive('/about-us')}`}>
+                <Link to="/about-us">About us</Link>
+              </li>
+
             <li className={`cursor-pointer manrope-semibold text-[30px] md:text-[40px] ${isActive('/services')}`}>
               <Link to="/services">Services</Link>
             </li>
-            <li className={`cursor-pointer manrope-semibold text-[30px] md:text-[40px] ${isActive('/about-us')}`}>
-              <Link to="/about-us">About us</Link>
-            </li>
+
             <li className={`cursor-pointer manrope-semibold text-[30px] md:text-[40px] ${isActive('/paysa-picks')}`}>
               <Link to="/paysa-picks">PaySa Picks: Articles & Humour</Link>
             </li>
