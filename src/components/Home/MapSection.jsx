@@ -1,8 +1,10 @@
-import React from "react";
-import Button from "../Button";
+import React, { useState } from "react";
 import ChevronButton from "../ChevronButton";
+import MapPopup from "../MapPopup";
 
-function MapSection() {
+function MapSection({ handleMapClick }) {
+  const [isPopupOpen, setPopupOpen] = useState(false);
+
   return (
     <>
       <section className="relative max-w-screen-lg px-6 mx-auto md:px-0 ">
@@ -46,7 +48,9 @@ function MapSection() {
           </div>
         </div>
         <div className="absolute max-w-[100%] w-[350px] md:w-[650px]  top-[50px]   md:left-[400px]">
-          <img src="/assets/map-pak.png" alt="HomePage Map" />
+          <span onClick={handleMapClick} className="cursor-pointer">
+            <img src="/assets/map-pak.png" alt="HomePage Map" />
+          </span>
         </div>
       </section>
     </>

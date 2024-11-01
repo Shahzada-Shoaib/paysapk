@@ -4,6 +4,7 @@ import Navbar from "../components/Home/Navbar";
 import Banner from "../components/Home/Banner";
 import Button from "../components/Button";
 import BannerWithoutVideo from "../components/BannerWithoutVideo";
+import MapPopup from "../components/MapPopup";
 const Footer = lazy(() => import("../components/Footer"));
 const LogoSlider = lazy(() => import("../components/Home/LogoSlider"));
 const PartnerSlider = lazy(() => import("../components/Home/PartnersSlider"));
@@ -15,6 +16,8 @@ const HomePageCarousel = lazy(() =>
 );
 
 function App() {
+  const [mapPopupState, setMapPopupState] = useState(false);
+
   return (
     <div>
       <Navbar />
@@ -60,7 +63,7 @@ function App() {
       </Suspense>
       <Suspense fallback={<div>Loading...</div>}>
         <div className="mt-8">
-          <MapSection />
+          <MapSection handleMapClick={() => setMapPopupState(true)} />
         </div>
       </Suspense>
       <div className="flex items-center justify-center w-full mt-[236px] text-center mb-[136px]">
@@ -69,9 +72,17 @@ function App() {
       <Suspense fallback={<div>Loading...</div>}>
         <Footer />
       </Suspense>
-      
-     
-
+      <div
+        className={`transition-opacity duration-500 ease-in-out ${
+          mapPopupState ? "opacity-100" : "opacity-0 pointer-events-none"
+        }`}
+      >
+        <MapPopup
+          isOpen={mapPopupState}
+          backgroundImage={""}
+          onClose={() => setMapPopupState(false)}
+        ></MapPopup>
+      </div>
     </div>
   );
 }
