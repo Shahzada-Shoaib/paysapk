@@ -23,7 +23,7 @@ function AboutUs() {
         <div className="flex justify-center max-w-screen-xl mx-auto text-white">
           <img
             fetchpriority="high"
-            src="/assets/aboutUsImages/aboutUsBanner.svg"
+            src="/assets/aboutUsImages/aboutUsBanner.webp"
             alt="About Us Banner"
             className="w-full h-auto"
           />
@@ -34,7 +34,7 @@ function AboutUs() {
       <div className="flex flex-col md:flex-row">
         <div className="w-full md:w-[50%]">
           <img
-            src="/assets/aboutUsImages/paysa-aboutUs.svg"
+            src="/assets/aboutUsImages/paysa-aboutUs.webp"
             alt="PaySa About"
             className="w-full h-auto"
           />

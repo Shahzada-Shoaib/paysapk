@@ -12,9 +12,9 @@ function HiringSection() {
       <div className="relative w-full h-[850px]  mb-[291px] ">
         <div className="bg-cover max-h-[650px] max-w-[500px]">
           <img
-            src="/assets/aboutUsImages/HiringSectionIMG.svg"
+            src="/assets/aboutUsImages/HiringSectionIMG.webp"
             alt="Background"
-            className="absolute inset-0 object-cover mt-40 md:mt-0"
+            className="absolute inset-0 object-cover mt-40 border md:mt-0"
           />
         </div>
 
@@ -51,6 +51,7 @@ function HiringSection() {
         </div>
 
       </div>
+      
     </div>
   );
 }
