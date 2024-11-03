@@ -8,7 +8,7 @@ function FAQquestions() {
         className="bg-cover min-h-[1000px] bg-center flex flex-col"
         style={{
           backgroundImage:
-            "url('/assets/get-in-touch-images/FAQbackground.svg')",
+            "url('/assets/get-in-touch-images/FAQbackground.webp')",
         }}
       >
         <div className="grid grid-cols-1 gap-8 mx-10 md:grid-cols-3">

@@ -9,14 +9,24 @@ function HiringSection() {
         <h1>JOIN OUR TALENT POOL! </h1>
       </div>
 
-      <div className="relative w-full h-[850px]  mb-[291px] ">
-        <div className="bg-cover max-h-[650px] max-w-[500px]">
+      <div className="relative w-full h-[850px] mb-[291px] md:ml-32">
+
+
+        
+        
+
+        <div>
           <img
             src="/assets/aboutUsImages/HiringSectionIMG.webp"
             alt="Background"
-            className="absolute inset-0 object-cover mt-40 border md:mt-0"
+            className="absolute inset-0 object-cover md:mt-8"
           />
         </div>
+
+
+
+
+        
 
         <div
           style={{
