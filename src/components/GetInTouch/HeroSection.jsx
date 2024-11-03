@@ -8,7 +8,7 @@ function HeroSection() {
     <div
       className="bg-cover h-[100vh] md:h-[1000px] bg-center flex flex-col  "
       style={{
-        backgroundImage: "url('/assets/get-in-touch-images/banner.svg')",
+        backgroundImage: "url('/assets/get-in-touch-images/banner.webp')",
       }}
     >
       <Navbar />

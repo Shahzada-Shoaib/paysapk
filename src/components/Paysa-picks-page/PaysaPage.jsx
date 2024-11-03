@@ -15,7 +15,7 @@ function PaysaPage() {
         {/* First Banner */}
         <div className="mx-auto">
           <img
-            src="/assets/paysaPicksImages/paysaBanner01.png"
+            src="/assets/paysaPicksImages/paysaBanner1.webp"
             alt="Sample Image"
             className="w-full"
           />
@@ -38,7 +38,7 @@ function PaysaPage() {
 
         {/* Second Banner */}
         <div className='w-full md:mb-80 aspect-auto'>
-          <img src='/assets/paysaPicksImages/paysaBanner2.svg' alt='image' className='w-full aspect-auto' />
+          <img src='/assets/paysaPicksImages/paysaBanner2.webp' alt='image' className='w-full aspect-auto' />
         </div>
 
 
