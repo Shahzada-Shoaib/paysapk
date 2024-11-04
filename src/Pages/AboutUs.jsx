@@ -70,11 +70,10 @@ function AboutUs() {
       </div>
 
       {/* Values Section */}
-      <div className="mt-24 md:mt-72">
+      <div className="mt-24 md:mt-22">
         <h1 className="flex justify-center font-[manrope] font-semibold text-white text-3xl mb-10 ">
           VALUES
         </h1>
-        {/* <AboutUsCarouselCard /> */}
       </div>
 
       <AboutUsCarouselSection />

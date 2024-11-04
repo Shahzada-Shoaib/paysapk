@@ -47,7 +47,7 @@ function App() {
       <Suspense fallback={<div>Loading...</div>}>
         <HomePageCarousel />
       </Suspense>
-      <div className="mt-[150px]">
+      <div className="md:mt-[150px]">
         <BannerWithoutVideo title=" OUR TRUSTED PARTNERS" />
       </div>
       <Suspense fallback={<div>Loading...</div>}>

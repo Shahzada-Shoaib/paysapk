@@ -40,7 +40,7 @@ function LogoSlider() {
 
   const mobileSettings = {
     infinite: true,
-    speed: 10000,
+    speed: 4000,
     slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,

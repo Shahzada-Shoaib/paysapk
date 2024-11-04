@@ -13,7 +13,7 @@ function Navbar() {
 
   return (
     <div>
-      <div className="flex items-center justify-between px-1 py-8 mx-auto md:px-3 md:max-w-screen-2xl">
+      <div className="flex items-center justify-between px-3 py-8 mx-auto md:px-3 md:max-w-screen-3xl">
         <div className="flex justify-start flex-1">
           <img
             onClick={() => setShowMenuPopup(true)}
