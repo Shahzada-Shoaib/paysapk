@@ -4,7 +4,7 @@ function CareerSection() {
     return (
         <div
             className="w-full bg-center bg-cover h-[2007px]"
-            style={{ backgroundImage: "url('/assets/aboutUsImages/CareerIMG.svg')" }}
+            style={{ backgroundImage: "url('/assets/aboutUsImages/CareerIMG.webp')" }}
         >
 
 

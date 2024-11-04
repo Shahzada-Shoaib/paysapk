@@ -6,7 +6,7 @@ function FAQbanner() {
     <div
       className="bg-cover h-[800px] md:h-[1000px] bg-center flex flex-col  "
       style={{
-        backgroundImage: "url('/assets/get-in-touch-images/FAQbanner.svg')",
+        backgroundImage: "url('/assets/get-in-touch-images/FAQbanner.webp')",
       }}
     >
       <BannerWithoutVideo
