@@ -98,9 +98,6 @@ body {
 }
 
 .menu-popup-bg {
-  /* background-image: url('https://s3-alpha-sig.figma.com/img/c0ff/20d7/334e433aba824dad0b8868c94f660037?Expires=1729468800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KpIAs490BmkTgeP774MWzbTK3RV38if~JuK9XSXpfgvXsRE7tGENoJZ~x~-Icc4wl5kQ~e2khuIfe-mk-ktcrgWMlGYdSIIoMa-F4ILOhRZt~j3UgknmpQkV2yuJSIRn99Jmm5AnlSI-1sGtbKHndbSVb9S6LBvsM-8ktKqgaaKeyerPhKrkwNrF389adOoCIgl2krL3uodrPOJz46416jHT4FkpKayes1vx7lJxz6o5gRjFpA6k~7CZ2uLiqrv7976tTG-EgebRLQO7MEBOW2M8LiTSl~KgxLbht~MPJtnLuBtUagnhXIhJegJ9RhbX4HBjSS33KXWmUabF6ciUFA__'); */
-  /* background-image: url("/assets/menu-popup-bg.webp");
- */
   background-image: url("https://i.imghippo.com/files/lepLW1729346177.webp");
 }
 .menu-popup-bg-overlay {

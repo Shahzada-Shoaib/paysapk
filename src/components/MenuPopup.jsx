@@ -19,7 +19,10 @@ function MenuPopup({ showMenuPopup, setShowMenuPopup }) {
   };
 
   return (
-    <div className="menu-popup-bg md:pb-[100px] z-10 top-0 bg-cover bg-black left-0 fixed w-full min-h-screen flex">
+    <div
+      style={{ backgroundImage: "url('/assets/menu-bg.webp')" }}
+      className="menu-popup-bg md:pb-[100px] z-10 top-0 bg-cover bg-black left-0 fixed w-full min-h-screen flex"
+    >
       <div className="flex flex-col items-stretch p-6 menu-popup-bg-overlay space-between">
         <div className="flex items-center justify-between w-full max-w-screen-3xl pt-2 mx-auto ">
           <div>
