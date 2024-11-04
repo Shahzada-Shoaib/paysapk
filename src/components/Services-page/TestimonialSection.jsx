@@ -25,6 +25,15 @@ function TestimonialSection() {
 
       {/* Row 2 */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 relative lg:-mt-[150px] mb-4">
+        <div className="md:hidden">
+          <TestimonialCard
+            brandLogo="/assets/servicesPage/cardLogo1.svg"
+            testimonial={
+              "PaySa's POS solution has revolutionized how we serve our customers, speeding up transactions and reducing wait times. It's reliability personified."
+            }
+          />
+        </div>
+
         <div className="lg:col-span-1 ">
           <TestimonialCard
             brandLogo="/assets/testimonial-logo/logo-one.svg"

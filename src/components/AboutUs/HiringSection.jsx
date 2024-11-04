@@ -36,7 +36,7 @@ function HiringSection() {
           className="absolute pt-12 pb-12 px-12  text-white md:right-96 p-6 max-w-[512px] min-h-[498px] md:top-36 top-[40px] rounded-2xl"
         >
 
-          <div class="mt-4">
+          <div className="mt-4">
             <p>
               Thank you for your interest in joining our company!
               <br />
@@ -52,7 +52,7 @@ function HiringSection() {
 
 
 
-          <div class="mt-24">
+          <div className="mt-24">
             <Link to="https://forms.gle/L1GRJfyrHCmbuPT99">
               <Button title="Apply Now" isPrimary={false} isChevronEnabled />
             </Link>
