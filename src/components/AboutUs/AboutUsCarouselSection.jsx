@@ -98,7 +98,7 @@ const MyCarousel = () => {
             title=" YES TO LIFE!"
             description=" Yes to Life! signifies our commitment to a positive work culture, encouraging a healthy work-life balance and celebrating achievements, fostering fulfillment. At PaySa, we value employees bringing their whole selves to work, creating a thriving environment."
             yellowimageURL="/assets/aboutUsImages/aboutUsYellowCard.svg"
-            alphabetIMG="/assets/aboutUsImages/Y-Image.svg"
+            alphabetIMG="/assets/aboutUsImages/Y-image.svg"
             vector="/assets/aboutUsImages/vector1.svg"
             navigationButtons={navigationButtons}
           />
@@ -108,7 +108,7 @@ const MyCarousel = () => {
             title=" SERVICE EXCELLENCE"
             description="Service Excellence enables us to provide top-notch solutions and experiences to our clients. It means delivering quality and fulfilling our promise to customer and vice versa. Employees are encouraged to actively seek ways to enhance the quality of our products and services."
             yellowimageURL="/assets/aboutUsImages/aboutUsYellowCard.svg"
-            alphabetIMG="/assets/aboutUsImages/S-Image.svg"
+            alphabetIMG="/assets/aboutUsImages/S-image.svg"
             vector="/assets/aboutUsImages/vector5.svg"
             navigationButtons={navigationButtons}
           />
@@ -118,7 +118,7 @@ const MyCarousel = () => {
             title=" ACCOUNTABILITY"
             description=" Accountability builds trust and reliability, empowering every team member to contribute to our collective success. It is at our core, driving ownership, commitment, and initiative, ensuring the impact of our actions on the company's success."
             yellowimageURL="/assets/aboutUsImages/aboutUsYellowCard.svg"
-            alphabetIMG="/assets/aboutUsImages/A-Image.svg"
+            alphabetIMG="/assets/aboutUsImages/A-image.svg"
             vector="/assets/aboutUsImages/vector6.svg"
             navigationButtons={navigationButtons}
           />

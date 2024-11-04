@@ -49,11 +49,9 @@ function App() {
         </div>
       </motion.div>
 
-      <Suspense fallback={<div>Loading...</div>}>
-        <motion.div {...fadeInUp}>
-          <LogoSlider />
-        </motion.div>
-      </Suspense>
+      <motion.div {...fadeInUp}>
+        <LogoSlider />
+      </motion.div>
 
       <motion.div {...fadeInUp}>
         <div className="flex justify-center">
@@ -86,22 +84,16 @@ function App() {
         <BannerWithoutVideo title="OUR TRUSTED PARTNERS" />
       </motion.div>
 
+      <motion.div {...fadeInUp} className="pt-8 pb-8">
+        <PartnerSlider />
+      </motion.div>
+
       <Suspense fallback={<div>Loading...</div>}>
-        <motion.div {...fadeInUp} className="pt-8 pb-8">
-          <PartnerSlider />
-        </motion.div>
+        <MapSection handleMapClick={() => setMapPopupState(true)} />
       </Suspense>
 
       <Suspense fallback={<div>Loading...</div>}>
-        <motion.div {...fadeInUp} className="mt-8 pb-32">
-          <MapSection handleMapClick={() => setMapPopupState(true)} />
-        </motion.div>
-      </Suspense>
-
-      <Suspense fallback={<div>Loading...</div>}>
-        <motion.div {...fadeInUp}>
-          <Footer />
-        </motion.div>
+        <Footer />
       </Suspense>
 
       <div
