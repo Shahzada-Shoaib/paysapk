@@ -1,10 +1,6 @@
 import React, { useState } from "react";
-import Button from "../components/Button";
-import { CSSTransition } from "react-transition-group";
 
 function MapPopup({ isOpen, onClose, backgroundImage = "" }) {
-  const [showPopup, setShowPopup] = useState(isOpen);
-
   return (
     <div
       className={`fixed top-0 left-0 w-full h-full z-50 flex items-center justify-center bg-black transition-opacity duration-300 bg-cover bg-center

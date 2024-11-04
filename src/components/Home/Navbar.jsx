@@ -49,6 +49,8 @@ function Navbar() {
 
 export default Navbar;
 
-{/* <button class="px-4 py-2 text-white bg-indigo-500 transition-transform transform hover:-translate-y-1">
+{
+  /* <button class="px-4 py-2 text-white bg-indigo-500 transition-transform transform hover:-translate-y-1">
   Slide Up on Hover
-</button> */}
+</button> */
+}
