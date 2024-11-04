@@ -51,7 +51,7 @@ function App() {
         <BannerWithoutVideo title=" OUR TRUSTED PARTNERS" />
       </div>
       <Suspense fallback={<div>Loading...</div>}>
-        <div className="pt-8">
+        <div className="pt-8 pb-8">
           <PartnerSlider />
         </div>
       </Suspense>

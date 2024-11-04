@@ -25,7 +25,7 @@ function Navbar() {
 
         <div className="flex justify-center flex-1 cursor-pointer">
           <Link to="/">
-            <img src={SiteLogo} alt="logo" style={{ height: "30px" }} />
+            <img src={SiteLogo} alt="logo" style={{ height: "50px" }} />
           </Link>
         </div>
 
@@ -48,4 +48,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
