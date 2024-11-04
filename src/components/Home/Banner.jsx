@@ -18,7 +18,7 @@ function Banner() {
       </div>
       <div className="mt-6  max-w-screen mx-auto">
         <video autoPlay preload="auto" className="w-full" loop muted>
-          <source src="paysaApp-video.mp4" type="video/mp4" />
+          <source src="paysaApp-video-sm.mp4" type="video/mp4" />
           Your browser does not support the video format.
         </video>
       </div>

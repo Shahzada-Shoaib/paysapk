@@ -51,14 +51,15 @@ function App() {
         <BannerWithoutVideo title=" OUR TRUSTED PARTNERS" />
       </div>
       <Suspense fallback={<div>Loading...</div>}>
-        <PartnerSlider />
+        <div className="pt-8">
+          <PartnerSlider />
+        </div>
       </Suspense>
       <Suspense fallback={<div>Loading...</div>}>
-        <div className="mt-8">
+        <div className="mt-8  pb-32">
           <MapSection handleMapClick={() => setMapPopupState(true)} />
         </div>
       </Suspense>
-    
 
       <Suspense fallback={<div>Loading...</div>}>
         <Footer />

@@ -33,7 +33,7 @@ function TestimonialSection() {
             }
           />
         </div>
-        <div className="lg:col-span-1  flex justify-center">
+        <div className="lg:col-span-1  md:flex md:justify-center">
           <TestimonialCard
             brandLogo="/assets/testimonial-logo/logo-two.svg"
             testimonial={
@@ -41,7 +41,7 @@ function TestimonialSection() {
             }
           />
         </div>
-        <div className="lg:col-span-1   flex justify-end">
+        <div className="lg:col-span-1   md:flex md:justify-end">
           <TestimonialCard
             brandLogo="/assets/testimonial-logo/logo-three.svg"
             testimonial={
