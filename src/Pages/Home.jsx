@@ -6,11 +6,11 @@ import Banner from "../components/Home/Banner";
 import Button from "../components/Button";
 import BannerWithoutVideo from "../components/BannerWithoutVideo";
 import MapPopup from "../components/MapPopup";
+import LogoSlider from "../components/Home/LogoSlider";
+import PartnerSlider from "../components/Home/PartnersSlider";
 import { Link } from "react-router-dom";
 
 const Footer = lazy(() => import("../components/Footer"));
-const LogoSlider = lazy(() => import("../components/Home/LogoSlider"));
-const PartnerSlider = lazy(() => import("../components/Home/PartnersSlider"));
 const MapSection = lazy(() => import("../components/Home/MapSection"));
 const AboutUsGrid = lazy(() => import("../components/Home/AboutUsGrid"));
 const HomePageCarousel = lazy(() =>
