@@ -93,7 +93,9 @@ function App() {
       </Suspense>
 
       <Suspense fallback={<div>Loading...</div>}>
-        <Footer />
+        <div className="mt-40">
+          <Footer />
+        </div>
       </Suspense>
 
       <div
