@@ -80,7 +80,7 @@ function App() {
         </motion.div>
       </Suspense>
 
-      <motion.div {...fadeInUp} className="md:mt-[150px]">
+      <motion.div {...fadeInUp} className="md:mt-[200px]">
         <BannerWithoutVideo title="OUR TRUSTED PARTNERS" />
       </motion.div>
 

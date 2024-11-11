@@ -12,7 +12,9 @@ const Footer = () => {
   return (
     <div className="">
       <div className="flex  justify-center my-[70px]">
-        <img src={FooterLogo} alt="icon" className="h-[100px] md:h-auto " />
+        <Link to="/">
+          <img src={FooterLogo} alt="icon" className="h-[100px] md:h-auto " />
+        </Link>
       </div>
       <div>
         <div
@@ -48,14 +50,46 @@ const Footer = () => {
 
 
         {/* Social Media Icons */}
-        <div className="items-center hidden space-x-4 text-2xl md:flex">
+        {/* <div className="items-center hidden space-x-4 text-2xl md:flex">
           <img src={FbIcon} alt="icon" className="mx-1" />
           <img src={LinkedinIcon} alt="icon" className="" />
           <img src={InstaIcon} alt="icon" className="" />
           <img src={TwitterIcon} alt="icon" className="" />
           <img src={TikTokIcon} alt="icon" className="" />
           <img src={ThreadIcon} alt="icon" className="" />
+        </div> */}
+
+        <div className="items-center hidden space-x-4 text-2xl md:flex">
+          <a href="https://www.facebook.com/paysa.technologies/" target="_blank" rel="noopener noreferrer">
+            <img src={FbIcon} alt="Facebook icon" className="mx-1" />
+          </a>
+
+          <a href="https://pk.linkedin.com/company/paysatechnologies" target="_blank" rel="noopener noreferrer">
+            <img src={LinkedinIcon} alt="LinkedIn icon" className="" />
+          </a>
+
+          <a href="https://www.instagram.com/paysa_tech/" target="_blank" rel="noopener noreferrer">
+            <img src={InstaIcon} alt="Instagram icon" className="" />
+          </a>
+
+          <a href="https://twitter.com/PaySa_pk" target="_blank" rel="noopener noreferrer">
+            <img src={TwitterIcon} alt="Twitter icon" className="" />
+          </a>
+
+          <a href="https://www.tiktok.com/@paysa_tech" target="_blank" rel="noopener noreferrer">
+            <img src={TikTokIcon} alt="TikTok icon" className="" />
+          </a>
+
+          <a href="https://www.threads.net/@paysa_tech" target="_blank" rel="noopener noreferrer">
+            <img src={ThreadIcon} alt="Threads icon" className="" />
+          </a>
         </div>
+
+
+
+
+
+
 
         {/* Location Links */}
         <div className="flex items-center mb-4 space-x-4 text-lg md:mb-0">
