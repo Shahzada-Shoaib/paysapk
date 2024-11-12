@@ -25,9 +25,9 @@ function PartnersSlider() {
         className="flex gap-4 whitespace-nowrap"
         style={{
           display: "flex",
-          gap: "2rem", // 1rem gap between logos
+          gap: "2rem", // 2rem gap between logos
           whiteSpace: "nowrap",
-          animation: "marquee 60s linear infinite", // Inline animation
+          animation: "marquee 50s linear infinite", // Inline animation
         }}
       >
         {/* Loop through the logos and display them */}
