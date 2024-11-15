@@ -8,8 +8,13 @@ import CareerSection from "../components/AboutUs/CareerSection";
 import HiringSection from "../components/AboutUs/HiringSection";
 import Footer from "../components/Footer";
 import AboutUsCarouselSection from "../components/AboutUs/AboutUsCarouselSection";
-
+import { useEffect } from "react";
 function AboutUs() {
+  useEffect(() => {
+    // Component load hone par page upar scroll kar do
+    window.scrollTo(0, 0);
+  }, []); 
+  
   return (
     <div className="bg-black">
       <div className="">

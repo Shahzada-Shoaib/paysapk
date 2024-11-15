@@ -3,8 +3,13 @@ import HeroSectionInServices from "../components/Services-page/HeroSectionInServ
 import CarouselServices from "../components/Services-page/CarouselServices";
 import TestimonialSection from "../components/Services-page/TestimonialSection";
 import Footer from ".././components/Footer";
+import { useEffect } from "react";
 
 function Services() {
+  useEffect(() => {
+    // Component load hone par page upar scroll kar do
+    window.scrollTo(0, 0);
+  }, []); 
   return (
     <div>
       <HeroSectionInServices />

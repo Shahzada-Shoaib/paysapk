@@ -1,66 +1,85 @@
-
 import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import useIsMobile from "../../utils/useIsMobile";
 
 const logos = [
-
-    "../assets/partners-Logos/partner1.svg",
-    "../assets/partners-Logos/partner2.png",
-    "../assets/partners-Logos/partner3.png",
-    "../assets/partners-Logos/partner4.png",
-    "../assets/partners-Logos/partner5.png",
-    "../assets/partners-Logos/partner6.png",
-    "../assets/partners-Logos/partner7.svg",
-    "../assets/partners-Logos/partner8.svg",
-
+  "../assets/partners-Logos/partner1.svg",
+  "../assets/partners-Logos/partner2.png",
+  "../assets/partners-Logos/partner3.png",
+  "../assets/partners-Logos/partner4.png",
+  "../assets/partners-Logos/partner5.png",
+  "../assets/partners-Logos/partner6.png",
+  "../assets/partners-Logos/partner7.svg",
+  "../assets/partners-Logos/partner8.svg",
 ];
 
-function PartnersSlider() {
-  // Clone the logos array to create a continuous loop effect
-  const extendedLogos = [...logos, ...logos];
+function PartnerSlider() {
+  const isMobile = useIsMobile();
+
+  const settings = {
+    infinite: true,
+    speed: 4000,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 0,
+    cssEase: "linear",
+    pauseOnHover: true,
+    arrows: false,
+  };
+
+  const mobileSettings = {
+    infinite: true,
+    speed: 4000,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 0,
+    cssEase: "linear",
+    pauseOnHover: true,
+    arrows: false,
+  };
 
   return (
-    <div className="relative mx-auto overflow-hidden max-w-screen-2xl">
-      {/* Wrapping div with animation style */}
-      <div
-        className="flex gap-4 whitespace-nowrap"
-        style={{
-          display: "flex",
-          gap: "2rem", // 2rem gap between logos
-          whiteSpace: "nowrap",
-          animation: "marquee 50s linear infinite", // Inline animation
-        }}
-      >
-        {/* Loop through the logos and display them */}
-        {extendedLogos.map((logo, index) => (
-          <div
-            key={index}
-            className="relative p-2 flex items-center justify-center min-w-[200px]"
-          >
-            <img
-              src={logo}
-              alt={`Client Logo ${index + 1}`}
-              className="object-contain w-40 h-24"
-            />
-          </div>
-        ))}
+    <div className="mx-auto max-w-screen-2xl">
+      <div className="relative">
+        <div className="md:hidden">
+          <Slider {...mobileSettings} className="slider">
+            {logos.map((logo, index) => (
+              <div
+                key={index}
+                className="relative flex items-center justify-center p-2"
+              >
+                <img
+                  src={logo}
+                  alt={`Client Logo ${index + 1}`}
+                  className="object-contain w-40 h-24"
+                />
+              </div>
+            ))}
+          </Slider>
+        </div>
+        <div className="hidden md:block">
+          <Slider {...settings} className="slider">
+            {logos.map((logo, index) => (
+              <div
+                key={index}
+                className="relative flex items-center justify-center p-2"
+              >
+                <img
+                  src={logo}
+                  alt={`Client Logo ${index + 1}`}
+                  className="object-contain w-40 h-24"
+                />
+              </div>
+            ))}
+          </Slider>
+        </div>
       </div>
-
-      {/* Adding the animation to the component using a <style> tag */}
-      <style>
-        {`
-          @keyframes marquee {
-            0% {
-              transform: translateX(0);
-            }
-            100% {
-              transform: translateX(-${logos.length * 160 + (logos.length - 1) * 16}px); /* Move logos by their total width + gap */
-            }
-          }
-        `}
-      </style>
     </div>
   );
 }
 
-export default PartnersSlider;
-
+export default PartnerSlider;

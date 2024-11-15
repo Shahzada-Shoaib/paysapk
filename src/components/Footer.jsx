@@ -11,11 +11,11 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="">
-      <div className="flex  justify-center my-[70px]">
+      {/* <div className="flex  justify-center my-[70px]">
         <Link to="/">
           <img src={FooterLogo} alt="icon" className="h-[100px] md:h-auto " />
         </Link>
-      </div>
+      </div> */}
       <div>
         <div
           style={{
