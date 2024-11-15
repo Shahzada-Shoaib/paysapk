@@ -85,11 +85,15 @@ function App() {
       </motion.div>
 
       <motion.div {...fadeInUp} className="pt-8 pb-8">
-        <PartnerSlider />
+        <div className="lg:pb-12">
+          <PartnerSlider />
+        </div>
       </motion.div>
 
       <Suspense fallback={<div>Loading...</div>}>
-        <MapSection handleMapClick={() => setMapPopupState(true)} />
+        <div className="lg:pb-40">
+          <MapSection handleMapClick={() => setMapPopupState(true)} />
+        </div>
       </Suspense>
 
       <Suspense fallback={<div>Loading...</div>}>

@@ -46,19 +46,6 @@ const Footer = () => {
 
 
 
-
-
-
-        {/* Social Media Icons */}
-        {/* <div className="items-center hidden space-x-4 text-2xl md:flex">
-          <img src={FbIcon} alt="icon" className="mx-1" />
-          <img src={LinkedinIcon} alt="icon" className="" />
-          <img src={InstaIcon} alt="icon" className="" />
-          <img src={TwitterIcon} alt="icon" className="" />
-          <img src={TikTokIcon} alt="icon" className="" />
-          <img src={ThreadIcon} alt="icon" className="" />
-        </div> */}
-
         <div className="items-center hidden space-x-4 text-2xl md:flex">
           <a href="https://www.facebook.com/paysa.technologies/" target="_blank" rel="noopener noreferrer">
             <img src={FbIcon} alt="Facebook icon" className="mx-1" />

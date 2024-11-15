@@ -1,8 +1,6 @@
 import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import useIsMobile from "../../utils/useIsMobile";
+import Marquee from "react-fast-marquee";
+import useScreenSize from "../../utils/useIsMobile";
 
 const logos = [
   "../assets/partners-Logos/partner1.svg",
@@ -16,68 +14,27 @@ const logos = [
 ];
 
 function PartnerSlider() {
-  const isMobile = useIsMobile();
-
-  const settings = {
-    infinite: true,
-    speed: 4000,
-    slidesToShow: 6,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 0,
-    cssEase: "linear",
-    pauseOnHover: true,
-    arrows: false,
-  };
-
-  const mobileSettings = {
-    infinite: true,
-    speed: 4000,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 0,
-    cssEase: "linear",
-    pauseOnHover: true,
-    arrows: false,
-  };
+  const { isMobile } = useScreenSize();
 
   return (
     <div className="mx-auto max-w-screen-2xl">
-      <div className="relative">
-        <div className="md:hidden">
-          <Slider {...mobileSettings} className="slider">
-            {logos.map((logo, index) => (
-              <div
-                key={index}
-                className="relative flex items-center justify-center p-2"
-              >
-                <img
-                  src={logo}
-                  alt={`Client Logo ${index + 1}`}
-                  className="object-contain w-40 h-24"
-                />
-              </div>
-            ))}
-          </Slider>
-        </div>
-        <div className="hidden md:block">
-          <Slider {...settings} className="slider">
-            {logos.map((logo, index) => (
-              <div
-                key={index}
-                className="relative flex items-center justify-center p-2"
-              >
-                <img
-                  src={logo}
-                  alt={`Client Logo ${index + 1}`}
-                  className="object-contain w-40 h-24"
-                />
-              </div>
-            ))}
-          </Slider>
-        </div>
-      </div>
+      <Marquee
+        gradient={false}
+        speed={isMobile ? 30 : 50}
+        direction="left"
+        pauseOnHover={true}
+      >
+        {logos.map((logo, index) => (
+          <div key={index} className={`mx-4 md:mx-8`}>
+            <img
+              src={logo}
+              alt={`Client Logo ${index + 1}`}
+              className="object-contain w-24 h-16 md:w-40 md:h-24"
+              loading="lazy"
+            />
+          </div>
+        ))}
+      </Marquee>
     </div>
   );
 }
