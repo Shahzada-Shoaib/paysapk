@@ -26,7 +26,7 @@ function AboutUsCard(props) {
           </p>
         </div>
         <div className="absolute flex justify-end bottom-4 right-7 ">
-          <ChevronButton isPrimary={!isPrimary} />
+          <ChevronButton isPrimary={!isPrimary} onClick={props.onButtonClick} />
         </div>
       </div>
     </div>
