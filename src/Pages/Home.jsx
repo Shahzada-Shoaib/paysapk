@@ -101,9 +101,9 @@ function App() {
         </div>
       </Suspense>
 
-      <div className="flex justify-center md:mt-96">
+      {/* <div className="flex justify-center md:mt-96">
         <Button isPrimary="" title="Get in the Circle" isChevronEnabled />
-      </div>
+      </div> */}
 
       <Suspense fallback={<div>Loading...</div>}>
         <div className="mt-40">

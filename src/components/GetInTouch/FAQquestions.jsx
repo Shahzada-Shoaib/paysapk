@@ -151,12 +151,21 @@ function FAQquestions() {
             />
           </div>
 
-          {/* <div>
+          <div>
             <Accordion
               isPrimary
-              title=" How secure are POS transactions, and what measures are in place to protect my customers data?"
+              content="Yes! PaySa POS app is updated regularly based on customer feedback and experience."
+              title="Does the POS has any updates?"
             />
-          </div> */}
+          </div>
+          
+          <div>
+            <Accordion
+              content={<p>Yes! The merchants get to choose and sign up for various customized services free of cost such as manual batch settlement, access to the merchant portal, daily transaction reporting and the online tip ( only for services industry ).</p>}
+              title="Does PaySa offer any customized features in the app?"
+            />
+          </div>
+          
         </div>
       </div>
     </div>

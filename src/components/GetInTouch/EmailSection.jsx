@@ -93,78 +93,87 @@ function EmailSection() {
   };
 
   return (
-    <div className="px-4 mt-16">
+    <div className="px-4 mt-16  mb-[100px]">
       <ToastContainer />
-      <section className="relative max-w-screen-md mx-auto mt-4">
-        <div className="md:pt-12">
+      <section className="flex justify-center mt-4 ">
+        
+        <div className="">
           <img
-            className="hidden md:block h-[456px] w-[424px] rounded-[20px] mb-32 "
-            src="/assets/get-in-touch-images/yellowImage.svg"
+            className="hidden md:block h-[] w-[] rounded-[20px] "
+            src="/assets/get-in-touch-images/getInTouch.svg"
             alt="background poster"
           />
         </div>
 
         <div
-          className="md:absolute w-full lg:w-[604px]  bg-[#3F94C44D] rounded-[20px] top-0  
-                md:left-[250px] z-20"
+          className="  bg-[] rounded-[20px]  md:w-[450px]"
         >
           <form
             ref={form}
             onSubmit={sendEmail}
-            className="pl-[20px]  pr-6 md:pr-[50px] pt-12 md:pt-8  md:pl-[52px]  h-full md:h-auto rounded-[20px] relative backdrop-blur-md"
+            className="pl-[20px]  pr-6 md:pr-[50px] md:pl-[52px]  h-full md:h-auto rounded-[20px] relative"
           >
-            <p className="text-white font-[raleway] pb-2">Name *</p>
+            {/* <p className="text-white font-[raleway] pb-2">Name *</p> */}
             <input
               type="text"
               name="name"
               value={formData.name}
               onChange={handleInputChange}
-              className="w-full text-white mb-1 h-[42.35px] rounded-md bg-[#185C8333] border border-[#185C8333] p-2"
+              className="w-full h-[55.35px] rounded-2xl p-2 mb-6"
+              placeholder="Name *"
             />
             {errors.name && (
-              <p className="text-red-500 text-sm mb-2">{errors.name}</p>
+              <p className="mb-2 text-sm text-red-500">{errors.name}</p>
             )}
 
-            <p className="text-white font-[raleway] pb-2">Email *</p>
+            {/* <p className="text-white font-[raleway] pb-2">Email *</p> */}
             <input
               type="email"
               name="email"
               value={formData.email}
               onChange={handleInputChange}
-              className="text-white w-full mb-1 h-[42.35px] rounded-md bg-[#185C8333] border border-[#185C8333] p-2"
+              className=" w-full h-[55.35px] rounded-2xl bg-[#] border border-[#] p-2 mb-6"
+              placeholder="Email *"
+
             />
             {errors.email && (
-              <p className="text-red-500 text-sm mb-2">{errors.email}</p>
+              <p className="mb-2 text-sm text-red-500">{errors.email}</p>
             )}
 
-            <p className="text-white font-[raleway] pb-2">Contact no *</p>
+            {/* <p className="text-white font-[raleway] pb-2">Contact no *</p> */}
             <input
               type="tel"
               name="contact"
               value={formData.contact}
               onChange={handleInputChange}
-              className="w-full h-[42.35px] text-white mb-1 rounded-md bg-[#185C8333] border border-[#185C8333] p-2"
+              className="w-full h-[55.35px]  mb-6 rounded-2xl bg-[#] border border-[#] p-2"
+              placeholder="Contact no *"
+
             />
             {errors.contact && (
-              <p className="text-red-500 text-sm mb-2">{errors.contact}</p>
+              <p className="mb-2 text-sm text-red-500">{errors.contact}</p>
             )}
 
-            <p className="text-white font-[raleway] pb-2">Message *</p>
+            {/* <p className="text-white font-[raleway] pb-2">Message *</p> */}
             <textarea
               name="message"
               value={formData.message}
               onChange={handleInputChange}
-              className="w-full text-white rounded-md bg-[#185C8333] border border-[#185C8333] p-2"
+              className="w-full rounded-2xl bg-[#] p-2 h-[108px]"
+              placeholder="Message *"
+
             />
             {errors.message && (
-              <p className="text-red-500 text-sm mb-2">{errors.message}</p>
+              <p className="text-sm text-red-500">{errors.message}</p>
             )}
 
-            <div className="text-center flex justify-center pt-6 pb-8">
-              <Button title="Get In Touch" isChevronEnabled isPrimary={false} />
+            <div className="flex pt-[50px] text-center pt- ">
+              {/* <Button title="Get In Touch" isChevronEnabled isPrimary={false} /> */}
+              <button className="text-white bg-[#FED21C] px-12 py-2 rounded-2xl">SUBMIT</button>
             </div>
           </form>
         </div>
+        
       </section>
     </div>
   );

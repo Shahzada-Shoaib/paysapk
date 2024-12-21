@@ -7,6 +7,7 @@ import TwitterIcon from "../images/social-icons/twitter.svg";
 import TikTokIcon from "../images/social-icons/tik_tok.svg";
 import ThreadIcon from "../images/social-icons/threads.svg";
 import { Link } from "react-router-dom";
+import Button from "./Button";
 
 const Footer = () => {
   return (
@@ -16,6 +17,11 @@ const Footer = () => {
           <img src={FooterLogo} alt="icon" className="h-[100px] md:h-auto " />
         </Link>
       </div> */}
+
+      <div className="flex justify-center md:my-28">
+        <Button isPrimary="" title="Get in the Circle" isChevronEnabled />
+      </div>
+      
       <div>
         <div
           style={{
