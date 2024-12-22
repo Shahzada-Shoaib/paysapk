@@ -80,21 +80,30 @@ function App() {
         </motion.div>
       </Suspense>
 
-      <motion.div {...fadeInUp} className="md:mt-[200px]">
-        <BannerWithoutVideo title="OUR TRUSTED PARTNERS" />
-      </motion.div>
 
-      <motion.div {...fadeInUp} className="pt-8 pb-8">
-        <div className="lg:pb-12">
-          <PartnerSlider />
-        </div>
-      </motion.div>
+      <div className=" md:my-[50px]">
+        <motion.div {...fadeInUp} className="md:mt-[200px]">
+          <BannerWithoutVideo title="OUR TRUSTED PARTNERS" />
+        </motion.div>
+
+        <motion.div {...fadeInUp} className="pt-8 pb-8">
+          <div className="lg:pb-12">
+            <PartnerSlider />
+          </div>
+        </motion.div>
+      </div>
+
+
 
       <Suspense fallback={<div>Loading...</div>}>
         <div className="lg:pb-40">
           <MapSection handleMapClick={() => setMapPopupState(true)} />
         </div>
       </Suspense>
+
+      {/* <div className="flex justify-center md:mt-96">
+        <Button isPrimary="" title="Get in the Circle" isChevronEnabled />
+      </div> */}
 
       <Suspense fallback={<div>Loading...</div>}>
         <div className="mt-40">

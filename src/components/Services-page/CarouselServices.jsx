@@ -70,7 +70,7 @@ const CarouselServices = () => {
   };
 
   return (
-    <div className="relative h-screen w-full overflow-hidden">
+    <div className="relative w-full h-screen overflow-hidden ">
       <AnimatePresence initial={false} custom={direction}>
         <motion.div
           key={currentIndex}
@@ -102,21 +102,21 @@ const CarouselServices = () => {
             top: 0,
             left: 0,
           }}
-          className="flex md:pb-8 justify-center h-[100vh] w-full bg-cover bg-no-repeat bg-center"
+          className="flex md:pb-8 justify-center h-[100vh] w-full bg-cover bg-no-repeat bg-center "
         >
-          <div className="flex flex-col text-white justify-end items-center">
+          <div className="flex flex-col items-center justify-end mt-8 text-white ">
             <img
-              className="h-[150px] w-[150px] md:h-[227px] md:w-[227px]"
+              className="h-[150px] w-[150px] md:h-[227px] md:w-[227px] "
               src={slides[currentIndex].icon}
               alt="services"
             />
             <div className="font-bold text-[28px] md:text-[35px] font-[manrope] mt-[57px]">
               <h1>{slides[currentIndex].title}</h1>
             </div>
-            <p className="max-w-[650px] px-6 md:px-0 font-[raleway] font-semibold text-center mt-[32px] pb-8 md:pb-[65px]">
+            <p className="max-w-[650px] px-6 md:px-0 font-[raleway]  leading-[30px] text-center mt-[32px] pb-8 md:pb-[65px]">
               {slides[currentIndex].description}
             </p>
-            <div className="flex space-x-24">
+            <div className="flex space-x-[134px]">
               <span onClick={handlePrev} className="rotate-180 cursor-pointer">
                 <ChevronButton isPrimary={true} />
               </span>
