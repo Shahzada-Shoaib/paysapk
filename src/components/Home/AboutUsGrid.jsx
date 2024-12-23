@@ -31,6 +31,15 @@ const AboutUsGrid = () => {
     slidesToScroll: 1,
     arrows: false,
     beforeChange: (_, next) => setActiveIndex(next),
+    responsive: [
+      {
+        breakpoint: 768, // Mobile screen size
+        settings: {
+          slidesToShow: 1, // Show 1 slide on mobile
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   const handleChangeSlide = () => {

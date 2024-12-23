@@ -17,7 +17,9 @@ function GetInTouch() {
       <EmailSection />
       <FAQbanner />
       <FAQquestions />
-      <Footer />
+      <div className="mt-16">
+        <Footer className="" />
+      </div>
     </div>
   );
 }

@@ -25,7 +25,6 @@ const CardsSection = () => {
     
   ];
 
-  // const [activeIndex, setActiveIndex] = useState(0);
   const sliderRef = useRef(null);
 
   const settings = {
@@ -33,9 +32,19 @@ const CardsSection = () => {
     // infinite: true,
     // speed: 500,
     slidesToShow: 3,
-    // autoplay: true,
-    // autoplaySpeed: 2000,
+    autoplay: true,
+    autoplaySpeed: 2000,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768, // Mobile screen size
+        settings: {
+          slidesToShow: 1, // Show 1 card on mobile
+          slidesToScroll: 1,
+        },
+      },
+    ],
+    
     // beforeChange: (_, next) => setActiveIndex(next),
   };
 
