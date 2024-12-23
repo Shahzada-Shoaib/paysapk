@@ -95,21 +95,14 @@ const SliderSection = () => {
 
     return (
 
-        <div className="flex mt-[79px]">
+        <div className="md:flex">
 
-            <div className="h-[200px]">
+            <div className="h-[200px] mt-28">
                 <img className="" src="assets/servicesPage/services-slider.svg" alt="" />
             </div>
 
 
-
-
-
-
-
-
-
-            <div className="relative mx-auto  max-w-screen-2xl   w-[40vw]">
+            <div className="relative mx-auto  max-w-screen-2xl   md:w-[40vw] mt-28">
                 <Carousel
                     renderArrowPrev={customPrevArrow}
                     renderArrowNext={customNextArrow}
@@ -124,30 +117,30 @@ const SliderSection = () => {
                 >
                     {/* Slide 1 */}
                     <div
-                        className="flex items-center justify-center float-right bg-cover "
+                        className=""
                     >
-                        <img src="/assets/servicesPage/serviceSlider1.png" alt="" />
+                        <img src="/assets/servicesPage/serviceSlider1.png" alt="" className="pointer-events-none" />
                     </div>
                     <div
-                        className="flex items-center justify-center float-right bg-cover full w- size-full"
+                        className=""
                     >
-                        <img src="/assets/servicesPage/serviceSlider2.svg" alt="" />
+                        <img src="/assets/servicesPage/serviceSlider2.svg" alt="" className="pointer-events-none" />
                     </div>
                     <div
-                        className="flex items-center justify-center float-right bg-cover full w- size-full"
+                        className=""
                     >
-                        <img src="/assets/servicesPage/serviceSlider3.svg" alt="" />
+                        <img src="/assets/servicesPage/serviceSlider3.svg" alt="" className="pointer-events-none" />
                     </div>
                     <div
-                        className="flex items-center justify-center float-right bg-cover full w- size-full"
+                        className=""
                     >
-                        <img src="/assets/servicesPage/serviceSlider4.svg" alt="" />
+                        <img src="/assets/servicesPage/serviceSlider4.svg" alt="" className="pointer-events-none" />
                     </div>
                     
                     <div
-                        className="flex items-center justify-center float-right bg-cover"
+                        className=""
                     >
-                        <img src="/assets/servicesPage/serviceSlider5.svg" alt="" />
+                        <img src="/assets/servicesPage/serviceSlider5.svg" alt="" className="pointer-events-none" />
                     </div>
 
 

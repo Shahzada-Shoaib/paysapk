@@ -7,40 +7,11 @@ function TestimonialSection() {
       <h1 className="text-white text-center text-[35px] font-bold font-manrope mb-16 md:mb-[40px]">
         TESTIMONIALS
       </h1>
-      {/* <div
-        className="w-full h-[800px] hidden md:block bg-cover bg-no-repeat bg-right border"
-        style={{
-          backgroundImage: "url('./assets/servicesPage/testimonialIMG1.svg')",
-        }}
-      >
-        <div className="pt-32 lg:float-right ">
-          <TestimonialCard
-            brandLogo="/assets/servicesPage/cardLogo1.svg"
-            testimonial={
-              "PaySa's POS solution has revolutionized how we serve our customers, speeding up transactions and reducing wait times. It's reliability personified."
-            }
-          />
-        </div>
-      </div> */}
 
+      <div className="gap-20 mx-6 md:flex md:justify-center">
+     
 
-
-
-
-
-
-      {/* Row 2 */}
-      <div className="relative flex justify-center gap-20 md:mb-[70px] md:grid-cols-2 lg:grid-cols-3">
-        {/* <div className="md:hidden">
-          <TestimonialCard
-            brandLogo="/assets/servicesPage/cardLogo1.svg"
-            testimonial={
-              "PaySa's POS solution has revolutionized how we serve our customers, speeding up transactions and reducing wait times. It's reliability personified."
-            }
-          />
-        </div> */}
-
-        <div className="lg:col-span-1 ">
+        <div className="mt-6">
           <TestimonialCard
             brandLogo="/assets/testimonial-logo/logo-one.svg"
             testimonial={
@@ -48,7 +19,7 @@ function TestimonialSection() {
             }
           />
         </div>
-        <div className="lg:col-span-1 md:flex md:justify-center">
+        <div className="mt-6">
           <TestimonialCard
             brandLogo="/assets/testimonial-logo/logo-two.svg"
             testimonial={
@@ -56,7 +27,7 @@ function TestimonialSection() {
             }
           />
         </div>
-        <div className="lg:col-span-1 md:flex md:justify-end">
+        <div className="mt-6">
           <TestimonialCard
             brandLogo="/assets/testimonial-logo/logo-three.svg"
             testimonial={
@@ -65,15 +36,17 @@ function TestimonialSection() {
           />
         </div>
       </div>
+      
+
 
 
 
       
-{/* Break */}
-      <div className="relative flex justify-center gap-20 just md:grid-cols-2 lg:grid-cols-3 ">
+
+      <div className="mx-6 md:gap-20 md:justify-center md:flex">
         
 
-        <div className="lg:col-span-1 ">
+        <div className="mt-6">
           <TestimonialCard
             brandLogo="/assets/testimonial-logo/logo-one.svg"
             testimonial={
@@ -81,7 +54,7 @@ function TestimonialSection() {
             }
           />
         </div>
-        <div className="lg:col-span-1 md:flex md:justify-center">
+        <div className="mt-6">
           <TestimonialCard
             brandLogo="/assets/testimonial-logo/logo-two.svg"
             testimonial={
@@ -91,34 +64,6 @@ function TestimonialSection() {
         </div>
       
       </div>
-
-
-
-
-
-
-
-
-
-      {/* Row 3 */}
-      {/* <div className="flex space-x-4 md:mt-[48px] md:h-[550px]">
-        <div className="w-full md:w-[356px] ">
-          <TestimonialCard
-            brandLogo="/assets/testimonial-logo/logo-five.svg"
-            testimonial={
-              "PaySa’s reliable and user-friendly POS system has significantly enhanced our guest experience by streamlining payments."
-            }
-          />
-        </div>
-
-        <div className="hidden md:flex md:flex-1">
-          <img
-            src="/assets/servicesPage/POSmachine.svg" // Larger placeholder image
-            alt="Placeholder"
-            className="w-full h-auto"
-          />
-        </div>
-      </div> */}
       
     </div>
   );

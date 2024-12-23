@@ -3,7 +3,7 @@ import Accordion from "../Accordion";
 
 function FAQquestions() {
   return (
-    <div>
+    <div className="">
       <div
         className="bg-cover min-h-[1000px] bg-center flex flex-col"
         style={{

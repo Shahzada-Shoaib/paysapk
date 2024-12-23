@@ -18,7 +18,7 @@ const Footer = () => {
         </Link>
       </div> */}
 
-      <div className="flex justify-center md:my-28">
+      <div className="flex justify-center mb-16 md:my-28">
         <Button isPrimary="" title="Get in the Circle" isChevronEnabled />
       </div>
       
