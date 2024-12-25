@@ -8,6 +8,7 @@ import AboutUs from './Pages/AboutUs';
 import Navbar from './components/Home/Navbar';
 import GetInTouch from './Pages/GetInTouch.jsx';
 import Services from './Pages/Services.jsx';
+import AnimatedText from './components/phase2/AnimatedText.jsx';
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
        </Routes>
      </Router>   
 
-    // <AboutUsCarousel/>
+    // <AnimatedText/>
   );
 }
 
