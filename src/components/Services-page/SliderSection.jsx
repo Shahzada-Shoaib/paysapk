@@ -51,7 +51,7 @@ const SliderSection = () => {
     <div className="flex flex-col mx-auto mt-10 md:flex-row">
       {/* Div#1 */}
       <div
-        className="w-full"
+        className="w-full hidden md:block"
         style={{
           backgroundImage: "url('/assets/servicesPage/services-bg.png')",
           backgroundSize: "cover",
@@ -63,14 +63,14 @@ const SliderSection = () => {
       />
 
       {/* Div#2 */}
-      <div className="relative w-[750px]">
+      <div className="relative md:w-[750px]">
         <Carousel {...carouselSettings}>
           {carouselImages.map((src, index) => (
             <div key={index} className="flex items-center justify-center">
               <img
                 src={src}
                 alt={`Service slide ${index + 1}`}
-                className="w-[750px]"
+                className=" md:w-[750px]"
                 loading="lazy"
               />
             </div>
