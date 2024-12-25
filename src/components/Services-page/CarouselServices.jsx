@@ -113,7 +113,7 @@ const CarouselServices = () => {
             <div className="font-bold text-[28px] md:text-[35px] font-[manrope] mt-[57px]">
               <h1>{slides[currentIndex].title}</h1>
             </div>
-            <p className="max-w-[650px] px-6 md:px-0 font-[raleway]  leading-[30px] text-center mt-[32px] pb-8 md:pb-[65px]">
+            <p className="max-w-[600px] text-justify px-6 md:px-0 font-[raleway]  leading-[30px] mt-[32px] pb-8 md:pb-[65px]">
               {slides[currentIndex].description}
             </p>
             <div className="flex space-x-[134px]">

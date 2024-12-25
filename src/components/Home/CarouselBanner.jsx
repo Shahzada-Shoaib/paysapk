@@ -6,14 +6,14 @@ function CarouselBanner(props) {
 
   return (
     <div
-      className={`md:h-[120vh] w-full flex bg-cover pb-[100px] mx-auto  bg-no-repeat `}
+      className={`md:h-[120vh] w-full flex bg-cover pb-[100px] mx-auto bg-no-repeat`}
       style={{
         backgroundImage: `url(${props?.image})`,
       }}
     >
       <div className="hidden md:block md:w-1/2"></div>
       {/* section 2 */}
-      <div className="pt-24 md:w-1/2 md:pt-24 md:bg-transparent bg-black/70 ">
+      <div className="pt-24 md:w-1/2 md:pt-24 md:bg-transparent bg-black/70">
         <div className="md:pl-24">
           <div className="flex items-start justify-start">
             <img
@@ -35,9 +35,13 @@ function CarouselBanner(props) {
         </div>
 
         <div className="pl-8 md:pl-24">
-          <p className="text-white mt-[10px] md:mt-[40px] md:w-[318px] text-justify">
-            {props.description1}
-          </p>
+          {/* Apply dangerouslySetInnerHTML directly to the <p> tag */}
+          <p
+            className="text-white mt-[10px] md:mt-[40px] md:w-[418px] text-left"
+            dangerouslySetInnerHTML={{
+              __html: props.description1,
+            }}
+          />
         </div>
       </div>
     </div>
