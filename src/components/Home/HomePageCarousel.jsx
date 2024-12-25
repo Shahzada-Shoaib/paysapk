@@ -72,7 +72,8 @@ const HomePageCarousel = () => {
             icon="/assets/services-carousel-icons/icon-1.png"
             image="https://i.imghippo.com/files/4TnYv1729352530.png"
             title1="365 DAYS SETTLEMENT"
-            description1="Get lightning-fast payment settlements with PaySa's POS terminal (within 24 hours)"
+            // description1="Get lightning-fast payment settlements with PaySa's POS terminal (within 24 hours)"
+            description1="Get lightning-fast payment settlements<br> with PaySa's POS terminal (within 24 hours)"
           />
         </div>
         <div className="size-full">
@@ -80,7 +81,9 @@ const HomePageCarousel = () => {
             icon="/assets/services-carousel-icons/icon-2-blue.png"
             image="https://i.imghippo.com/files/TgdPe1729353236.png"
             title1="CUSTOMISED MIS"
-            description1="Make smart decisions with powerful analytics"
+            description1="Make smart decisions with powerful analysis"
+
+            // description1="Make smart decisions with powerful analytics"
           />
         </div>
         <div className="size-full">
@@ -88,7 +91,7 @@ const HomePageCarousel = () => {
             icon="/assets/services-carousel-icons/icon-3.png"
             image="https://i.imghippo.com/files/KB2X01729354831.png"
             title1="SECURE VPN TUNNEL"
-            description1="Safeguard transactions with top-notch security through implementation of network segmentation"
+            description1="Safeguard transactions with top-notch<br>security through implementation of <br>network segmentation"
           />
         </div>
 
@@ -97,7 +100,7 @@ const HomePageCarousel = () => {
             icon="/assets/services-carousel-icons/icon-4.png"
             image="https://i.imghippo.com/files/Bo9fk1729354905.png"
             title1="24/7 CUSTOMER SUPPORT"
-            description1="Get lightning-fast payment settlements with PaySa's POS terminal (within 24 hours)"
+            description1="Get lightning-fast payment settlements <br>with PaySa's POS terminal (within 24<br> hours)"
           />
         </div>
       </Carousel>
