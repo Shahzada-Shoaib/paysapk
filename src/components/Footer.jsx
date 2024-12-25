@@ -8,8 +8,10 @@ import TikTokIcon from "../images/social-icons/tik_tok.svg";
 import ThreadIcon from "../images/social-icons/threads.svg";
 import { Link } from "react-router-dom";
 import Button from "./Button";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <div className="">
       {/* <div className="flex  justify-center my-[70px]">
@@ -18,9 +20,15 @@ const Footer = () => {
         </Link>
       </div> */}
 
-      <div className="flex justify-center mb-16 md:my-28">
-        <Button isPrimary="" title="Get in the Circle" isChevronEnabled />
-      </div>
+    
+      <Link to="/get-in-touch">
+        <div className="flex justify-center mb-16 md:my-28">
+          <Button isPrimary="" title="Get in the Circle" isChevronEnabled onClick={() => navigate("/get-in-touch")} />
+        </div>
+      </Link>
+
+
+      
       
       <div>
         <div

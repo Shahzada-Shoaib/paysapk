@@ -35,7 +35,7 @@ function CarouselBanner(props) {
         </div>
 
         <div className="pl-8 md:pl-24">
-          <p className="text-white text-left mt-[10px] md:mt-[40px] md:w-[400px]">
+          <p className="text-white mt-[10px] md:mt-[40px] md:w-[318px] text-justify">
             {props.description1}
           </p>
         </div>

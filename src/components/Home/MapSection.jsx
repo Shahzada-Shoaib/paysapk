@@ -19,10 +19,10 @@ function MapSection({ handleMapClick }) {
           className="md:absolute  w-[100%] lg:w-[656px] h-[363px] bg-[#3F94C44D] rounded-[20px] top-0  
                 md:left-[250px] z-20"
         >
-          <div className="pl-[20px] relative z-10 md:pl-[52px] pt-12 md:pt-[70px]  h-full md:h-auto rounded-[20px] relative backdrop-blur-md md:w-[60%]">
+          <div className="pl-[20px] z-10 md:pl-[52px] pt-12 md:pt-[70px]  h-full md:h-auto rounded-[20px] relative backdrop-blur-md md:w-[60%]">
             <div>
               <h1 className="font-bold text-white  text-[28px] md:text-[40px] font-[manrope] ">
-                550+ Customers
+                1000+ Customers
               </h1>
             </div>
             <div className="mt-[20px]">
