@@ -35,7 +35,7 @@ function MapSection({ handleMapClick }) {
               </p>
             </div>
             <div>
-              <button
+              {/* <button
                 style={{ background: "rgba(24, 92, 131, 0.5)" }}
                 className="mt-[45px] items-center text-white flex rounded px-4 py-1 transition-transform transform hover:-translate-y-1"
               >
@@ -43,7 +43,7 @@ function MapSection({ handleMapClick }) {
                 <span className="ml-4">
                   <ChevronButton isSmall isPrimary={true} />
                 </span>
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
