@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function HiringSection() {
   return (
-    <div className="relative px-6 md:-mt-32 md:px-0  -mt-60 md:-mt-12 ">
+    <div className="relative px-6 md:px-0 md:mt-12 ">
       <div className="font-semibold text-white text-[35px] flex justify-center font-[manrope]">
         <h1>JOIN OUR TALENT POOL! </h1>
       </div>
@@ -13,7 +13,7 @@ function HiringSection() {
         <img
           src="/assets/aboutUsImages/HiringSectionIMG.webp"
           alt="Background"
-          className="relative md:mt-8 hidden md:block"
+          className="relative hidden md:mt-8 md:block"
         />
 
         <div

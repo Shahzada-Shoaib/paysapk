@@ -9,14 +9,16 @@ import HiringSection from "../components/AboutUs/HiringSection";
 import Footer from "../components/Footer";
 import AboutUsCarouselSection from "../components/AboutUs/AboutUsCarouselSection";
 import { useEffect } from "react";
+import EmployeeCard from "../components/AboutUs/EmployeeCard";
+import EmployeeCarousel from "../components/AboutUs/EmployeeCarousel";
 function AboutUs() {
   useEffect(() => {
     // Component load hone par page upar scroll kar do
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
   }, []); 
   
   return (
-    <div className="bg-black">
+    <div className="w-full ">
       <div className="">
         <Navbar />
         <BannerWithoutVideo
@@ -81,13 +83,76 @@ function AboutUs() {
         </h1>
       </div>
 
-      <AboutUsCarouselSection />
-      <AboutUsCardsSection />
+     
+        
+        <div className="">
+          <AboutUsCarouselSection />
+        </div>
+        <div className="w-full bg-no-repeat bg-cover object-fit"
+        style={{ backgroundImage: "url('/assets/aboutUsImages/aboutUs-bg1.png')" }}
+        >
+        </div>
+
+        <div>
+        <img className="w-full bg-no-repeat bg-cover object-fit" src="/assets/aboutUsImages/aboutUs-bg1.png" alt="bg new" />
+
+        </div>
+
+
+
+
+        {/* <AboutUsCardsSection />
       <div className="flex items-center justify-center w-full mt-[59px] ">
         <Button title="Dive in" isPrimary={false} isChevronEnabled />
+      </div> */}
+
+        <div className="">
+          <CareerSection />
+        </div>
+
+
+
+        {/* Employee Cards Section */}
+
+      <div className="w-[] bg-no-repeat object-fit bg-cover p-8 md:h-[1000px] flex "
+        style={{ backgroundImage: "url('/assets/aboutUsImages/aboutUs-bg1.png')" }}
+      >
+
+      
+          {/* Employees Carousel Section */}
+    
+      {/* <img className="w-full bg-no-repeat bg-cover object-fit" src="/assets/aboutUsImages/aboutUs-bg1.png" alt="bg new" /> */}
+        
       </div>
-      <CareerSection />
-      <HiringSection />
+
+      <div className="w-[] bg-no-repeat object-fit bg-cover p-8 md:h-[1000px] flex "
+        style={{ backgroundImage: "url('/assets/aboutUsImages/aboutUs-bg1.png')" }}>
+
+</div>
+
+      <EmployeeCarousel />
+
+
+
+
+
+
+
+
+
+
+
+
+{/* This is hiring section */}
+        
+        <div className="border ">
+          <HiringSection />
+        </div>
+
+        
+    
+     
+      
       <Footer />
     </div>
   );
