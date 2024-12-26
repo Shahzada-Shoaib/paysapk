@@ -3,12 +3,12 @@ import React from 'react'
 function CareerSection() {
     return (
         <div
-            className="w-full bg-center bg-cover h-[2007px]"
-            style={{ backgroundImage: "url('/assets/aboutUsImages/CareerIMG.webp')" }}
+            className="w-full bg-center bg-cover h-[] flex justify-between"
+            // style={{ backgroundImage: "url('/assets/aboutUsImages/CareerSection.svg')" }}
         >
 
 
-            <div className='text-white max-w-[460px] md:ml-[60px] px-6 pt-28'>
+            <div className='text-white max-w-[560px] md:ml-[60px] px-6  text-justify'>
                 <h1 className="font-[manrope] text-[35px] font-bold">
                     CAREER</h1>
                 <h2 className='mt-[44px] font-[manrope] font-bold'>
@@ -46,6 +46,10 @@ function CareerSection() {
 
 
 
+            </div>
+
+            <div>
+                <img src="/assets/aboutUsImages/CareerSection.svg" alt="" />
             </div>
 
         </div>
