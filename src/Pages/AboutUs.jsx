@@ -15,8 +15,8 @@ function AboutUs() {
   useEffect(() => {
     // Component load hone par page upar scroll kar do
     // window.scrollTo(0, 0);
-  }, []); 
-  
+  }, []);
+
   return (
     <div className="w-full ">
       <div className="">
@@ -76,83 +76,45 @@ function AboutUs() {
         </div>
       </div>
 
-      {/* Values Section */}
       <div className="mt-24 md:mt-22">
         <h1 className="flex justify-center font-[manrope] font-semibold text-white text-3xl mb-10 ">
           VALUES
         </h1>
       </div>
 
-     
-        
-        <div className="">
-          <AboutUsCarouselSection />
-        </div>
-        <div className="w-full bg-no-repeat bg-cover object-fit"
-        style={{ backgroundImage: "url('/assets/aboutUsImages/aboutUs-bg1.png')" }}
-        >
-        </div>
+      <div className="">
+        <AboutUsCarouselSection />
+      </div>
+      <div
+        className="w-full bg-no-repeat bg-cover object-fit"
+        style={{
+          backgroundImage: "url('/assets/aboutUsImages/aboutUs-bg1.png')",
+        }}
+      ></div>
 
-        <div>
-        <img className="w-full bg-no-repeat bg-cover object-fit" src="/assets/aboutUsImages/aboutUs-bg1.png" alt="bg new" />
-
-        </div>
-
-
-
-
-        {/* <AboutUsCardsSection />
-      <div className="flex items-center justify-center w-full mt-[59px] ">
-        <Button title="Dive in" isPrimary={false} isChevronEnabled />
-      </div> */}
-
-        <div className="">
-          <CareerSection />
-        </div>
-
-
-
-        {/* Employee Cards Section */}
-
-      <div className="w-[] bg-no-repeat object-fit bg-cover p-8 md:h-[1000px] flex "
-        style={{ backgroundImage: "url('/assets/aboutUsImages/aboutUs-bg1.png')" }}
-      >
-
-      
-          {/* Employees Carousel Section */}
-    
-      {/* <img className="w-full bg-no-repeat bg-cover object-fit" src="/assets/aboutUsImages/aboutUs-bg1.png" alt="bg new" /> */}
-        
+      <div>
+        <img
+          className="w-full bg-no-repeat bg-cover object-fit"
+          src="/assets/aboutUsImages/aboutUs-bg1.png"
+          alt="bg new"
+        />
       </div>
 
-      <div className="w-[] bg-no-repeat object-fit bg-cover p-8 md:h-[1000px] flex "
-        style={{ backgroundImage: "url('/assets/aboutUsImages/aboutUs-bg1.png')" }}>
+      <div className="">
+        <CareerSection />
+      </div>
 
-</div>
+      <div
+        className="bg-no-repeat  bg-cover px-8 pt-[200px] h-[800px]"
+        style={{
+          backgroundImage: "url('/assets/aboutUsImages/aboutus-yellow-bg.png')",
+        }}
+      >
+        <EmployeeCarousel />
+      </div>
 
-      <EmployeeCarousel />
+      <HiringSection />
 
-
-
-
-
-
-
-
-
-
-
-
-{/* This is hiring section */}
-        
-        <div className="border ">
-          <HiringSection />
-        </div>
-
-        
-    
-     
-      
       <Footer />
     </div>
   );

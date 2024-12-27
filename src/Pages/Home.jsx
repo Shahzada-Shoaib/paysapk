@@ -9,6 +9,7 @@ import MapPopup from "../components/MapPopup";
 import LogoSlider from "../components/Home/LogoSlider";
 import PartnerSlider from "../components/Home/PartnersSlider";
 import { Link } from "react-router-dom";
+import AnimatedText from "../components/phase2/AnimatedText";
 
 const Footer = lazy(() => import("../components/Footer"));
 const MapSection = lazy(() => import("../components/Home/MapSection"));
@@ -80,7 +81,6 @@ function App() {
         </motion.div>
       </Suspense>
 
-
       <div className=" md:my-[50px]">
         <motion.div {...fadeInUp} className="md:mt-[200px]">
           <BannerWithoutVideo title="OUR TRUSTED PARTNERS" />
@@ -92,8 +92,6 @@ function App() {
           </div>
         </motion.div>
       </div>
-
-
 
       <Suspense fallback={<div>Loading...</div>}>
         <div className="lg:pb-40">
@@ -122,6 +120,7 @@ function App() {
           onClose={() => setMapPopupState(false)}
         />
       </div>
+    
     </div>
   );
 }
