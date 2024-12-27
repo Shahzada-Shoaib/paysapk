@@ -96,18 +96,15 @@ function EmailSection() {
     <div className="px-4 mt-16  mb-[100px]">
       <ToastContainer />
       <section className="flex justify-center mt-4 ">
-        
         <div className="">
           <img
-            className="hidden md:block h-[] w-[] rounded-[20px] "
+            className="hidden md:block rounded-[20px] "
             src="/assets/get-in-touch-images/getInTouch.svg"
             alt="background poster"
           />
         </div>
 
-        <div
-          className="  bg-[] rounded-[20px]  md:w-[450px]"
-        >
+        <div className="  bg-[] rounded-[20px]  md:w-[450px]">
           <form
             ref={form}
             onSubmit={sendEmail}
@@ -134,7 +131,6 @@ function EmailSection() {
               onChange={handleInputChange}
               className=" w-full h-[55.35px] rounded-2xl bg-[#] border border-[#] p-2 mb-6"
               placeholder="Email *"
-
             />
             {errors.email && (
               <p className="mb-2 text-sm text-red-500">{errors.email}</p>
@@ -148,7 +144,6 @@ function EmailSection() {
               onChange={handleInputChange}
               className="w-full h-[55.35px]  mb-6 rounded-2xl bg-[#] border border-[#] p-2"
               placeholder="Contact no *"
-
             />
             {errors.contact && (
               <p className="mb-2 text-sm text-red-500">{errors.contact}</p>
@@ -161,7 +156,6 @@ function EmailSection() {
               onChange={handleInputChange}
               className="w-full rounded-2xl bg-[#] p-2 h-[108px]"
               placeholder="Message *"
-
             />
             {errors.message && (
               <p className="text-sm text-red-500">{errors.message}</p>
@@ -169,11 +163,12 @@ function EmailSection() {
 
             <div className="flex pt-[50px] text-center pt- ">
               {/* <Button title="Get In Touch" isChevronEnabled isPrimary={false} /> */}
-              <button className="text-white bg-[#FED21C] px-12 py-2 rounded-2xl">SUBMIT</button>
+              <button className="text-white bg-[#FED21C] px-12 py-2 rounded-2xl">
+                SUBMIT
+              </button>
             </div>
           </form>
         </div>
-        
       </section>
     </div>
   );

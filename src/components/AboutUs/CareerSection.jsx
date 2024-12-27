@@ -3,7 +3,7 @@ import React from "react";
 function CareerSection() {
   return (
     <div
-      className="w-full bg-center bg-cover h-[] flex justify-between"
+      className="w-full bg-center bg-cover  flex justify-between"
       // style={{ backgroundImage: "url('/assets/aboutUsImages/CareerSection.svg')" }}
     >
       <div className="text-white max-w-[560px] md:ml-[60px] px-6  text-justify">
@@ -47,7 +47,7 @@ function CareerSection() {
       </div>
 
       <div className="hidden md:block">
-        <img src="/assets/aboutUsImages/CareerSection.svg" alt="" />
+        <img src="/assets/aboutUsImages/careerSection.svg" alt="" />
       </div>
     </div>
   );
