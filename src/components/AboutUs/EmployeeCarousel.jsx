@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import EmployeeCard from "./EmployeeCard";
+import useScreenSize from "../../utils/useIsMobile";
 
 const EmployeeCarousel = () => {
   const items = [
@@ -61,6 +62,7 @@ const EmployeeCarousel = () => {
     speed: 500,
     draggable: true,
     slidesToShow: 5,
+    slidesToScroll: 1,
   };
 
   const mobileSettings = {
@@ -69,6 +71,7 @@ const EmployeeCarousel = () => {
     speed: 500,
     draggable: true,
     slidesToShow: 1,
+    slidesToScroll: 1,
   };
 
   const handleChangeSlide = () => {
@@ -82,6 +85,8 @@ const EmployeeCarousel = () => {
       sliderRef.current.slickPrev();
     }
   };
+
+  const { isMobile } = useScreenSize();
 
   return (
     <div className="">
@@ -101,7 +106,27 @@ const EmployeeCarousel = () => {
       </div>
 
       <div className="mx-auto ">
-        <div className="hidden md:block">
+        {isMobile ? (
+          <Slider {...mobileSettings} ref={sliderRef}>
+            {items.map((item, index) => {
+              return (
+                <div className="px-2">
+                  <div
+                    key={index}
+                    className={`flex items-center justify-center rounded-lg transition-all duration-300
+                                 }`}
+                  >
+                    <EmployeeCard
+                      title={item.title}
+                      description={item.description}
+                      imageUrl={item.imageUrl}
+                    />
+                  </div>
+                </div>
+              );
+            })}
+          </Slider>
+        ) : (
           <Slider {...settings} ref={sliderRef}>
             {items.map((item, index) => {
               return (
@@ -121,29 +146,7 @@ const EmployeeCarousel = () => {
               );
             })}
           </Slider>
-        </div>
-
-        <div className="block md:hidden">
-          <Slider {...mobileSettings} ref={sliderRef}>
-            {items.map((item, index) => {
-              return (
-                <div className="px-2">
-                  <div
-                    key={index}
-                    className={`flex items-center justify-center rounded-lg transition-all duration-300
-                                }`}
-                  >
-                    <EmployeeCard
-                      title={item.title}
-                      description={item.description}
-                      imageUrl={item.imageUrl}
-                    />
-                  </div>
-                </div>
-              );
-            })}
-          </Slider>
-        </div>
+        )}
       </div>
     </div>
   );
