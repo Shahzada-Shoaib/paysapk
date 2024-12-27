@@ -92,7 +92,7 @@ function AboutUs() {
         }}
       ></div>
 
-      <div>
+      <div className="hidden md:block">
         <img
           className="w-full bg-no-repeat bg-cover object-fit"
           src="/assets/aboutUsImages/aboutUs-bg1.png"

@@ -59,7 +59,7 @@ const MyCarousel = () => {
         onChange={(index) => setCurrentSlide(index)} // Update currentSlide on change
         showArrows={false} // Disable default arrows
       >
-        <div className="w-full h-[820px] ">
+        <div className="w-full h-[700px] md:h-[650px] ">
           <AboutUsCarouselCard
             title=" WORKINGS @ PAYSA"
             description="At PaySa, we foster diversity, support professional growth, and prioritize open communication and genuine relationships. Our talent philosophy centers on hiring ambitious professionals, offering career growth opportunities, and achieving greatness together by aligning values and goals."
