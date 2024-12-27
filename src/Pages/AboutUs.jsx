@@ -105,7 +105,7 @@ function AboutUs() {
       </div>
 
       <div
-        className="bg-no-repeat  bg-cover px-8 pt-[200px] h-[800px]"
+        className="bg-no-repeat  bg-cover px-8 pt-[200px]  h-[700px] md:h-[900px]"
         style={{
           backgroundImage: "url('/assets/aboutUsImages/aboutus-yellow-bg.png')",
         }}

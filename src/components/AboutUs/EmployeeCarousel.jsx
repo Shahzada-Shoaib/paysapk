@@ -86,7 +86,9 @@ const EmployeeCarousel = () => {
   return (
     <div className="">
       <div className="flex justify-center md:justify-between text-center md:text-left p-4 text-white">
-        <div className="text-[36px] font-bold pb-8 md:pb-0">Our Team</div>
+        <div className=" text-[50px] md:text-[36px] font-bold pb-8 md:pb-0">
+          Our Team
+        </div>
         <div className="pr-24 md:pt-4 space-x-6 hidden md:block">
           <button className="" onClick={handlePrevSlide}>
             &#8592;
