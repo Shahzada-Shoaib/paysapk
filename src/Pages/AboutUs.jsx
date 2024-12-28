@@ -114,6 +114,9 @@ function AboutUs() {
       </div>
 
       <HiringSection />
+      <div>
+        <img src="/assets/text-animations/aboutUS.gif" alt="" />
+      </div>
 
       <Footer />
     </div>
