@@ -33,9 +33,24 @@ const AnimatedText = () => {
         return () => clearTimeout(timer);
     }, [charIndex, removing, currentTextIndex, texts]);
 
+    // Split the current text into words
+    const words = displayText.split(" ");
+
     return (
-        <div className="flex items-center justify-center h-screen bg-gray-900">
-            <h1 className="text-4xl font-bold text-white">{displayText}</h1>
+        <div className="flex items-center border justify-cente">
+            <h1 className="text-4xl font-bold text-white">
+                {words.map((word, index) => (
+                    <span
+                        key={index}
+                        className={`mr-2 ${index % 2 === 0
+                                ? "text-red-500"
+                                : "text-blue-500"
+                            }`}
+                    >
+                        {word}
+                    </span>
+                ))}
+            </h1>
         </div>
     );
 };

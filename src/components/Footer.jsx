@@ -19,6 +19,7 @@ const Footer = () => {
           <img src={FooterLogo} alt="icon" className="h-[100px] md:h-auto " />
         </Link>
       </div> */}
+      
 
     
       <Link to="/get-in-touch">

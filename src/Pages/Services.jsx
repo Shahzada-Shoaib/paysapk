@@ -22,6 +22,9 @@ function Services() {
       <div className="mt-12 mb-10 md:mt-0">
         <img src="/assets/servicesPage/servicesGif.gif" alt="services" />
       </div>
+      <div>
+        <img src="/assets/text-animations/services.gif" alt="" />
+      </div>
     
       <Footer />
     </div>

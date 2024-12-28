@@ -17,6 +17,10 @@ function GetInTouch() {
       <EmailSection />
       <FAQbanner />
       <FAQquestions />
+      <div className="">
+        <img src="/assets/text-animations/getintouch.gif" alt="" />
+      </div>
+
       <div className="mt-16">
         <Footer className="" />
       </div>
