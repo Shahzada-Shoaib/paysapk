@@ -53,7 +53,7 @@ const AboutUsGrid = () => {
   };
 
   return (
-    <div className="w-full max-w-6xl mx-auto mb-52">
+    <div className="w-full md:max-w-7xl w-none md:mx-auto mb-52">
       <Slider {...settings} ref={sliderRef}>
         {items.map((item, index) => {
           const isSecondSlide =
