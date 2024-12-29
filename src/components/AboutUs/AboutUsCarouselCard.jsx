@@ -29,7 +29,7 @@ function AboutUsCarouselCard(props) {
               </h1>
             </div>
             <div className="mt-[20px] flex justify-center ">
-              <p className="text-white text-[16px] leading-5 font-[raleway] md:w-[400px] w-[300px]">
+              <p className="text-white text-[16px] leading-5 font-[raleway] md:w-[400px] w-[300px] text-justify">
                 {props.description}
               </p>
             </div>

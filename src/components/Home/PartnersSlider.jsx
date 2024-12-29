@@ -4,13 +4,12 @@ import useScreenSize from "../../utils/useIsMobile";
 
 const logos = [
   "../assets/partners-Logos/partner1.svg",
-  "../assets/partners-Logos/partner2.png",
+  "../assets/partners-Logos/partner-2.svg",
   "../assets/partners-Logos/partner3.png",
   "../assets/partners-Logos/partner4.png",
   "../assets/partners-Logos/partner5.png",
   "../assets/partners-Logos/partner6.png",
   "../assets/partners-Logos/partner7.svg",
-  "../assets/partners-Logos/partner8.svg",
 ];
 
 function PartnerSlider() {

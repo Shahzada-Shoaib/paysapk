@@ -21,9 +21,9 @@ function MenuPopup({ showMenuPopup, setShowMenuPopup }) {
   return (
     <div
       style={{ backgroundImage: "url('/assets/menu-bg.webp')" }}
-      className="menu-popup-bg md:pb-[100px] z-10 top-0 bg-cover bg-black left-0 fixed w-full min-h-screen flex"
+      className="menu-popup-bg md:pb-[100px] z-10 top-0 bg-cover bg-black left-0 fixed w-full min-h-screen flex "
     >
-      <div className="flex flex-col items-stretch p-6 menu-popup-bg-overlay space-between">
+      <div className="flex flex-col items-stretch p-[71px]  menu-popup-bg-overlay space-between">
         <div className="flex items-center justify-between w-full pt-2 mx-auto max-w-screen-3xl ">
           <div>
             <img
@@ -33,13 +33,13 @@ function MenuPopup({ showMenuPopup, setShowMenuPopup }) {
               alt="Cross icon"
             />
           </div>
-          <div>
+          {/* <div>
             <img src={SiteLogo} alt="logo" style={{ height: "50px" }}></img>
-          </div>
+          </div> */}
         </div>
         {/* Menu Section */}
-        <div className="flex flex-1  md:pt-[90px] w-full flex-wrap lg:pt-0 pb-[50px] max-w-screen-3xl mx-auto">
-          <div className="flex pt-12 md:w-3/6 lg:pt-0 lg:items-end">
+        <div className="flex flex-1  md:pt-[90px] w-full flex-wrap lg:pt-0 pb-[50px] max-w-screen-3xl mx-auto ">
+          <div className="flex pt-10 leading-[50px] md:w-3/6 lg:pt-0 lg:items-center">
             <ul className="space-y-6 list-none">
               <li
                 className={`cursor-pointer manrope-semibold text-[30px] md:text-[40px] ${isActive(
@@ -81,43 +81,45 @@ function MenuPopup({ showMenuPopup, setShowMenuPopup }) {
             </ul>
           </div>
 
-          <div className="flex md:w-3/6 lg:items-end">
-            <div className="flex items-end justify-end w-full pb-4 space-x-3 text-2xl">
-              {/* <img src={FbIcon} alt="icon" className="mx-1" />
+        
+
+
+        </div>
+
+        <div className="mt-20 mb-4 ">
+          <div className="flex w-full pb-4 space-x-3 text-2xl">
+            {/* <img src={FbIcon} alt="icon" className="mx-1" />
               <img src={LinkedinIcon} alt="icon" className="" />
               <img src={InstaIcon} alt="icon" className="" />
               <img src={TwitterIcon} alt="icon" className="" />
               <img src={TikTokIcon} alt="icon" className="" />
               <img src={ThreadIcon} alt="icon" className="" /> */}
 
-              <a href="https://www.facebook.com/paysa.technologies/" target="_blank" rel="noopener noreferrer">
-                <img src={FbIcon} alt="Facebook icon" className="mx-1" />
-              </a>
+            <a href="https://www.facebook.com/paysa.technologies/" target="_blank" rel="noopener noreferrer">
+              <img src={FbIcon} alt="Facebook icon" className="mx-1" />
+            </a>
 
-              <a href="https://pk.linkedin.com/company/paysatechnologies" target="_blank" rel="noopener noreferrer">
-                <img src={LinkedinIcon} alt="LinkedIn icon" className="" />
-              </a>
+            <a href="https://pk.linkedin.com/company/paysatechnologies" target="_blank" rel="noopener noreferrer">
+              <img src={LinkedinIcon} alt="LinkedIn icon" className="" />
+            </a>
 
-              <a href="https://www.instagram.com/paysa_tech/" target="_blank" rel="noopener noreferrer">
-                <img src={InstaIcon} alt="Instagram icon" className="" />
-              </a>
+            <a href="https://www.instagram.com/paysa_tech/" target="_blank" rel="noopener noreferrer">
+              <img src={InstaIcon} alt="Instagram icon" className="" />
+            </a>
 
-              <a href="https://twitter.com/PaySa_pk" target="_blank" rel="noopener noreferrer">
-                <img src={TwitterIcon} alt="Twitter icon" className="" />
-              </a>
+            <a href="https://twitter.com/PaySa_pk" target="_blank" rel="noopener noreferrer">
+              <img src={TwitterIcon} alt="Twitter icon" className="" />
+            </a>
 
-              <a href="https://www.tiktok.com/@paysa_tech" target="_blank" rel="noopener noreferrer">
-                <img src={TikTokIcon} alt="TikTok icon" className="" />
-              </a>
+            <a href="https://www.tiktok.com/@paysa_tech" target="_blank" rel="noopener noreferrer">
+              <img src={TikTokIcon} alt="TikTok icon" className="" />
+            </a>
 
-              <a href="https://www.threads.net/@paysa_tech" target="_blank" rel="noopener noreferrer">
-                <img src={ThreadIcon} alt="Threads icon" className="" />
-              </a>
+            <a href="https://www.threads.net/@paysa_tech" target="_blank" rel="noopener noreferrer">
+              <img src={ThreadIcon} alt="Threads icon" className="" />
+            </a>
 
-            </div>
           </div>
-
-
         </div>
       </div>
     </div>

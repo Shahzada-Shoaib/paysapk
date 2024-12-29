@@ -68,9 +68,26 @@ function PaysaPage() {
         </div> */}
 
         {/* Second Banner */}
-      <div className='w-full mb-16 md:mb-80 aspect-auto'>
+
+        
+      {/* <div className='w-full mb-16 md:mb-80 aspect-auto'>
           <img src='/assets/paysaPicksImages/paysaBanner2.webp' alt='image' className='w-full aspect-auto' />
-        </div>
+          <img src='/assets/paysaPicksImages/paysaPicks.gif'/>
+        </div> */}
+
+      <div className="relative w-full mb-16 md:mb-80 aspect-auto">
+        <img
+          src="/assets/paysaPicksImages/paysaBanner-2.svg"
+          alt="image"
+          className="w-full aspect-auto"
+        />
+        <img
+          src="/assets/paysaPicksImages/paysaPicks.gif"
+          alt="gif"
+          className="absolute md:top-40 top-0 left-0 md:h-[879px] md:w-[1072px]"
+        />
+      </div>
+
 
 
       

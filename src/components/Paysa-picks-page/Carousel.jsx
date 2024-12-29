@@ -35,7 +35,7 @@ const AboutUsCarousel = () => {
 
 
     return (
-        <div className="max-w-6xl mx-auto ">
+        <div className="w-full mx-auto ">
             <Slider {...settings} ref={sliderRef}>
                 {items.map((item, index) => {
                     const isSecondSlide =
@@ -45,7 +45,7 @@ const AboutUsCarousel = () => {
                     return (
                         <div
                             key={index}
-                            className={`p-6 h-flex items-center justify-center rounded-lg transition-all duration-300 ${isSecondSlide ? "mt-0" : "mt-10" }`}
+                            className={`p-6  h-flex flex justify-center rounded-lg transition-all duration-300 ${isSecondSlide ? "mt-0" : "mt-10" }`}
                             // className={`${isSecondSlide ? "mt-[150px]" : "mt-6"}`}
                         >
                             {/* <img
@@ -55,7 +55,7 @@ const AboutUsCarousel = () => {
                             /> */}
 
                             <a href={item.link} target="_blank" rel="noopener noreferrer" key={index}>
-                                <img src={item.image} alt={item.alt} />
+                                <img src={item.image} alt={item.alt} className="mx-auto " />
                             </a>
                         </div>
                     );
