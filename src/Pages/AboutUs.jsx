@@ -30,11 +30,12 @@ function AboutUs() {
         <div className="flex justify-center max-w-screen-xl mx-auto text-white">
           <img
             fetchpriority="high"
-            src="/assets/aboutUsImages/aboutUsBanner.webp"
+            src="/assets/aboutUsImages/aboutUsBanner.svg"
             alt="About Us Banner"
             className="w-full h-auto"
           />
         </div>
+        
       </div>
 
       {/* Story Section */}

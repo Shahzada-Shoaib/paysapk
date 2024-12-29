@@ -46,7 +46,7 @@ const CardsSection = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto ">
+    <div className="max-w-6xl mx-auto mb-14 ">
       <Slider {...settings} ref={sliderRef}>
         {items.map((item, index) => (
           <div

@@ -4,7 +4,7 @@ import React from "react";
 import "../../App.css";
 import Banner from "./Banner";
 import MenuPopup from "../MenuPopup";
-import SiteLogo from "../../images/logo.svg";
+// import SiteLogo from "../../images/newLogo.svg";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
@@ -25,7 +25,7 @@ function Navbar() {
 
         <div className="flex justify-center flex-1 cursor-pointer">
           <Link to="/">
-            <img src={SiteLogo} alt="logo" style={{ height: "50px" }} />
+            <img src="/assets/newLogo.svg" alt="logo" style={{ height: "50px" }} />
           </Link>
         </div>
 

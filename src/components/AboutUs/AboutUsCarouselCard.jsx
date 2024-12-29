@@ -16,23 +16,31 @@ function AboutUsCarouselCard(props) {
           )}
         </div>
 
+
+
+
+
+        
+
         <div
           className="md:absolute  w-[100%] lg:w-[656px] h-[427px] bg-[#3F94C44D] rounded-[20px] top-0  
-                md:left-[250px]  z-2"
+                md:left-[250px]  z-2 border"
         >
           <div
-            className={`pl-[20px]  pt-8 md:pt-20 md:pl-[52px] md:pt-[70px]  h-full md:h-auto rounded-[20px] relative ${props.textLeft} ${props.firstSlideBlur}`}
+            className={`pl-[20px] border pt-8 md:pt-20 md:pl-[52px]   h-full md:h-auto rounded-[20px] relative ${props.textLeft} ${props.firstSlideBlur}`}
           >
-            <div className=" mb-[22px]">
+            <div className=" mb-[22px] border">
               <h1 className="font-bold text-white text-[25px] font-[manrope]">
                 {props.title}
               </h1>
             </div>
-            <div className="mt-[20px] flex justify-center ">
-              <p className="text-white text-[16px] leading-5 font-[raleway] md:w-[400px] w-[300px] text-justify">
+            
+            <div className="mt-[20px] flex justify-center border ">
+              <p className="text-white text-[16px] leading-5 font-[raleway] md:w-[] w-[] text-justify">
                 {props.description}
               </p>
             </div>
+            
             <div className="flex relative justify-center mt-[20px] md:mt-[40px] z-10 ">
               {props.navigationButtons}
             </div>
@@ -43,7 +51,18 @@ function AboutUsCarouselCard(props) {
           </div>
         </div>
 
-        <div className="absolute w-[283px] h-[283px]   top-[290px]  z-1  md:left-[630px]">
+
+
+
+
+
+
+
+
+
+        
+
+        <div className="absolute w-[283px] h-[283px]   top-[290px]  z-1  md:left-[630px] border">
           <img src={props.alphabetIMG} alt="About Page Carousel" />
         </div>
       </section>

@@ -6,7 +6,7 @@ function CarouselBanner(props) {
 
   return (
     <div
-      className={`md:h-[120vh] w-full flex bg-cover pb-[100px] mx-auto bg-no-repeat`}
+      className={`md:h-[120vh] w-full flex bg-cover pb-[100px] mx-auto bg-no-repeat `}
       style={{
         backgroundImage: `url(${props?.image})`,
       }}
@@ -37,7 +37,7 @@ function CarouselBanner(props) {
         <div className="pl-8 md:pl-24">
           {/* Apply dangerouslySetInnerHTML directly to the <p> tag */}
           <p
-            className="text-white mt-[10px] md:mt-[40px] md:w-[418px] text-left"
+            className="text-white mt-[10px] md:mt-[40px] md:w-[418px] text-left  pl-8 "
             dangerouslySetInnerHTML={{
               __html: props.description1,
             }}
