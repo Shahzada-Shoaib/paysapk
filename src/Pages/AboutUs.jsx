@@ -47,9 +47,9 @@ function AboutUs() {
           />
         </div>
 
-        <div className="text-white w-full md:w-[50%] p-5">
-          <h1 className="font-[manrope] font-bold text-3xl">OUR STORY</h1>
-          <p className="font-semibold font-[raleway] mt-5 leading-7">
+        <div className="text-white w-full md:w-[50%] p-5  flex flex-col my-auto ">
+          <h1 className="font-[manrope] font-bold text-3xl text-[35px]">OUR STORY</h1>
+          <p className="font-semibold font-[raleway] mt-[32px] leading-[24px] w-[] text-justify  md:mr-[89px]">
             At PaySa, we began our journey in 2023 with a mission to
             revolutionize banking services and lead digitalization in Pakistan.
             Identifying a significant gap in the digital payments market in
@@ -113,9 +113,13 @@ function AboutUs() {
         <EmployeeCarousel />
       </div>
 
-      <HiringSection />
       <div>
-        <img src="/assets/text-animations/aboutUS.gif" alt="" />
+        <HiringSection />
+      </div>
+      
+      {/* <div className="h-16"></div> */}
+      <div className="flex justify-center md:mt-[200px] my-10 ">
+        <img className="md:h-[88px] h-[41px] " src="/assets/text-animations/aboutUS.gif" alt="" />
       </div>
 
       <Footer />

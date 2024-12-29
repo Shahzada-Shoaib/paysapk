@@ -3,12 +3,21 @@ import Marquee from "react-fast-marquee";
 import useScreenSize from "../../utils/useIsMobile";
 
 const logos = [
-  "../assets/clients-logos/clients-logo1.svg",
+  "../assets/clients-logos/clients-logo-1.svg",
+  "../assets/clients-logos/clients-logo-2.svg",
+  "../assets/clients-logos/clients-logo-3.svg",
+  "../assets/clients-logos/clients-logo-4.svg",
+  "../assets/clients-logos/clients-logo-5.svg",
+
+
+
+  
   "../assets/clients-logos/clients-logo2.svg",
   "../assets/clients-logos/clients-logo4.svg",
   "../assets/clients-logos/clients-logo5.svg",
   "../assets/clients-logos/clients-logo6.svg",
   "../assets/clients-logos/clients-logo7.svg",
+  
   "../assets/clients-logos/clients-logo8.svg",
   "../assets/clients-logos/clients-logo9.svg",
   "../assets/clients-logos/clients-logo10.svg",
@@ -19,13 +28,14 @@ const logos = [
   "../assets/clients-logos/clients-logo18.svg",
   "../assets/clients-logos/clients-logo19.svg",
   "../assets/clients-logos/clients-logo20.svg",
+  
 ];
 
 function LogoSlider() {
   const { isMobile } = useScreenSize();
 
   return (
-    <div className="max-w-screen-2xl mx-auto">
+    <div className="mx-auto max-w-screen-2xl">
       <Marquee
         gradient={false}
         speed={isMobile ? 30 : 50}

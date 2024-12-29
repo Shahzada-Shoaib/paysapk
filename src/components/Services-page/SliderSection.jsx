@@ -4,7 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const SliderSection = () => {
   const carouselImages = [
-    "/assets/servicesPage/serviceSlider1.png",
+    "/assets/servicesPage/serviceSlider1.svg",
     "/assets/servicesPage/serviceSlider2.svg",
     "/assets/servicesPage/serviceSlider3.svg",
     "/assets/servicesPage/serviceSlider4.svg",
@@ -23,14 +23,14 @@ const SliderSection = () => {
   );
 
   const customPrevArrow = (onClickHandler) => (
-    <ArrowButton onClick={onClickHandler} direction="prev" className="left-4" />
+    <ArrowButton onClick={onClickHandler} direction="prev" className="left-4 bg-[#FDD21C33] rounded-lg border-[#FDD21C33]" />
   );
 
   const customNextArrow = (onClickHandler) => (
     <ArrowButton
       onClick={onClickHandler}
       direction="next"
-      className="right-4"
+      className="right-4 bg-[#FDD21C33] rounded-lg border-[#FDD21C33]"
     />
   );
 
@@ -51,7 +51,7 @@ const SliderSection = () => {
     <div className="flex flex-col mx-auto mt-10 md:flex-row">
       {/* Div#1 */}
       <div
-        className="w-full hidden md:block"
+        className="hidden w-full md:block"
         style={{
           backgroundImage: "url('/assets/servicesPage/services-bg.png')",
           backgroundSize: "cover",
@@ -63,7 +63,7 @@ const SliderSection = () => {
       />
 
       {/* Div#2 */}
-      <div className="relative md:w-[750px]">
+      <div className="relative md:w-[750px] border-black">
         <Carousel {...carouselSettings}>
           {carouselImages.map((src, index) => (
             <div key={index} className="flex items-center justify-center">

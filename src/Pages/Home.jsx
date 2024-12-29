@@ -103,12 +103,12 @@ function App() {
         <Button isPrimary="" title="Get in the Circle" isChevronEnabled />
       </div> */}
 
-      <div className="">
-        <img src="/assets/text-animations/textAnimation.gif" alt="" />
+      <div className="flex justify-center mx-6 mt-4 ">
+        <img className="md:w-[755px]" src="/assets/text-animations/textAnimation.gif" alt="" />
       </div>
 
       <Suspense fallback={<div>Loading...</div>}>
-        <div className="mt-40">
+        <div className="">
           <Footer />
         </div>
       </Suspense>

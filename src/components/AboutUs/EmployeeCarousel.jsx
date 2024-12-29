@@ -10,7 +10,7 @@ const EmployeeCarousel = () => {
     {
       title: "Ali Adnan",
       description: "CEO & Co Founder",
-      imageUrl: "/assets/aboutUsImages/employees/employee1.svg",
+      imageUrl: "/assets/aboutUsImages/employees/employee-1.svg",
     },
     {
       title: "Sedrick Nicholson",
@@ -89,12 +89,12 @@ const EmployeeCarousel = () => {
   const { isMobile } = useScreenSize();
 
   return (
-    <div className="">
-      <div className="flex justify-center md:justify-between text-center md:text-left p-4 text-white">
+    <div className=" md:mt-32">
+      <div className="flex justify-center p-4 text-center text-white md:justify-between md:text-left">
         <div className=" text-[50px] md:text-[36px] font-bold pb-8 md:pb-0">
           Our Team
         </div>
-        <div className="pr-24 md:pt-4 space-x-6 hidden md:block">
+        <div className="hidden pr-24 space-x-6 md:pt-4 md:block">
           <button className="" onClick={handlePrevSlide}>
             &#8592;
           </button>
