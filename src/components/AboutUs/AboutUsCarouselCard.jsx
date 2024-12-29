@@ -8,7 +8,10 @@ function AboutUsCarouselCard(props) {
         <div
           className="mt-14 relative h-[424px] w-[384px] right-[360px] hidden md:block rounded-[20px]"
           style={{
-            backgroundImage: `url(${props.yellowimageURL})`,
+            backgroundImage: props.isFirstSlide
+              ? `url(${props.yellowimageURL})`
+              : "none",
+            backgroundColor: props.isFirstSlide ? "transparent" : "#FDD21C",
           }}
         >
           {props.vector && (
@@ -24,18 +27,18 @@ function AboutUsCarouselCard(props) {
 
         <div
           className="md:absolute  w-[100%] lg:w-[656px] h-[427px] bg-[#3F94C44D] rounded-[20px] top-0  
-                md:left-[250px]  z-2 border"
+                md:left-[250px]  z-2 "
         >
           <div
-            className={`pl-[20px] border pt-8 md:pt-20 md:pl-[52px]   h-full md:h-auto rounded-[20px] relative ${props.textLeft} ${props.firstSlideBlur}`}
+            className={`md:pt-20 md:pl-[102px] md:pr-[79px]   h-full md:h-auto rounded-[20px] relative ${props.textLeft} ${props.firstSlideBlur}`}
           >
-            <div className=" mb-[22px] border">
-              <h1 className="font-bold text-white text-[25px] font-[manrope]">
+            <div className=" mb-[22px] ">
+              <h1 className="font-bold text-white text-[35px] font-[manrope]">
                 {props.title}
               </h1>
             </div>
             
-            <div className="mt-[20px] flex justify-center border ">
+            <div className="mt-[20px] flex justify-center  ">
               <p className="text-white text-[16px] leading-5 font-[raleway] md:w-[] w-[] text-justify">
                 {props.description}
               </p>
@@ -45,7 +48,7 @@ function AboutUsCarouselCard(props) {
               {props.navigationButtons}
             </div>
 
-            <div className="flex flex-col items-start mt-[-22px] transition-transform transform hover:-translate-y-1">
+            <div className="flex flex-col items-center mt-[-22px] transition-transform transform hover:-translate-y-1">
               {props.button}
             </div>
           </div>
@@ -62,7 +65,7 @@ function AboutUsCarouselCard(props) {
 
         
 
-        <div className="absolute w-[283px] h-[283px]   top-[290px]  z-1  md:left-[630px] border">
+        <div className="absolute w-[247px] h-[313px]   top-[330px] ml-10 z-1  md:left-[630px]  ">
           <img src={props.alphabetIMG} alt="About Page Carousel" />
         </div>
       </section>

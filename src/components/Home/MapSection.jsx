@@ -19,7 +19,7 @@ function MapSection({ handleMapClick }) {
           className="md:absolute  w-[100%] lg:w-[656px] h-[363px] bg-[#3F94C44D] rounded-[20px] top-0  
                 md:left-[250px] z-20"
         >
-          <div className="pl-[20px] z-10 md:pl-[52px] pt-12 md:pt-[70px]  h-full md:h-auto rounded-[20px] relative backdrop-blur-md md:w-[60%]">
+          <div className="pl-[20px] z-10 md:pl-[52px] pt-24 md:pt-[70px]  h-full md:h-auto rounded-[20px] relative backdrop-blur-md md:w-[60%]">
             <div>
               <h1 className="font-bold text-white  text-[28px] md:text-[40px] font-[manrope] ">
                 1000+ Customers
@@ -46,6 +46,7 @@ function MapSection({ handleMapClick }) {
               </button> */}
             </div>
           </div>
+          
         </div>
         <div className="absolute max-w-[100%] w-[350px] md:w-[650px]  top-[50px]   md:left-[400px]">
           <span onClick={handleMapClick} className="cursor-pointer">

@@ -59,9 +59,10 @@ const MyCarousel = () => {
         onChange={(index) => setCurrentSlide(index)} // Update currentSlide on change
         showArrows={false} // Disable default arrows
       >
-        <div className="w-full h-[700px] md:h-[650px] ">
+        <div className=" h-[700px] md:h-[650px] ">
           <AboutUsCarouselCard
-            title=" WORKINGS @ PAYSA"
+            isFirstSlide={true}
+            title="WORKING AT PAYSA"
             description="At PaySa, we foster diversity, support professional growth, and prioritize open communication and genuine relationships. Our talent philosophy centers on hiring ambitious professionals, offering career growth opportunities, and achieving greatness together by aligning values and goals."
             yellowimageURL="/assets/aboutUsImages/aboutUsYellowCard.svg"
             alphabetIMG="/assets/aboutUsImages/P-Image.svg"
@@ -70,13 +71,13 @@ const MyCarousel = () => {
             // prevSlide={prevSlide}
             button={firstSlidebutton}
             textLeft="text-left"
-            firstSlideBlur="md:w-[55%] backdrop-blur-md"
+            firstSlideBlur="md:w-[] backdrop-blur-md"
           />
         </div>
         <div className="w-full ">
           <AboutUsCarouselCard
             title=" PASSION"
-            description=" Passion drives all our endeavors, anchoring our commitment to making a meaningful impact in the technology sector. We believe in the power of passion to fuel creativity and resilience, empowering us to surmount challenges and deliver outstanding results."
+            description="Passion drives all our endeavors, anchoring our commitment to making a meaningful impact in the technology sector. We believe in the power of passion to fuel creativity and resilience, empowering us to surmount challenges and deliver outstanding results."
             yellowimageURL="/assets/aboutUsImages/aboutUsYellowCard.svg"
             alphabetIMG="/assets/aboutUsImages/P-Image.svg"
             vector="/assets/aboutUsImages/vector1.svg"
@@ -86,7 +87,7 @@ const MyCarousel = () => {
         <div className="w-full ">
           <AboutUsCarouselCard
             title=" ACCESSIBILITY"
-            description=" Accessibility supports our vision as a trusted digital payment provider, ensuring workplace understanding and product accessibility for all. With collaborative efforts and user-friendly design, our employees drive PaySa's success in a dynamic industry."
+            description="Accessibility supports our vision as a trusted digital payment provider, ensuring workplace understanding and product accessibility for all. With collaborative efforts and user-friendly design, our employees drive PaySa's success in a dynamic industry."
             yellowimageURL="/assets/aboutUsImages/aboutUsYellowCard.svg"
             alphabetIMG="/assets/aboutUsImages/A-image.svg"
             vector="/assets/aboutUsImages/vector3.svg"
@@ -96,7 +97,7 @@ const MyCarousel = () => {
         <div className="w-full ">
           <AboutUsCarouselCard
             title=" YES TO LIFE!"
-            description=" Yes to Life! signifies our commitment to a positive work culture, encouraging a healthy work-life balance and celebrating achievements, fostering fulfillment. At PaySa, we value employees bringing their whole selves to work, creating a thriving environment."
+            description="Yes to Life! signifies our commitment to a positive work culture, encouraging a healthy work-life balance and celebrating achievements, fostering fulfillment. At PaySa, we value employees bringing their whole selves to work, creating a thriving environment."
             yellowimageURL="/assets/aboutUsImages/aboutUsYellowCard.svg"
             alphabetIMG="/assets/aboutUsImages/Y-image.svg"
             vector="/assets/aboutUsImages/vector1.svg"
@@ -116,7 +117,7 @@ const MyCarousel = () => {
         <div className="w-full ">
           <AboutUsCarouselCard
             title=" ACCOUNTABILITY"
-            description=" Accountability builds trust and reliability, empowering every team member to contribute to our collective success. It is at our core, driving ownership, commitment, and initiative, ensuring the impact of our actions on the company's success."
+            description="Accountability builds trust and reliability, empowering every team member to contribute to our collective success. It is at our core, driving ownership, commitment, and initiative, ensuring the impact of our actions on the company's success."
             yellowimageURL="/assets/aboutUsImages/aboutUsYellowCard.svg"
             alphabetIMG="/assets/aboutUsImages/A-image.svg"
             vector="/assets/aboutUsImages/vector6.svg"
