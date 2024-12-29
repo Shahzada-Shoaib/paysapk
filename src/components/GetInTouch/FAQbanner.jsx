@@ -9,10 +9,13 @@ function FAQbanner() {
         backgroundImage: "url('/assets/get-in-touch-images/FAQbanner.webp')",
       }}
     >
-      <BannerWithoutVideo
-        title="FREQUENTLY ASKED QUESTIONS"
-        description="Dive in to find comprehensive answers and insights that address common queries, ensuring a seamless experience."
-      />
+      <div className="px-4 banner md:px-0">
+        <h1 className="max-w-[914px]">FREQUENTLY ASKED QUESTIONS</h1>
+        <p className="text-center mt-5 md:max-w-[450px]">
+          Dive in to find comprehensive answers and insights that address common
+          queries, ensuring a seamless experience.{" "}
+        </p>
+      </div>
     </div>
   );
 }

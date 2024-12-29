@@ -82,7 +82,7 @@ function FAQquestions() {
                   customers' information remains protected from cyber threats.
                 </p>
               }
-              title=" How secure are POS transactions, and what measures are in place to protect my customers data?"
+              title=" How secure are POS transactions, and what measures are in place to protect my customers' data?"
             />
           </div>
 
@@ -96,7 +96,7 @@ function FAQquestions() {
                   any queries.
                 </p>
               }
-              title="What type of customer support can I expect if I encounter any issues with the POS terminal? "
+              title="What type of customer support can I expect if I encounter any issues with the POS terminal?"
             />
           </div>
 
@@ -158,14 +158,20 @@ function FAQquestions() {
               title="Does the POS has any updates?"
             />
           </div>
-          
+
           <div>
             <Accordion
-              content={<p>Yes! The merchants get to choose and sign up for various customized services free of cost such as manual batch settlement, access to the merchant portal, daily transaction reporting and the online tip ( only for services industry ).</p>}
+              content={
+                <p>
+                  Yes! The merchants get to choose and sign up for various
+                  customized services free of cost such as manual batch
+                  settlement, access to the merchant portal, daily transaction
+                  reporting and the online tip ( only for services industry ).
+                </p>
+              }
               title="Does PaySa offer any customized features in the app?"
             />
           </div>
-          
         </div>
       </div>
     </div>
