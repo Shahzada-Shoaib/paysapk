@@ -7,10 +7,7 @@ function BannerWithoutVideo(props) {
       <div className="px-4 banner md:px-0">
         <h1 className="max-w-[914px]"> {props.title}</h1>
 
-        <p className="max-w-[]   text-center mt-5">
-          {" "}
-          {props.description}{" "}
-        </p>
+        <p className="text-center mt-5"> {props.description} </p>
       </div>
     </div>
   );
