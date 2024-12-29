@@ -21,7 +21,7 @@ function PaysaPage() {
          
                   <div className="mx-auto">
                       <img
-                        src="/assets/paysaPicksImages/paysaBanner1.webp"
+                        src="/assets/paysaPicksImages/paysaBanner1.svg"
                         alt="Sample Image"
                         className="w-full"
                       />
@@ -44,7 +44,7 @@ function PaysaPage() {
         </div> */}
         <CardsSection/>
                 
-<Carousel/>
+        <Carousel/>
               
                  
 
@@ -84,7 +84,7 @@ function PaysaPage() {
         <img
           src="/assets/paysaPicksImages/paysaPicks.gif"
           alt="gif"
-          className="absolute md:top-40 top-0 left-0 md:h-[879px] md:w-[1072px]"
+          className="absolute md:top-40 top-0 left-0 md:h-[800px] md:w-[950px]"
         />
       </div>
 
