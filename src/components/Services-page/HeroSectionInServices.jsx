@@ -7,7 +7,7 @@ function HeroSectionInServices() {
     <div
       className="flex flex-col h-[100vh] md:h-[1300px] bg-center bg-cover "
       style={{
-        backgroundImage: "url('/assets/servicesPage/bannerService.svg')",
+        backgroundImage: "url('/assets/servicesPage/banner-service.svg')",
       }}
     >
       <Navbar />
