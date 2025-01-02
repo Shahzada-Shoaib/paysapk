@@ -25,6 +25,7 @@ const MyCarousel = () => {
     >
       Our values
       <span className="ml-4">
+        
         <ChevronButton isSmall isPrimary={true} />
       </span>
     </button>
