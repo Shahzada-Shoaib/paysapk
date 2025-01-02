@@ -14,7 +14,7 @@ const Footer = () => {
   const navigate = useNavigate();
   return (
     <div className="">
-      <Link to="/get-in-touch">
+      {/* <Link to="/get-in-touch">
         <div className="flex justify-center mb-16 md:my-28">
           <Button
             isPrimary=""
@@ -23,7 +23,19 @@ const Footer = () => {
             onClick={() => navigate("/get-in-touch")}
           />
         </div>
+      </Link> */}
+
+
+      <Link to="/get-in-touch" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+        <div className="flex justify-center mb-16 md:my-28">
+          <Button
+            isPrimary=""
+            title="Get in the Circle"
+            isChevronEnabled
+          />
+        </div>
       </Link>
+
 
       <div>
         <div

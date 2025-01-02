@@ -4,16 +4,18 @@ import { Link } from "react-router-dom";
 
 function HiringSection() {
   return (
-    <div className="relative px-6 my- md:px-0 md:mt-12">
+    <div className="relative px-6 my-6 md:px-0 md:mt-12">
       <div className="font-semibold text-white text-[35px] flex justify-center font-[manrope] ">
         <h1 className="mt-10 md:mt-0">JOIN OUR TALENT POOL! </h1>
       </div>
 
-      <div className="relative  mt-10 md:mt-20  md:h-[550px] max-w-[650px] mx-auto mb-[0px] ">
+      <div className="relative  mt-10 md:mt-20  md:h-[550px] md:max-w-[650px] mx-auto mb-[0px]  ">
         <img
-          src="/assets/aboutUsImages/HiringSectionIMG.webp"
+          // src="/assets/aboutUsImages/HiringSectionIMG.webp"
+          src="/assets/aboutUsImages/HiringSectionIMG.png"
+
           alt="Background"
-          className="relative hidden md:mt-8 md:block md:h-[712px]"
+          className="relative hidden md:mt-8 md:block md:h-[712px] "
         />
 
         <div
@@ -49,7 +51,18 @@ function HiringSection() {
         </div>
         
       </div>
+      
+      
     </div>
+
+
+
+
+
+
+
+
+
   );
 }
 

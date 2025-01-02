@@ -36,7 +36,7 @@ function TestimonialCard({ brandLogo = "", testimonial }) {
                 <div className="mb-4 text-lg text-yellow-400">
                   &#9733; &#9733; &#9733; &#9733; &#9733;
                 </div>
-                <p className="w-[240px] text-justify">{testimonial}</p>
+                <p className="w-[240px] ">{testimonial}</p>
               </div>
             </div>
           </div>

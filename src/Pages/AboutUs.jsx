@@ -13,9 +13,9 @@ import EmployeeCard from "../components/AboutUs/EmployeeCard";
 import EmployeeCarousel from "../components/AboutUs/EmployeeCarousel";
 function AboutUs() {
   useEffect(() => {
-    // Component load hone par page upar scroll kar do
-    // window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
+
 
   return (
     <div className="w-full ">
@@ -106,7 +106,7 @@ function AboutUs() {
       </div>
 
       <div
-        className="bg-no-repeat  bg-cover px-8 pt-[200px]  h-[700px] md:h-[900px]"
+        className="bg-no-repeat bg-cover px-8 pt-[200px]  h-[700px] md:h-[850px]"
         style={{
           backgroundImage: "url('/assets/aboutUsImages/aboutus-yellow-bg.png')",
         }}
