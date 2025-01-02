@@ -9,7 +9,7 @@ function TestimonialCard({ brandLogo = "", testimonial }) {
       <div
         onMouseEnter={() => setIsFlipped(true)}
         onMouseLeave={() => setIsFlipped(false)}
-        className="text-white"
+        className="text-white "
       >
         <div className="bg-[#185C8333] w-[100%] md:w-[355px] h-[476px] rounded-3xl">
           <div className="flex flex-col h-full">
@@ -26,17 +26,17 @@ function TestimonialCard({ brandLogo = "", testimonial }) {
         className="text-white"
       >
         <div>
-          <div className="text-white bg-[#185C8333] w-[100%] md:w-[355px] h-[476px] rounded-3xl">
-            <div className="flex flex-col h-full pl-10">
+          <div className="text-white bg-[#185C8333] w-[100%] px-7 md:w-[355px] h-[476px] rounded-3xl">
+            <div className="flex flex-col h-full ">
               <div className="flex items-center justify-start flex-1 ">
                 <img src={brandLogo} alt="brand testimonial" />
               </div>
 
-              <div className="flex flex-col flex-1">
+              <div className="flex flex-col flex-1 ">
                 <div className="mb-4 text-lg text-yellow-400">
                   &#9733; &#9733; &#9733; &#9733; &#9733;
                 </div>
-                <p className="w-[240px] text-justify hyphens-auto ">{testimonial}</p>
+                <p className="w-[] text-[16px] text-justify hyphens-auto ">{testimonial}</p>
               </div>
             </div>
           </div>
