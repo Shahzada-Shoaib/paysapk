@@ -21,7 +21,7 @@ function AboutUsCard(props) {
           <h2 className="text-xl font-[manrope] font-bold text-center mt-[] text-white">
             {props.title}
           </h2>
-          <p className="text-center text-gray- mt-[30px] semi-bold text-white font-[raleway] text-[15px]">
+          <p className="text-center text-gray- mt-[30px] semi-bold text-white font-[raleway] text-[15px]  w-[300px]">
             {props.description}
           </p>
         </div>

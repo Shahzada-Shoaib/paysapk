@@ -100,7 +100,7 @@ const HomePageCarousel = () => {
             icon="/assets/services-carousel-icons/icon-4.png"
             image="https://i.imghippo.com/files/Bo9fk1729354905.png"
             title1="24/7 CUSTOMER SUPPORT"
-            description1="Get lightning-fast payment settlements <br>with PaySa's POS terminal (within 24<br> hours)"
+            description1="Your queries are resolved in a heartbeat."
           />
         </div>
       </Carousel>

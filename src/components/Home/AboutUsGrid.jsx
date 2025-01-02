@@ -22,7 +22,7 @@ const AboutUsGrid = () => {
 
   const items = [
     { title: "OUR STORY", description: "With swift progress and major industry partnerships, we’re transforming banking.", path: "/about-us", scrollPosition: { large: 800, medium: 400 }, isPrimary: true },
-    { title: "LIFE @ PAYSA", description: "With a commitment to service excellence and adaptability, we foster an environment where every day is a chance to grow.", path: "/about-us", scrollPosition: { large: 3400, medium: 1500 }, isPrimary: false },
+    { title: "LIFE AT PAYSA", description: "With a commitment to service excellence and adaptability, we foster an environment where every day is a chance to grow.", path: "/about-us", scrollPosition: { large: 3400, medium: 1500 }, isPrimary: false },
     { title: "SERVICES", description: "At PaySa, we offer lightning fast payments, data insights, top security, and 24/7 support.", path: "/services", scrollPosition: { large: 0, medium: 0 }, isPrimary: true },
     { title: "PAYSA HUMOUR", description: "At PaySa, we live for a thriving and fun environment.", path: "/paysa-picks", scrollPosition: { large: 0, medium: 0 }, isPrimary: false },
     { title: "VALUES", description: "At PaySa, our values drive our vision for a seamless digital future.", path: "/about-us", scrollPosition: { large: 1600, medium: 800 }, isPrimary: true },
