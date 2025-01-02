@@ -44,7 +44,7 @@ function MapSection({ handleMapClick }) {
                   <ChevronButton isSmall isPrimary={true} />
                 </span>
               </button> */}
-            </div>
+            </div>  
           </div>
           
         </div>

@@ -89,20 +89,21 @@ const EmployeeCarousel = () => {
   const { isMobile } = useScreenSize();
 
   return (
-    <div className=" md:mt-32">
+    <div className="md:mt-[70px] ">
       <div className="flex justify-center p-4 text-center text-white md:justify-between md:text-left">
-        <div className=" text-[50px] md:text-[36px] font-bold pb-8 md:pb-0">
+        <div className=" text-[50px] md:text-[36px] font-bold pb-8 md:pb-0 ">
           Our Team
         </div>
-        <div className="hidden pr-24 space-x-6 md:pt-4 md:block">
-          <button className="" onClick={handlePrevSlide}>
+        <div className="hidden pr-48 space-x-8 md:pt-0 md:block">
+          <button className="text-3xl" onClick={handlePrevSlide}>
             &#8592;
           </button>
-          <button className="" onClick={handleChangeSlide}>
+          <button className="text-3xl" onClick={handleChangeSlide}>
             {" "}
             &#8594;{" "}
           </button>
         </div>
+        
       </div>
 
       <div className="mx-auto ">

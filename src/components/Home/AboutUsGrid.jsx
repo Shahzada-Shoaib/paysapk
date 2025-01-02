@@ -1,31 +1,38 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import AboutUsCard from "../Home/AboutUsCard";
-import { useNavigate } from "react-router-dom";
 
 const AboutUsGrid = () => {
   const navigate = useNavigate();
-
-  const items = [
-    { title: "OUR STORY", description: "With swift progress and major industry partnerships, we’re transforming banking.", path: "/about-us", scrollPosition: 800, isPrimary : true},
-    
-    { title: "LIFE @ PAYSA", description: "With a commitment to service excellence and adaptability, we foster an environment where every day is a chance to grow.", path: "/about-us", scrollPosition: 3100, isPrimary: false },
-    
-    { title: "SERVICES", description: "At PaySa, we offer lightning-fast payments, data insights, top security, and 24/7 support.", path: "/services", scrollPosition: 0, isPrimary: true },
-    { title: "PAYSA HUMOUR", description: "At PaySa, we live for a thriving and fun environment.", path: "/paysa-picks", scrollPosition: 0, isPrimary: false },
-    { title: "VALUES", description: "At PaySa, our values drive our vision for a seamless digital future.", path: "/about-us", scrollPosition: 1600, isPrimary: true },
-    { title: "CAREER", description: "Join our dynamic team if you have a thirst for market exposure and career growth.", path: "/about-us", scrollPosition: 4900, isPrimary: false },
-  ];
-
+  const location = useLocation();
   const [activeIndex, setActiveIndex] = useState(0);
   const sliderRef = useRef(null);
 
+  useEffect(() => {
+    // Scroll to the top whenever the location changes
+    const scrollToTop = () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
+    scrollToTop();
+  }, [location.pathname]);
+
+  const items = [
+    { title: "OUR STORY", description: "With swift progress and major industry partnerships, we’re transforming banking.", path: "/about-us", scrollPosition: { large: 800, medium: 400 }, isPrimary: true },
+    { title: "LIFE @ PAYSA", description: "With a commitment to service excellence and adaptability, we foster an environment where every day is a chance to grow.", path: "/about-us", scrollPosition: { large: 3400, medium: 1500 }, isPrimary: false },
+    { title: "SERVICES", description: "At PaySa, we offer lightning fast payments, data insights, top security, and 24/7 support.", path: "/services", scrollPosition: { large: 0, medium: 0 }, isPrimary: true },
+    { title: "PAYSA HUMOUR", description: "At PaySa, we live for a thriving and fun environment.", path: "/paysa-picks", scrollPosition: { large: 0, medium: 0 }, isPrimary: false },
+    { title: "VALUES", description: "At PaySa, our values drive our vision for a seamless digital future.", path: "/about-us", scrollPosition: { large: 1600, medium: 800 }, isPrimary: true },
+    { title: "CAREER", description: "Join our dynamic team if you have a thirst for market exposure and career growth.", path: "/about-us", scrollPosition: { large: 4900, medium: 2400 }, isPrimary: false },
+  ];
+
   const settings = {
-    speed: 1000,             // Speed of slide transition (in ms)
-    autoplay: true,          // Enables autoplay
-    autoplaySpeed: 1000,  
+    speed: 1000,
+    autoplay: true,
+    autoplaySpeed: 1000,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -43,13 +50,19 @@ const AboutUsGrid = () => {
   };
 
   const handleClick = (path, scrollPosition) => {
-    navigate(path); // Navigate to the desired page
+    navigate(path);
     setTimeout(() => {
+      const screenWidth = window.innerWidth;
+      const position =
+        screenWidth > 768
+          ? scrollPosition.large // Large screen position
+          : scrollPosition.medium; // Medium screen position
+
       window.scrollTo({
-        top: scrollPosition, // Adjust this value as needed to reach the desired position
-        behavior: "smooth", // Ensures a smooth scroll effect
+        top: position,
+        behavior: "smooth",
       });
-    }, 0); // Delay to ensure scroll happens after navigation
+    }, 50); // Adjusted timeout for better DOM readiness
   };
 
   return (
@@ -68,7 +81,7 @@ const AboutUsGrid = () => {
                 }`}
             >
               <AboutUsCard
-                isPrimary ={item.isPrimary}
+                isPrimary={item.isPrimary}
                 title={item.title}
                 description={item.description}
               />

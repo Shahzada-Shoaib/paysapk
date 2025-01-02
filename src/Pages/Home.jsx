@@ -10,6 +10,7 @@ import LogoSlider from "../components/Home/LogoSlider";
 import PartnerSlider from "../components/Home/PartnersSlider";
 import { Link } from "react-router-dom";
 import AnimatedText from "../components/phase2/AnimatedText";
+import { useEffect } from "react";
 
 const Footer = lazy(() => import("../components/Footer"));
 const MapSection = lazy(() => import("../components/Home/MapSection"));
@@ -19,6 +20,16 @@ const HomePageCarousel = lazy(() =>
 );
 
 function App() {
+
+  useEffect(() => {
+    // Ensures scrolling works regardless of other rendering behavior
+    const scrollToTop = () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+    scrollToTop();
+  }, []);
+
+  
   const [mapPopupState, setMapPopupState] = useState(false);
 
   const fadeInUp = {
@@ -37,6 +48,7 @@ function App() {
     },
   };
 
+  
   return (
     <div>
       <Navbar />
