@@ -1,11 +1,11 @@
 import React from "react";
 import FooterLogo from "../images/footer-logo.svg";
 import FbIcon from "../images/social-icons/facebook.svg";
-import LinkedinIcon from "../images/social-icons/linkedin.svg";
+import LinkedinIcon from "../images/social-icons/linkedIn.png";
 import InstaIcon from "../images/social-icons/instagram.png";
-import TwitterIcon from "../images/social-icons/twitter.svg";
-import TikTokIcon from "../images/social-icons/tik_tok.svg";
-import ThreadIcon from "../images/social-icons/threads.svg";
+import TwitterIcon from "../images/social-icons/twitter.png";
+import TikTokIcon from "../images/social-icons/tiktok.png";
+import ThreadIcon from "../images/social-icons/threads.png";
 import { Link } from "react-router-dom";
 import Button from "./Button";
 import { useNavigate } from "react-router-dom";
