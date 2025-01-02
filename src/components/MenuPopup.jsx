@@ -1,12 +1,11 @@
 import React from "react";
 import CrossIcon from "../images/Cross-Icon.svg";
 import FbIcon from "../images/social-icons/facebook.svg";
-import LinkedinIcon from "../images/social-icons/linkedIn.png";
-import InstaIcon from "../images/social-icons/instagram.png";
-import TwitterIcon from "../images/social-icons/twitter.png";
-import TikTokIcon from "../images/social-icons/tiktok.png";
-import ThreadIcon from "../images/social-icons/threads.png";
-import SiteLogo from "../images/logo.svg";
+import LinkedinIcon from "../images/social-icons/linkedin.svg";
+import InstaIcon from "../images/social-icons/instagram.svg";
+import TwitterIcon from "../images/social-icons/twitter.svg";
+import TikTokIcon from "../images/social-icons/tiktok.svg";
+import ThreadIcon from "../images/social-icons/thread.svg";
 import { Link, useLocation } from "react-router-dom";
 
 function MenuPopup({ showMenuPopup, setShowMenuPopup }) {
@@ -38,10 +37,6 @@ function MenuPopup({ showMenuPopup, setShowMenuPopup }) {
           </div> */}
         </div>
 
-
-
-
-        
         {/* Menu Section */}
         <div className="flex flex-1  md:pt-[] w-full flex-wrap lg:pt-0 pb-[] max-w-screen-3xl mx-auto  ">
           <div className="flex pt- leading-[50px] md:w-3/6 lg:pt-0 lg:items-center">
@@ -85,45 +80,93 @@ function MenuPopup({ showMenuPopup, setShowMenuPopup }) {
               </li>
             </ul>
           </div>
-
-        
-
-
         </div>
 
         <div className="mb-4 mt-18 ">
           <div className="flex w-full pb-8 space-x-3 text-2xl">
-            {/* <img src={FbIcon} alt="icon" className="mx-1" />
-              <img src={LinkedinIcon} alt="icon" className="" />
-              <img src={InstaIcon} alt="icon" className="" />
-              <img src={TwitterIcon} alt="icon" className="" />
-              <img src={TikTokIcon} alt="icon" className="" />
-              <img src={ThreadIcon} alt="icon" className="" /> */}
-
-            <a href="https://www.facebook.com/paysa.technologies/" target="_blank" rel="noopener noreferrer">
-              <img src={FbIcon} alt="Facebook icon" className="mx-1" />
+            <a
+              href="https://www.facebook.com/paysa.technologies/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={FbIcon}
+                height={32}
+                width={32}
+                alt="Facebook icon"
+                className="mx-1"
+              />
             </a>
 
-            <a href="https://pk.linkedin.com/company/paysatechnologies" target="_blank" rel="noopener noreferrer">
-              <img src={LinkedinIcon} alt="LinkedIn icon" className="" />
+            <a
+              href="https://pk.linkedin.com/company/paysatechnologies"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={LinkedinIcon}
+                height={32}
+                width={32}
+                alt="LinkedIn icon"
+                className=""
+              />
             </a>
 
-            <a href="https://www.instagram.com/paysa_tech/" target="_blank" rel="noopener noreferrer">
-              <img src={InstaIcon} alt="Instagram icon" className="" />
+            <a
+              href="https://www.instagram.com/paysa_tech/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={InstaIcon}
+                height={32}
+                width={32}
+                alt="Instagram icon"
+                className=""
+              />
             </a>
 
-            <a href="https://twitter.com/PaySa_pk" target="_blank" rel="noopener noreferrer">
-              <img src={TwitterIcon} alt="Twitter icon" className="" />
+            <a
+              href="https://twitter.com/PaySa_pk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                height={32}
+                width={32}
+                src={TwitterIcon}
+                alt="Twitter icon"
+                className=""
+              />
             </a>
 
-            <a href="https://www.tiktok.com/@paysa_tech" target="_blank" rel="noopener noreferrer">
-              <img src={TikTokIcon} alt="TikTok icon" className="" />
+            <a
+              href="https://www.tiktok.com/@paysa_tech"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                height={32}
+                width={32}
+                src={TikTokIcon}
+                alt="TikTok icon"
+                className=""
+              />
             </a>
 
-            <a href="https://www.threads.net/@paysa_tech" target="_blank" rel="noopener noreferrer">
-              <img src={ThreadIcon} alt="Threads icon" className="" />
+            <a
+              href="https://www.threads.net/@paysa_tech"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                height={32}
+                width={32}
+                src={ThreadIcon}
+                alt="Threads icon"
+                className=""
+              />
             </a>
-
           </div>
         </div>
       </div>

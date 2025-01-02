@@ -1,41 +1,25 @@
 import React from "react";
 import FooterLogo from "../images/footer-logo.svg";
 import FbIcon from "../images/social-icons/facebook.svg";
-import LinkedinIcon from "../images/social-icons/linkedIn.png";
-import InstaIcon from "../images/social-icons/instagram.png";
-import TwitterIcon from "../images/social-icons/twitter.png";
-import TikTokIcon from "../images/social-icons/tiktok.png";
-import ThreadIcon from "../images/social-icons/threads.png";
+import LinkedinIcon from "../images/social-icons/linkedin.svg";
+import InstaIcon from "../images/social-icons/instagram.svg";
+import TwitterIcon from "../images/social-icons/twitter.svg";
+import TikTokIcon from "../images/social-icons/tiktok.svg";
+import ThreadIcon from "../images/social-icons/thread.svg";
 import { Link } from "react-router-dom";
 import Button from "./Button";
-import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
-  const navigate = useNavigate();
   return (
     <div className="">
-      {/* <Link to="/get-in-touch">
+      <Link
+        to="/get-in-touch"
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      >
         <div className="flex justify-center mb-16 md:my-28">
-          <Button
-            isPrimary=""
-            title="Get in the Circle"
-            isChevronEnabled
-            onClick={() => navigate("/get-in-touch")}
-          />
-        </div>
-      </Link> */}
-
-
-      <Link to="/get-in-touch" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-        <div className="flex justify-center mb-16 md:my-28">
-          <Button
-            isPrimary=""
-            title="Get in the Circle"
-            isChevronEnabled
-          />
+          <Button isPrimary="" title="Get in the Circle" isChevronEnabled />
         </div>
       </Link>
-
 
       <div>
         <div
@@ -76,7 +60,13 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={FbIcon} alt="Facebook icon" className="mx-1" />
+            <img
+              src={FbIcon}
+              height={32}
+              width={32}
+              alt="Facebook icon"
+              className="mx-1"
+            />
           </a>
 
           <a
@@ -84,7 +74,13 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={LinkedinIcon} alt="LinkedIn icon" className="" />
+            <img
+              src={LinkedinIcon}
+              height={32}
+              width={32}
+              alt="LinkedIn icon"
+              className=""
+            />
           </a>
 
           <a
@@ -92,7 +88,13 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={InstaIcon} alt="Instagram icon" className="" />
+            <img
+              height={32}
+              width={32}
+              src={InstaIcon}
+              alt="Instagram icon"
+              className=""
+            />
           </a>
 
           <a
@@ -100,7 +102,13 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={TwitterIcon} alt="Twitter icon" className="" />
+            <img
+              src={TwitterIcon}
+              height={32}
+              width={32}
+              alt="Twitter icon"
+              className=""
+            />
           </a>
 
           <a
@@ -108,7 +116,13 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={TikTokIcon} alt="TikTok icon" className="" />
+            <img
+              src={TikTokIcon}
+              height={32}
+              width={32}
+              alt="TikTok icon"
+              className=""
+            />
           </a>
 
           <a
@@ -116,7 +130,13 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={ThreadIcon} alt="Threads icon" className="" />
+            <img
+              height={32}
+              width={32}
+              src={ThreadIcon}
+              alt="Threads icon"
+              className=""
+            />
           </a>
         </div>
 
