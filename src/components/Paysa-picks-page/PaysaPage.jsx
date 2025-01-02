@@ -75,7 +75,7 @@ function PaysaPage() {
           <img src='/assets/paysaPicksImages/paysaPicks.gif'/>
         </div> */}
 
-      <div className="relative w-full mb-16 md:mb-80 aspect-auto">
+      <div className="relative w-full mb-2 md:mb- aspect-auto">
         <img
           src="/assets/paysaPicksImages/paysaBanner-2.svg"
           alt="image"
@@ -84,7 +84,7 @@ function PaysaPage() {
         <img
           src="/assets/paysaPicksImages/paysaPicks.gif"
           alt="gif"
-          className="absolute md:top-40 top-0 left-0 md:h-[800px] md:w-[950px]"
+          className="absolute md:top-40 top-0 left-0 md:h-[800px] md:w-[950px] "
         />
       </div>
 
