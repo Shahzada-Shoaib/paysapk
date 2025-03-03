@@ -87,11 +87,11 @@ function App() {
         />
       </motion.div>
 
-      <Suspense fallback={<div>Loading...</div>}>
+      {/* <Suspense fallback={<div>Loading...</div>}>
         <motion.div {...fadeInUp}>
           <HomePageCarousel />
         </motion.div>
-      </Suspense>
+      </Suspense> */}
 
       <div className=" md:my-[50px]">
         <motion.div {...fadeInUp} className="md:mt-[200px]">
