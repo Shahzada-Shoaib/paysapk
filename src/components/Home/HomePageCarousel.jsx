@@ -19,6 +19,7 @@ const HomePageCarousel = () => {
       >
         ❮ {/* Custom left arrow symbol */}
       </button>
+      // <div></div>
     );
   };
 
